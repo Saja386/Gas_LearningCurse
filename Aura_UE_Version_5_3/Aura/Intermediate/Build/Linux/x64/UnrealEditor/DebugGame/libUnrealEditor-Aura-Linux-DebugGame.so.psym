@@ -1,0 +1,2227 @@
+MODULE Linux x86_64 E2AB168A9661E61800000000000000000 libUnrealEditor-Aura-Linux-DebugGame.so
+INFO CODE_ID 8A16ABE2619618E6
+FILE 0 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/AudioMixerCore/Public/AudioMixerTypes.h
+FILE 1 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/Core/Public/Compression/CompressedBuffer.h
+FILE 2 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/Core/Public/Containers/Array.h
+FILE 3 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/Core/Public/Containers/ContainerAllocationPolicies.h
+FILE 4 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/Core/Public/Containers/StringView.h
+FILE 5 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/Core/Public/Containers/UnrealString.h.inl
+FILE 6 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/Core/Public/Math/IntPoint.h
+FILE 7 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/Core/Public/Memory/CompositeBuffer.h
+FILE 8 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/Core/Public/Memory/SharedBuffer.h
+FILE 9 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/Core/Public/Misc/EnumClassFlags.h
+FILE 10 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/Core/Public/Modules/ModuleInterface.h
+FILE 11 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/Core/Public/Modules/ModuleManager.h
+FILE 12 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/Core/Public/Stats/Stats2.h
+FILE 13 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/Core/Public/Templates/MemoryOps.h
+FILE 14 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/Core/Public/Templates/PimplPtr.h
+FILE 15 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/Core/Public/Templates/UnrealTemplate.h
+FILE 16 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/Core/Public/UObject/NameTypes.h
+FILE 17 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/CoreUObject/Public/Serialization/DerivedData.h
+FILE 18 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/CoreUObject/Public/UObject/Class.h
+FILE 19 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/CoreUObject/Public/UObject/Object.h
+FILE 20 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectHandle.h
+FILE 21 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectHandleTracking.h
+FILE 22 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectMacros.h
+FILE 23 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/CoreUObject/Public/UObject/UObjectBase.h
+FILE 24 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/CoreUObject/Public/UObject/UObjectBaseUtility.h
+FILE 25 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/Engine/Classes/AI/Navigation/NavAgentInterface.h
+FILE 26 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/Engine/Classes/Animation/AttributesContainer.h
+FILE 27 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/Engine/Classes/GameFramework/Actor.h
+FILE 28 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/Engine/Classes/GameFramework/Character.h
+FILE 29 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/Engine/Classes/GameFramework/Pawn.h
+FILE 30 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/Experimental/Chaos/Public/Chaos/ParticleIterator.h
+FILE 31 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/Experimental/Chaos/Public/ChaosVisualDebugger/ChaosVDMemWriterReader.h
+FILE 32 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/Experimental/Chaos/Public/ChaosVisualDebugger/ChaosVDSerializedNameTable.h
+FILE 33 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/SlateCore/Public/Layout/Margin.h
+FILE 34 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/SlateCore/Public/Styling/CoreStyle.h
+FILE 35 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/SlateCore/Public/Types/SlateVector2.h
+FILE 36 /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/ThirdParty/Unix/LibCxx/include/c++/v1/atomic
+FILE 37 /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/Aura.init.gen.cpp
+FILE 38 /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/BaseCharacter.gen.cpp
+FILE 39 /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Aura.cpp
+FILE 40 /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Private/BaseCharacter.cpp
+FILE 41 /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/BaseCharacter.h
+FUNC f860 6 0 EmptyLinkFunctionForGeneratedCodeAura_init()
+f860 4 9 37
+f864 2 9 37
+FUNC f870 32 0 Z_Construct_UPackage__Script_Aura()
+f870 4 12 37
+f874 8 13 37
+f87c 6 13 37
+f882 17 24 37
+f899 7 26 37
+f8a0 2 26 37
+FUNC f8b0 a 0 FBufferOwner::~FBufferOwner()
+f8b0 8 602 8
+f8b8 2 602 8
+FUNC f8c0 12 0 __cxx_global_var_init
+f8c0 4 0 37
+f8c4 c 9 30
+f8d0 2 9 30
+FUNC f8e0 12 0 __cxx_global_var_init.1
+f8e0 4 0 37
+f8e4 c 10 30
+f8f0 2 10 30
+FUNC f900 12 0 __cxx_global_var_init.2
+f900 4 0 37
+f904 c 11 30
+f910 2 11 30
+FUNC f920 12 0 __cxx_global_var_init.3
+f920 4 0 37
+f924 c 12 30
+f930 2 12 30
+FUNC f940 1e 0 __cxx_global_var_init.46
+f940 4 0 37
+f944 18 24 26
+f95c 2 24 26
+FUNC f960 41 0 __cxx_global_var_init.54
+f960 8 0 37
+f968 e 28 37
+f976 25 28 37
+f99b 6 28 37
+FUNC f9b0 24 0 <name omitted>
+f9b0 24 0 37
+FUNC f9e0 179 0 FThreadSafeStaticStat<FStat_STAT_ParticlesSequentialFor>::FThreadSafeStaticStat()
+f9e0 38 1910 12
+fa18 a 1916 12
+fa22 b 1916 12
+fa2d 4 1916 12
+fa31 7 1916 12
+fa38 4 1916 12
+fa3c 9 1916 12
+fa45 b 1916 12
+fa50 8 1916 12
+fa58 4 1916 12
+fa5c b 1916 12
+fa67 4 1916 12
+fa6b 4 1916 12
+fa6f 4 1916 12
+fa73 4 1916 12
+fa77 4 1916 12
+fa7b 5 1916 12
+fa80 6 1916 12
+fa86 f 1916 12
+fa95 13 1916 12
+faa8 f 1916 12
+fab7 1a 1916 12
+fad1 58 1916 12
+fb29 4 1916 12
+fb2d 14 1916 12
+fb41 4 1916 12
+fb45 3 1916 12
+fb48 4 1916 12
+fb4c 4 1916 12
+fb50 9 1917 12
+FUNC fb60 179 0 FThreadSafeStaticStat<FStat_STAT_ParticlesParallelFor>::FThreadSafeStaticStat()
+fb60 38 1910 12
+fb98 a 1916 12
+fba2 b 1916 12
+fbad 4 1916 12
+fbb1 7 1916 12
+fbb8 4 1916 12
+fbbc 9 1916 12
+fbc5 b 1916 12
+fbd0 8 1916 12
+fbd8 4 1916 12
+fbdc b 1916 12
+fbe7 4 1916 12
+fbeb 4 1916 12
+fbef 4 1916 12
+fbf3 4 1916 12
+fbf7 4 1916 12
+fbfb 5 1916 12
+fc00 6 1916 12
+fc06 f 1916 12
+fc15 13 1916 12
+fc28 f 1916 12
+fc37 1a 1916 12
+fc51 58 1916 12
+fca9 4 1916 12
+fcad 14 1916 12
+fcc1 4 1916 12
+fcc5 3 1916 12
+fcc8 4 1916 12
+fccc 4 1916 12
+fcd0 9 1917 12
+FUNC fce0 179 0 FThreadSafeStaticStat<FStat_STAT_ParticleViewParallelForImp>::FThreadSafeStaticStat()
+fce0 38 1910 12
+fd18 a 1916 12
+fd22 b 1916 12
+fd2d 4 1916 12
+fd31 7 1916 12
+fd38 4 1916 12
+fd3c 9 1916 12
+fd45 b 1916 12
+fd50 8 1916 12
+fd58 4 1916 12
+fd5c b 1916 12
+fd67 4 1916 12
+fd6b 4 1916 12
+fd6f 4 1916 12
+fd73 4 1916 12
+fd77 4 1916 12
+fd7b 5 1916 12
+fd80 6 1916 12
+fd86 f 1916 12
+fd95 13 1916 12
+fda8 f 1916 12
+fdb7 1a 1916 12
+fdd1 58 1916 12
+fe29 4 1916 12
+fe2d 14 1916 12
+fe41 4 1916 12
+fe45 3 1916 12
+fe48 4 1916 12
+fe4c 4 1916 12
+fe50 9 1917 12
+FUNC fe60 179 0 FThreadSafeStaticStat<FStat_STAT_HandleViewParallelForImp>::FThreadSafeStaticStat()
+fe60 38 1910 12
+fe98 a 1916 12
+fea2 b 1916 12
+fead 4 1916 12
+feb1 7 1916 12
+feb8 4 1916 12
+febc 9 1916 12
+fec5 b 1916 12
+fed0 8 1916 12
+fed8 4 1916 12
+fedc b 1916 12
+fee7 4 1916 12
+feeb 4 1916 12
+feef 4 1916 12
+fef3 4 1916 12
+fef7 4 1916 12
+fefb 5 1916 12
+ff00 6 1916 12
+ff06 f 1916 12
+ff15 13 1916 12
+ff28 f 1916 12
+ff37 1a 1916 12
+ff51 58 1916 12
+ffa9 4 1916 12
+ffad 14 1916 12
+ffc1 4 1916 12
+ffc5 3 1916 12
+ffc8 4 1916 12
+ffcc 4 1916 12
+ffd0 9 1917 12
+FUNC ffe0 7a 0 __cxx_global_var_init.4
+ffe0 2a 0 37
+1000a 1d 49 0
+10027 c 0 37
+10033 6 49 0
+10039 3 0 0
+1003c 9 49 0
+10045 15 0 37
+FUNC 10060 7a 0 __cxx_global_var_init.5
+10060 2a 0 37
+1008a 1d 48 0
+100a7 c 0 37
+100b3 6 48 0
+100b9 3 0 0
+100bc 9 48 0
+100c5 15 0 37
+FUNC 100e0 7a 0 __cxx_global_var_init.7
+100e0 2a 0 37
+1010a 1d 55 0
+10127 c 0 37
+10133 6 55 0
+10139 3 0 0
+1013c 9 55 0
+10145 15 0 37
+FUNC 10160 7a 0 __cxx_global_var_init.9
+10160 2a 0 37
+1018a 1d 54 0
+101a7 c 0 37
+101b3 6 54 0
+101b9 3 0 0
+101bc 9 54 0
+101c5 15 0 37
+FUNC 101e0 7a 0 __cxx_global_var_init.11
+101e0 2a 0 37
+1020a 1d 53 0
+10227 c 0 37
+10233 6 53 0
+10239 3 0 0
+1023c 9 53 0
+10245 15 0 37
+FUNC 10260 7a 0 __cxx_global_var_init.13
+10260 2a 0 37
+1028a 1d 52 0
+102a7 c 0 37
+102b3 6 52 0
+102b9 3 0 0
+102bc 9 52 0
+102c5 15 0 37
+FUNC 102e0 7a 0 __cxx_global_var_init.15
+102e0 2a 0 37
+1030a 1d 56 0
+10327 c 0 37
+10333 6 56 0
+10339 3 0 0
+1033c 9 56 0
+10345 15 0 37
+FUNC 10360 7e 0 __cxx_global_var_init.17
+10360 2a 0 37
+1038a 21 85 34
+103ab c 0 37
+103b7 6 85 34
+103bd 3 0 34
+103c0 9 85 34
+103c9 15 0 37
+FUNC 103e0 47 0 FDeprecateSlateVector2D::FDeprecateSlateVector2D(float, float)
+103e0 16 132 35
+103f6 5 131 35
+103fb 17 131 35
+10412 5 131 35
+10417 4 131 35
+1041b 5 131 35
+10420 5 131 35
+10425 2 133 35
+FUNC 10430 7e 0 __cxx_global_var_init.18
+10430 2a 0 37
+1045a 21 86 34
+1047b c 0 37
+10487 6 86 34
+1048d 3 0 34
+10490 9 86 34
+10499 15 0 37
+FUNC 104b0 7e 0 __cxx_global_var_init.19
+104b0 2a 0 37
+104da 21 87 34
+104fb c 0 37
+10507 6 87 34
+1050d 3 0 34
+10510 9 87 34
+10519 15 0 37
+FUNC 10530 7e 0 __cxx_global_var_init.20
+10530 2a 0 37
+1055a 21 88 34
+1057b c 0 37
+10587 6 88 34
+1058d 3 0 34
+10590 9 88 34
+10599 15 0 37
+FUNC 105b0 79 0 __cxx_global_var_init.21
+105b0 2a 0 37
+105da 1c 89 34
+105f6 c 0 37
+10602 6 89 34
+10608 3 0 34
+1060b 9 89 34
+10614 15 0 37
+FUNC 10630 79 0 __cxx_global_var_init.22
+10630 2a 0 37
+1065a 1c 90 34
+10676 c 0 37
+10682 6 90 34
+10688 3 0 34
+1068b 9 90 34
+10694 15 0 37
+FUNC 106b0 79 0 __cxx_global_var_init.23
+106b0 2a 0 37
+106da 1c 91 34
+106f6 c 0 37
+10702 6 91 34
+10708 3 0 34
+1070b 9 91 34
+10714 15 0 37
+FUNC 10730 7e 0 __cxx_global_var_init.24
+10730 2a 0 37
+1075a 21 92 34
+1077b c 0 37
+10787 6 92 34
+1078d 3 0 34
+10790 9 92 34
+10799 15 0 37
+FUNC 107b0 79 0 __cxx_global_var_init.25
+107b0 2a 0 37
+107da 1c 93 34
+107f6 c 0 37
+10802 6 93 34
+10808 3 0 34
+1080b 9 93 34
+10814 15 0 37
+FUNC 10830 79 0 __cxx_global_var_init.26
+10830 2a 0 37
+1085a 1c 94 34
+10876 c 0 37
+10882 6 94 34
+10888 3 0 34
+1088b 9 94 34
+10894 15 0 37
+FUNC 108b0 79 0 __cxx_global_var_init.27
+108b0 2a 0 37
+108da 1c 95 34
+108f6 c 0 37
+10902 6 95 34
+10908 3 0 34
+1090b 9 95 34
+10914 15 0 37
+FUNC 10930 79 0 __cxx_global_var_init.28
+10930 2a 0 37
+1095a 1c 96 34
+10976 c 0 37
+10982 6 96 34
+10988 3 0 34
+1098b 9 96 34
+10994 15 0 37
+FUNC 109b0 79 0 __cxx_global_var_init.29
+109b0 2a 0 37
+109da 1c 97 34
+109f6 c 0 37
+10a02 6 97 34
+10a08 3 0 34
+10a0b 9 97 34
+10a14 15 0 37
+FUNC 10a30 79 0 __cxx_global_var_init.30
+10a30 2a 0 37
+10a5a 1c 98 34
+10a76 c 0 37
+10a82 6 98 34
+10a88 3 0 34
+10a8b 9 98 34
+10a94 15 0 37
+FUNC 10ab0 79 0 __cxx_global_var_init.31
+10ab0 2a 0 37
+10ada 1c 99 34
+10af6 c 0 37
+10b02 6 99 34
+10b08 3 0 34
+10b0b 9 99 34
+10b14 15 0 37
+FUNC 10b30 79 0 __cxx_global_var_init.32
+10b30 2a 0 37
+10b5a 1c 100 34
+10b76 c 0 37
+10b82 6 100 34
+10b88 3 0 34
+10b8b 9 100 34
+10b94 15 0 37
+FUNC 10bb0 79 0 __cxx_global_var_init.33
+10bb0 2a 0 37
+10bda 1c 101 34
+10bf6 c 0 37
+10c02 6 101 34
+10c08 3 0 34
+10c0b 9 101 34
+10c14 15 0 37
+FUNC 10c30 79 0 __cxx_global_var_init.34
+10c30 2a 0 37
+10c5a 1c 102 34
+10c76 c 0 37
+10c82 6 102 34
+10c88 3 0 34
+10c8b 9 102 34
+10c94 15 0 37
+FUNC 10cb0 79 0 __cxx_global_var_init.35
+10cb0 2a 0 37
+10cda 1c 103 34
+10cf6 c 0 37
+10d02 6 103 34
+10d08 3 0 34
+10d0b 9 103 34
+10d14 15 0 37
+FUNC 10d30 7e 0 __cxx_global_var_init.36
+10d30 2a 0 37
+10d5a 21 104 34
+10d7b c 0 37
+10d87 6 104 34
+10d8d 3 0 34
+10d90 9 104 34
+10d99 15 0 37
+FUNC 10db0 79 0 __cxx_global_var_init.37
+10db0 2a 0 37
+10dda 1c 105 34
+10df6 c 0 37
+10e02 6 105 34
+10e08 3 0 34
+10e0b 9 105 34
+10e14 15 0 37
+FUNC 10e30 7e 0 __cxx_global_var_init.38
+10e30 2a 0 37
+10e5a 21 108 34
+10e7b c 0 37
+10e87 6 108 34
+10e8d 3 0 34
+10e90 9 108 34
+10e99 15 0 37
+FUNC 10eb0 3f 0 FMargin::FMargin(float, float)
+10eb0 16 64 33
+10ec6 5 60 33
+10ecb 4 60 33
+10ecf 5 61 33
+10ed4 5 61 33
+10ed9 5 62 33
+10ede 5 62 33
+10ee3 5 63 33
+10ee8 5 63 33
+10eed 2 64 33
+FUNC 10ef0 84 0 __cxx_global_var_init.39
+10ef0 2a 0 37
+10f1a 27 110 34
+10f41 c 0 37
+10f4d 6 110 34
+10f53 3 0 34
+10f56 9 110 34
+10f5f 15 0 37
+FUNC 10f80 59 0 FMargin::FMargin(double, double, double, double)
+10f80 20 88 33
+10fa0 9 84 33
+10fa9 4 84 33
+10fad 9 85 33
+10fb6 5 85 33
+10fbb 9 86 33
+10fc4 5 86 33
+10fc9 9 87 33
+10fd2 5 87 33
+10fd7 2 88 33
+FUNC 10fe0 89 0 __cxx_global_var_init.40
+10fe0 2a 0 37
+1100a 2c 112 34
+11036 c 0 37
+11042 6 112 34
+11048 3 0 34
+1104b 9 112 34
+11054 15 0 37
+FUNC 11070 7e 0 __cxx_global_var_init.41
+11070 2a 0 37
+1109a 21 113 34
+110bb c 0 37
+110c7 6 113 34
+110cd 3 0 34
+110d0 9 113 34
+110d9 15 0 37
+FUNC 110f0 84 0 __cxx_global_var_init.42
+110f0 2a 0 37
+1111a 27 114 34
+11141 c 0 37
+1114d 6 114 34
+11153 3 0 34
+11156 9 114 34
+1115f 15 0 37
+FUNC 11180 84 0 __cxx_global_var_init.43
+11180 2a 0 37
+111aa 27 115 34
+111d1 c 0 37
+111dd 6 115 34
+111e3 3 0 34
+111e6 9 115 34
+111ef 15 0 37
+FUNC 11210 7a 0 __cxx_global_var_init.44
+11210 2a 0 37
+1123a 1d 59 0
+11257 c 0 37
+11263 6 59 0
+11269 3 0 0
+1126c 9 59 0
+11275 15 0 37
+FUNC 11290 2a 0 __cxx_global_var_init.48
+11290 18 0 37
+112a8 10 488 6
+112b8 2 488 6
+FUNC 112c0 1f 0 UE::Math::TIntPoint<int>::TIntPoint(int, int)
+112c0 12 60 6
+112d2 3 58 6
+112d5 2 58 6
+112d7 3 59 6
+112da 3 59 6
+112dd 2 61 6
+FUNC 112e0 75 0 __cxx_global_var_init.49
+112e0 2a 0 37
+1130a 18 19 31
+11322 c 0 37
+1132e 6 19 31
+11334 3 0 31
+11337 9 19 31
+11340 15 0 37
+FUNC 11360 a5 0 TStringView<char16_t>::TStringView(char16_t const*)
+11360 10 92 4
+11370 4 90 4
+11374 3 90 4
+11377 8 91 4
+1137f b 91 4
+1138a 8 91 4
+11392 8 91 4
+1139a 5 91 4
+1139f 6 91 4
+113a5 c 91 4
+113b1 7 91 4
+113b8 f 91 4
+113c7 4 91 4
+113cb 6 91 4
+113d1 9 91 4
+113da 5 91 4
+113df 3 91 4
+113e2 3 91 4
+113e5 6 91 4
+113eb f 91 4
+113fa 7 0 4
+11401 2 91 4
+11403 2 93 4
+FUNC 11410 78 0 __cxx_global_var_init.51
+11410 2d 0 37
+1143d 18 20 32
+11455 c 0 37
+11461 6 20 32
+11467 3 0 32
+1146a 9 20 32
+11473 15 0 37
+FUNC 11490 37 0 FRegisterCompiledInInfo::FRegisterCompiledInInfo<UPackage* (&)(), char16_t const (&) [13], TRegistrationInfo<UPackage, FPackageReloadVersionInfo>&, FPackageReloadVersionInfo>(UPackage* (&&&)(), char16_t const (&&&) [13], TRegistrationInfo<UPackage, FPackageReloadVersionInfo>&&&, FPackageReloadVersionInfo&&)
+11490 1c 328 23
+114ac 10 329 23
+114bc 5 329 23
+114c1 6 330 23
+FUNC 114d0 1c 0 FBufferOwner::~FBufferOwner()
+114d0 c 602 8
+114dc e 602 8
+114ea 2 604 8
+FUNC 114f0 1b 0 FBufferOwner::MaterializeBuffer()
+114f0 10 607 8
+11500 5 608 8
+11505 6 609 8
+FUNC 11510 88 0 __cxx_global_var_init.56
+11510 2a 0 37
+1153a 11 145 7
+1154b 26 0 37
+11571 6 145 7
+11577 3 0 7
+1157a 9 145 7
+11583 15 0 37
+FUNC 115a0 71 0 FCompositeBuffer::FCompositeBuffer<(void*)0>()
+115a0 1c 43 7
+115bc 9 42 7
+115c5 7 42 7
+115cc b 42 7
+115d7 d 42 7
+115e4 7 42 7
+115eb 9 42 7
+115f4 e 42 7
+11602 7 42 7
+11609 2 42 7
+1160b 6 50 7
+FUNC 11620 1b 0 FCompositeBuffer::~FCompositeBuffer()
+11620 10 26 7
+11630 5 26 7
+11635 6 26 7
+FUNC 11640 1f 0 TSizedInlineAllocator<1u, 32, TSizedDefaultAllocator<32> >::ForElementType<FSharedBuffer>::ForElementType()
+11640 10 853 3
+11650 9 852 3
+11659 6 854 3
+FUNC 11660 f 0 TSizedInlineAllocator<1u, 32, TSizedDefaultAllocator<32> >::ForElementType<FSharedBuffer>::GetInitialCapacity() const
+11660 8 958 3
+11668 5 959 3
+1166d 2 959 3
+FUNC 11670 1f 0 TSizedInlineAllocator<1u, 32, TSizedDefaultAllocator<32> >::ForElementType<FSharedBuffer>::~ForElementType()
+11670 10 847 3
+11680 9 847 3
+11689 6 847 3
+FUNC 11690 1b 0 TSizedHeapAllocator<32, FMemory>::ForElementType<FSharedBuffer>::ForElementType()
+11690 10 797 3
+116a0 5 796 3
+116a5 6 798 3
+FUNC 116b0 15 0 TSizedHeapAllocator<32, FMemory>::ForAnyElementType::ForAnyElementType()
+116b0 c 623 3
+116bc 7 622 3
+116c3 2 623 3
+FUNC 116d0 4a 0 TSizedHeapAllocator<32, FMemory>::ForElementType<FSharedBuffer>::~ForElementType()
+116d0 1c 792 3
+116ec 4 792 3
+116f0 6 792 3
+116f6 4 792 3
+116fa 3 792 3
+116fd a 792 3
+11707 5 792 3
+1170c 3 792 3
+1170f 5 792 3
+11714 6 792 3
+FUNC 11730 d0 0 TArray<FSharedBuffer, TSizedInlineAllocator<1u, 32, TSizedDefaultAllocator<32> > >::~TArray()
+11730 28 678 2
+11758 14 679 2
+1176c 7 679 2
+11773 4 679 2
+11777 9 679 2
+11780 6 679 2
+11786 4 679 2
+1178a 9 679 2
+11793 4 679 2
+11797 5 679 2
+1179c 4 679 2
+117a0 8 679 2
+117a8 5 679 2
+117ad 8 0 2
+117b5 a 679 2
+117bf 4 679 2
+117c3 6 679 2
+117c9 4 679 2
+117cd 5 679 2
+117d2 c 679 2
+117de 9 679 2
+117e7 5 679 2
+117ec 5 679 2
+117f1 4 0 13
+117f5 5 683 2
+117fa 6 683 2
+FUNC 11800 1b 0 FSharedBuffer::~FSharedBuffer()
+11800 10 338 8
+11810 5 338 8
+11815 6 338 8
+FUNC 11820 2b 0 UE::SharedBuffer::Private::TBufferOwnerPtr<UE::SharedBuffer::Private::FSharedOps>::~TBufferOwnerPtr()
+11820 10 818 8
+11830 3 819 8
+11833 a 819 8
+1183d 6 820 8
+11843 3 0 8
+11846 5 819 8
+FUNC 11850 26 0 UE::SharedBuffer::Private::FSharedOps::Release(FBufferOwner*)
+11850 c 142 8
+1185c 5 142 8
+11861 6 142 8
+11867 4 142 8
+1186b 5 142 8
+11870 6 142 8
+FUNC 11880 76 0 FBufferOwner::ReleaseSharedReference()
+11880 14 699 8
+11894 8 700 8
+1189c 11 700 8
+118ad a 700 8
+118b7 4 700 8
+118bb 4 702 8
+118bf 5 702 8
+118c4 3 702 8
+118c7 6 702 8
+118cd 4 0 8
+118d1 a 704 8
+118db 8 705 8
+118e3 8 706 8
+118eb 5 707 8
+118f0 6 709 8
+FUNC 11900 29 0 std::__1::__atomic_base<unsigned long long, true>::fetch_sub
+11900 17 1665 36
+11917 4 1665 36
+1191b 3 1665 36
+1191e 5 1665 36
+11923 6 1665 36
+FUNC 11930 10 0 FBufferOwner::SetSharedRefCount(unsigned int)
+11930 7 105 8
+11937 3 105 8
+1193a 4 105 8
+1193e 2 105 8
+FUNC 11940 17 0 FBufferOwner::GetSharedRefCount(unsigned long long)
+11940 8 104 8
+11948 4 104 8
+1194c 4 104 8
+11950 5 104 8
+11955 2 104 8
+FUNC 11960 70 0 FBufferOwner::ReleaseWeakReference()
+11960 14 734 8
+11974 8 735 8
+1197c 11 735 8
+1198d a 735 8
+11997 4 735 8
+1199b 4 737 8
+1199f 5 737 8
+119a4 3 737 8
+119a7 6 737 8
+119ad 4 0 8
+119b1 a 739 8
+119bb 4 0 8
+119bf 6 739 8
+119c5 5 740 8
+119ca 6 741 8
+FUNC 119d0 c5 0 std::__1::__cxx_atomic_fetch_sub<unsigned long long>
+119d0 f 1030 36
+119df 8 1031 36
+119e7 3 1031 36
+119ea 4 1031 36
+119ee 15 1031 36
+11a03 18 0 36
+11a1b 15 1031 36
+11a30 4 0 36
+11a34 15 1031 36
+11a49 4 0 36
+11a4d 15 1031 36
+11a62 4 0 36
+11a66 15 1031 36
+11a7b 4 0 36
+11a7f 14 1031 36
+11a93 2 1031 36
+FUNC 11aa0 10 0 FBufferOwner::SetWeakRefCount(unsigned int)
+11aa0 7 107 8
+11aa7 3 107 8
+11aaa 4 107 8
+11aae 2 107 8
+FUNC 11ab0 17 0 FBufferOwner::GetWeakRefCount(unsigned long long)
+11ab0 8 106 8
+11ab8 4 106 8
+11abc 4 106 8
+11ac0 5 106 8
+11ac5 2 106 8
+FUNC 11ad0 e 0 TSizedInlineAllocator<1u, 32, TSizedDefaultAllocator<32> >::ForElementType<FSharedBuffer>::GetInlineElements() const
+11ad0 c 984 3
+11adc 2 985 3
+FUNC 11ae0 88 0 __cxx_global_var_init.57
+11ae0 2a 0 37
+11b0a 11 174 1
+11b1b 26 0 37
+11b41 6 174 1
+11b47 3 0 1
+11b4a 9 174 1
+11b53 15 0 37
+FUNC 11b70 1b 0 FCompressedBuffer::FCompressedBuffer()
+11b70 10 49 1
+11b80 5 49 1
+11b85 6 49 1
+FUNC 11b90 1b 0 FCompressedBuffer::~FCompressedBuffer()
+11b90 10 49 1
+11ba0 5 49 1
+11ba5 6 49 1
+FUNC 11bb0 27 0 bool EnumHasAnyFlags<EStatFlags>(EStatFlags, EStatFlags)
+11bb0 10 36 9
+11bc0 4 38 9
+11bc4 4 38 9
+11bc8 2 38 9
+11bca 6 38 9
+11bd0 5 38 9
+11bd5 2 38 9
+FUNC 11be0 1f 0 operator|(EStatFlags, EStatFlags)
+11be0 10 192 12
+11bf0 d 192 12
+11bfd 2 192 12
+FUNC 11c00 4e 0 __cxx_global_var_init.70
+11c00 4e 0 37
+FUNC 11c50 1b 0 UE::FDerivedData::~FDerivedData()
+11c50 10 81 17
+11c60 5 81 17
+11c65 6 81 17
+FUNC 11c70 1b 0 TPimplPtr<UE::DerivedData::Private::FEditorData, (EPimplPtrMode)1>::~TPimplPtr()
+11c70 10 257 14
+11c80 5 257 14
+11c85 6 257 14
+FUNC 11c90 5b 0 TPimplPtr<UE::DerivedData::Private::FEditorData, (EPimplPtrMode)0>::~TPimplPtr()
+11c90 14 164 14
+11ca4 4 165 14
+11ca8 6 165 14
+11cae 4 0 14
+11cb2 7 167 14
+11cb9 4 167 14
+11cbd 4 167 14
+11cc1 4 167 14
+11cc5 4 167 14
+11cc9 3 167 14
+11ccc 7 167 14
+11cd3 5 167 14
+11cd8 5 168 14
+11cdd 6 169 14
+11ce3 3 0 14
+11ce6 5 167 14
+FUNC 11cf0 39 0 FBufferOwner::SetIsMaterialized()
+11cf0 10 664 8
+11d00 8 665 8
+11d08 11 665 8
+11d19 a 665 8
+11d23 6 666 8
+FUNC 11d30 29 0 std::__1::__atomic_base<unsigned long long, true>::fetch_or
+11d30 17 1677 36
+11d47 4 1677 36
+11d4b 3 1677 36
+11d4e 5 1677 36
+11d53 6 1677 36
+FUNC 11d60 14 0 FBufferOwner::SetFlags(FBufferOwner::EBufferOwnerFlags)
+11d60 a 109 8
+11d6a 4 109 8
+11d6e 4 109 8
+11d72 2 109 8
+FUNC 11d80 20a 0 std::__1::__cxx_atomic_fetch_or<unsigned long long>
+11d80 13 1062 36
+11d93 8 1063 36
+11d9b 3 1063 36
+11d9e 4 1063 36
+11da2 15 1063 36
+11db7 18 0 36
+11dcf f 1063 36
+11dde c 0 36
+11dea 24 1063 36
+11e0e 4 0 36
+11e12 9 1063 36
+11e1b 4 0 36
+11e1f f 1063 36
+11e2e c 0 36
+11e3a 24 1063 36
+11e5e 4 0 36
+11e62 9 1063 36
+11e6b 4 0 36
+11e6f f 1063 36
+11e7e c 0 36
+11e8a 24 1063 36
+11eae 4 0 36
+11eb2 9 1063 36
+11ebb 4 0 36
+11ebf 15 1063 36
+11ed4 12 0 36
+11ee6 2a 1063 36
+11f10 7 0 36
+11f17 9 1063 36
+11f20 4 0 36
+11f24 15 1063 36
+11f39 12 0 36
+11f4b 2a 1063 36
+11f75 7 0 36
+11f7c 8 1063 36
+11f84 6 1063 36
+FUNC 11f90 6 0 EmptyLinkFunctionForGeneratedCodeBaseCharacter()
+11f90 4 10 38
+11f94 2 10 38
+FUNC 11fa0 6 0 ABaseCharacter::StaticRegisterNativesABaseCharacter()
+11fa0 4 21 38
+11fa4 2 22 38
+FUNC 11fb0 e7 0 ABaseCharacter::GetPrivateStaticClass()
+11fb0 f 23 38
+11fbf 8 23 38
+11fc7 6 23 38
+11fcd b6 23 38
+12083 7 23 38
+1208a d 23 38
+FUNC 120a0 b 0 Z_Construct_UClass_ABaseCharacter_NoRegister()
+120a0 4 25 38
+120a4 5 26 38
+120a9 2 26 38
+FUNC 120b0 32 0 Z_Construct_UClass_ABaseCharacter()
+120b0 4 64 38
+120b4 8 65 38
+120bc 6 65 38
+120c2 17 67 38
+120d9 7 69 38
+120e0 2 69 38
+FUNC 120f0 b 0 UClass* StaticClass<ABaseCharacter>()
+120f0 4 72 38
+120f4 5 73 38
+120f9 2 73 38
+FUNC 12100 52 0 ABaseCharacter::ABaseCharacter(FVTableHelper&)
+12100 18 75 38
+12118 34 75 38
+1214c 6 75 38
+FUNC 12160 1b 0 ABaseCharacter::~ABaseCharacter()
+12160 10 76 38
+12170 5 76 38
+12175 6 76 38
+FUNC 12180 19 0 non-virtual thunk to ABaseCharacter::~ABaseCharacter()
+12180 19 0 38
+FUNC 121a0 28 0 ABaseCharacter::~ABaseCharacter()
+121a0 14 76 38
+121b4 e 76 38
+121c2 6 76 38
+FUNC 121d0 19 0 non-virtual thunk to ABaseCharacter::~ABaseCharacter()
+121d0 19 0 38
+FUNC 121f0 12 0 __cxx_global_var_init
+121f0 4 0 38
+121f4 c 9 30
+12200 2 9 30
+FUNC 12210 12 0 __cxx_global_var_init.1
+12210 4 0 38
+12214 c 10 30
+12220 2 10 30
+FUNC 12230 12 0 __cxx_global_var_init.2
+12230 4 0 38
+12234 c 11 30
+12240 2 11 30
+FUNC 12250 12 0 __cxx_global_var_init.3
+12250 4 0 38
+12254 c 12 30
+12260 2 12 30
+FUNC 12270 1e 0 __cxx_global_var_init.46
+12270 4 0 38
+12274 18 24 26
+1228c 2 24 26
+FUNC 12290 6b 0 __cxx_global_var_init.55
+12290 8 0 38
+12298 8 87 38
+122a0 8 88 38
+122a8 7 88 38
+122af 8 89 38
+122b7 7 89 38
+122be 37 86 38
+122f5 6 89 38
+FUNC 12300 24 0 <name omitted>
+12300 24 0 38
+FUNC 12330 d 0 ABaseCharacter::StaticPackage()
+12330 4 12 41
+12334 7 12 41
+1233b 2 12 41
+FUNC 12340 8 0 ABaseCharacter::StaticClassCastFlags()
+12340 4 12 41
+12344 2 12 41
+12346 2 12 41
+FUNC 12350 d 0 APawn::StaticConfigName()
+12350 4 44 29
+12354 7 44 29
+1235b 2 44 29
+FUNC 12360 1b 0 void InternalConstructor<ABaseCharacter>(FObjectInitializer const&)
+12360 c 3558 18
+1236c 4 3559 18
+12370 5 3559 18
+12375 6 3560 18
+FUNC 12380 1b 0 UObject* InternalVTableHelperCtorCaller<ABaseCharacter>(FVTableHelper&)
+12380 c 3568 18
+1238c 4 3569 18
+12390 5 3569 18
+12395 6 3569 18
+FUNC 123a0 181 0 FUObjectCppClassStaticFunctions::FUObjectCppClassStaticFunctions(void (*)(UObject*, FReferenceCollector&), void (*)(FArchive&, UClass const*), void (*)(FAppendToClassSchemaContext&), void (*)(TArray<FTopLevelAssetPath, TSizedDefaultAllocator<32> >&, UClass const*))
+123a0 20 1990 22
+123c0 4 1984 22
+123c4 3 1984 22
+123c7 4 1986 22
+123cb 4 1986 22
+123cf 4 1987 22
+123d3 4 1987 22
+123d7 4 1988 22
+123db 4 1988 22
+123df e 1992 22
+123ed d 1992 22
+123fa 21 1992 22
+1241b d 1992 22
+12428 1 1992 22
+12429 5 1992 22
+1242e e 1994 22
+1243c d 1994 22
+12449 21 1994 22
+1246a d 1994 22
+12477 1 1994 22
+12478 5 1994 22
+1247d e 1995 22
+1248b d 1995 22
+12498 21 1995 22
+124b9 d 1995 22
+124c6 1 1995 22
+124c7 5 1995 22
+124cc e 1996 22
+124da d 1996 22
+124e7 21 1996 22
+12508 d 1996 22
+12515 1 1996 22
+12516 5 1996 22
+1251b 6 2000 22
+FUNC 12530 b 0 ACharacter::StaticClass()
+12530 4 242 28
+12534 5 242 28
+12539 2 242 28
+FUNC 12540 b 0 UObject::StaticClass()
+12540 4 90 19
+12544 5 90 19
+12549 2 90 19
+FUNC 12550 b 0 ABaseCharacter::StaticClass()
+12550 4 12 41
+12554 5 12 41
+12559 2 12 41
+FUNC 12560 1b 0 ABaseCharacter::operator delete(void*)
+12560 c 12 41
+1256c 9 12 41
+12575 6 12 41
+FUNC 12580 5c 0 FRegisterCompiledInInfo::FRegisterCompiledInInfo<char16_t const (&) [13], FClassRegisterCompiledInInfo const (&) [1], unsigned long, std::nullptr_t, int, std::nullptr_t, int>(char16_t const (&&&) [13], FClassRegisterCompiledInInfo const (&&&) [1], unsigned long&&, std::nullptr_t&&, int&&, std::nullptr_t&&, int&&)
+12580 28 328 23
+125a8 c 329 23
+125b4 3 329 23
+125b7 4 329 23
+125bb 3 329 23
+125be 4 329 23
+125c2 3 329 23
+125c5 11 329 23
+125d6 6 330 23
+FUNC 125e0 a 0 UObjectBase::RegisterDependencies()
+125e0 8 103 23
+125e8 2 103 23
+FUNC 125f0 11 0 UObjectBaseUtility::CanBeClusterRoot() const
+125f0 8 379 24
+125f8 7 380 24
+125ff 2 380 24
+FUNC 12610 a 0 UObjectBaseUtility::OnClusterMarkedAsPendingKill()
+12610 8 398 24
+12618 2 398 24
+FUNC 12620 2d 0 UObject::GetDetailedInfoInternal() const
+12620 17 212 19
+12637 10 212 19
+12647 6 212 19
+FUNC 12650 a 0 UObject::PostCDOContruct()
+12650 8 232 19
+12658 2 233 19
+FUNC 12660 e 0 UObject::PostCDOCompiled(FObjectPostCDOCompiledContext const&)
+12660 c 244 19
+1266c 2 245 19
+FUNC 12670 a 0 UObject::PostCDOCompiled()
+12670 8 253 19
+12678 2 254 19
+FUNC 12680 e 0 UObject::LoadedFromAnotherClass(FName const&)
+12680 c 317 19
+1268c 2 317 19
+FUNC 12690 20 0 UObject::ResolveSubobject(char16_t const*, UObject*&, bool)
+12690 17 332 19
+126a7 7 332 19
+126ae 2 332 19
+FUNC 126b0 11 0 UObject::IsReadyForAsyncPostLoad() const
+126b0 8 337 19
+126b8 7 337 19
+126bf 2 337 19
+FUNC 126d0 a 0 UObject::PostLinkerChange()
+126d0 8 371 19
+126d8 2 371 19
+FUNC 126e0 a 0 UObject::ShutdownAfterError()
+126e0 8 412 19
+126e8 2 412 19
+FUNC 126f0 e 0 UObject::PostInterpChange(FProperty*)
+126f0 c 415 19
+126fc 2 415 19
+FUNC 12700 e 0 UObject::PreDuplicate(FObjectDuplicationParameters&)
+12700 c 524 19
+1270c 2 524 19
+FUNC 12710 12 0 UObject::PostDuplicate(bool)
+12710 10 530 19
+12720 2 530 19
+FUNC 12730 32 0 UObject::PostDuplicate(EDuplicateMode::Type)
+12730 13 532 19
+12743 7 533 19
+1274a 12 533 19
+1275c 6 534 19
+FUNC 12770 11 0 UObject::NeedsLoadForEditorGame() const
+12770 8 567 19
+12778 7 568 19
+1277f 2 568 19
+FUNC 12790 11 0 UObject::HasNonEditorOnlyReferences() const
+12790 8 588 19
+12798 7 589 19
+1279f 2 589 19
+FUNC 127b0 11 0 UObject::IsPostLoadThreadSafe() const
+127b0 8 598 19
+127b8 7 599 19
+127bf 2 599 19
+FUNC 127d0 e 0 UObject::GetPrestreamPackages(TArray<UObject*, TSizedDefaultAllocator<32> >&)
+127d0 c 622 19
+127dc 2 623 19
+FUNC 127e0 11 0 UObject::ExportCustomProperties(FOutputDevice&, unsigned int)
+127e0 f 650 19
+127ef 2 650 19
+FUNC 12800 12 0 UObject::ImportCustomProperties(char16_t const*, FFeedbackContext*)
+12800 10 661 19
+12810 2 661 19
+FUNC 12820 e 0 UObject::PostReloadConfig(FProperty*)
+12820 c 673 19
+1282c 2 673 19
+FUNC 12830 2d 0 UObject::GetDesc()
+12830 17 686 19
+12847 10 686 19
+12857 6 686 19
+FUNC 12860 a 0 UObject::MoveDataToSparseClassDataStruct() const
+12860 8 692 19
+12868 2 692 19
+FUNC 12870 19 0 UObject::ConformSparseClassDataStruct(UScriptStruct*, void*) const
+12870 10 693 19
+12880 7 693 19
+12887 2 693 19
+FUNC 12890 18 0 UObject::GetNativePropertyValues(TMap<FString, FString, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<FString, FString, false> >&, unsigned int) const
+12890 f 726 19
+1289f 7 727 19
+128a6 2 727 19
+FUNC 128b0 3c 0 UObject::GetExporterName()
+128b0 c 757 19
+128bc 15 758 19
+128d1 15 758 19
+128e6 6 758 19
+FUNC 128f0 c 0 UObject::GetRestoreForUObjectOverwrite()
+128f0 8 791 19
+128f8 2 792 19
+128fa 2 792 19
+FUNC 12900 15 0 UObject::AreNativePropertiesIdenticalTo(UObject*) const
+12900 c 803 19
+1290c 7 804 19
+12913 2 804 19
+FUNC 12920 a 0 UObject::PostRepNotifies()
+12920 8 1025 19
+12928 2 1025 19
+FUNC 12930 e 0 UObject::BeginCacheForCookedPlatformData(ITargetPlatform const*)
+12930 c 1148 19
+1293c 2 1148 19
+FUNC 12940 15 0 UObject::IsCachedCookedPlatformDataLoaded(ITargetPlatform const*)
+12940 c 1155 19
+1294c 7 1155 19
+12953 2 1155 19
+FUNC 12960 a 0 UObject::WillNeverCacheCookedPlatformDataAgain()
+12960 8 1160 19
+12968 2 1160 19
+FUNC 12970 e 0 UObject::ClearCachedCookedPlatformData(ITargetPlatform const*)
+12970 c 1167 19
+1297c 2 1167 19
+FUNC 12980 a 0 UObject::ClearAllCachedCookedPlatformData()
+12980 8 1174 19
+12988 2 1174 19
+FUNC 12990 12 0 UObject::CookAdditionalFilesOverride(char16_t const*, ITargetPlatform const*, TFunctionRef<void (char16_t const*, void*, long long)>)
+12990 10 1203 19
+129a0 2 1204 19
+FUNC 129b0 c 0 UObject::GetConfigOverridePlatform() const
+129b0 8 1318 19
+129b8 2 1318 19
+129ba 2 1318 19
+FUNC 129c0 e 0 UObject::OverrideConfigSection(FString&)
+129c0 c 1325 19
+129cc 2 1325 19
+FUNC 129d0 e 0 UObject::OverridePerObjectConfigSection(FString&)
+129d0 c 1332 19
+129dc 2 1332 19
+FUNC 129e0 3b 0 UObject::ProcessConsoleExec(char16_t const*, FOutputDevice&, UObject*)
+129e0 1c 1461 19
+129fc 4 1462 19
+12a00 4 1462 19
+12a04 4 1462 19
+12a08 8 1462 19
+12a10 5 1462 19
+12a15 6 1462 19
+FUNC 12a20 14 0 UObject::RegenerateClass(UClass*, UObject*)
+12a20 10 1476 19
+12a30 2 1476 19
+12a32 2 1476 19
+FUNC 12a40 a 0 UObject::MarkAsEditorOnlySubobject()
+12a40 8 1489 19
+12a48 2 1489 19
+FUNC 12a50 1a 0 AActor::SetNetPushIdDynamic(unsigned long long)
+12a50 10 197 27
+12a60 8 197 27
+12a68 2 197 27
+FUNC 12a70 1b 0 AActor::GetNetPushIdDynamic() const
+12a70 10 197 27
+12a80 5 197 27
+12a85 6 197 27
+FUNC 12a90 21 0 AActor::IsInEditingLevelInstance() const
+12a90 c 321 27
+12a9c e 322 27
+12aaa 5 322 27
+12aaf 2 322 27
+FUNC 12ac0 11 0 AActor::ShouldLevelKeepRefIfExternal() const
+12ac0 8 1008 27
+12ac8 7 1008 27
+12acf 2 1008 27
+FUNC 12ae0 37 0 AActor::GetRuntimeGrid() const
+12ae0 c 1019 27
+12aec 14 1019 27
+12b00 15 1019 27
+12b15 2 1019 27
+FUNC 12b20 27 0 AActor::IsLockLocation() const
+12b20 c 1037 27
+12b2c 14 1037 27
+12b40 5 1037 27
+12b45 2 1037 27
+FUNC 12b50 11 0 AActor::IsDataLayerTypeSupported(TSubclassOf<UDataLayerInstance>) const
+12b50 8 1316 27
+12b58 7 1316 27
+12b5f 2 1316 27
+FUNC 12b70 11 0 AActor::ActorTypeIsMainWorldOnly() const
+12b70 8 1318 27
+12b78 7 1318 27
+12b7f 2 1318 27
+FUNC 12b90 11 0 AActor::ActorTypeSupportsDataLayer() const
+12b90 8 1338 27
+12b98 7 1338 27
+12b9f 2 1338 27
+FUNC 12bb0 11 0 AActor::ActorTypeSupportsExternalDataLayer() const
+12bb0 8 1339 27
+12bb8 7 1339 27
+12bbf 2 1339 27
+FUNC 12bd0 11 0 AActor::IsRuntimeOnly() const
+12bd0 8 2207 27
+12bd8 7 2207 27
+12bdf 2 2207 27
+FUNC 12bf0 e 0 AActor::PopulatePIEDuplicationSeed(AActor::FDuplicationSeedInterface&)
+12bf0 c 2256 27
+12bfc 2 2256 27
+FUNC 12c00 11 0 AActor::IsDefaultPreviewEnabled() const
+12c00 8 2260 27
+12c08 7 2261 27
+12c0f 2 2261 27
+FUNC 12c20 11 0 AActor::IsUserManaged() const
+12c20 8 2265 27
+12c28 7 2265 27
+12c2f 2 2265 27
+FUNC 12c40 19 0 AActor::CanEditChangeComponent(UActorComponent const*, FProperty const*) const
+12c40 10 2290 27
+12c50 7 2290 27
+12c57 2 2290 27
+FUNC 12c60 41 0 AActor::GetDefaultAttachComponent() const
+12c60 18 2317 27
+12c78 1e 2317 27
+12c96 5 2317 27
+12c9b 6 2317 27
+FUNC 12cb0 21 0 AActor::IsLevelBoundsRelevant() const
+12cb0 c 2392 27
+12cbc e 2392 27
+12cca 5 2392 27
+12ccf 2 2392 27
+FUNC 12ce0 11 0 AActor::ShouldExport()
+12ce0 8 2520 27
+12ce8 7 2520 27
+12cef 2 2520 27
+FUNC 12d00 a3 0 AActor::ShouldImport(FString*, bool)
+12d00 1f 2524 27
+12d1f b 2524 27
+12d2a 4 2524 27
+12d2e d 2524 27
+12d3b 3 2524 27
+12d3e 19 2524 27
+12d57 5 2524 27
+12d5c 1d 2524 27
+12d79 3 2524 27
+12d7c 19 2524 27
+12d95 3 0 27
+12d98 5 2524 27
+12d9d 6 2524 27
+FUNC 12db0 1f 0 AActor::ShouldImport(TStringView<char16_t>, bool)
+12db0 16 2527 27
+12dc6 7 2527 27
+12dcd 2 2527 27
+FUNC 12dd0 d 0 AActor::EditorKeyPressed(FKey, EInputEvent)
+12dd0 b 2531 27
+12ddb 2 2531 27
+FUNC 12de0 11 0 AActor::OpenAssetEditor()
+12de0 8 2619 27
+12de8 7 2619 27
+12def 2 2619 27
+FUNC 12e00 1be 0 AActor::GetCustomIconName() const
+12e00 31 2625 27
+12e31 2b 2625 27
+12e5c 9 2625 27
+12e65 4 2625 27
+12e69 6 2625 27
+12e6f 9 2625 27
+12e78 5 2625 27
+12e7d 3 2625 27
+12e80 8 2625 27
+12e88 3 2625 27
+12e8b 6 2625 27
+12e91 6 2625 27
+12e97 c 2625 27
+12ea3 6 2625 27
+12ea9 6 2625 27
+12eaf 3 2625 27
+12eb2 22 2625 27
+12ed4 c 2625 27
+12ee0 7 2625 27
+12ee7 10 2625 27
+12ef7 6 2625 27
+12efd 6 2625 27
+12f03 3 2625 27
+12f06 3 2625 27
+12f09 15 2625 27
+12f1e 15 2625 27
+12f33 21 2625 27
+12f54 27 2625 27
+12f7b 13 2625 27
+12f8e 27 2625 27
+12fb5 9 2625 27
+FUNC 12fc0 12 0 AActor::OnActorChannelOpen(FInBunch&, UNetConnection*)
+12fc0 10 2672 27
+12fd0 2 2672 27
+FUNC 12fe0 11 0 AActor::UseShortConnectTimeout() const
+12fe0 8 2679 27
+12fe8 7 2679 27
+12fef 2 2679 27
+FUNC 13000 e 0 AActor::OnSerializeNewActor(FOutBunch&)
+13000 c 2685 27
+1300c 2 2685 27
+FUNC 13010 e 0 AActor::OnNetCleanup(UNetConnection*)
+13010 c 2691 27
+1301c 2 2691 27
+FUNC 13020 2f 0 AActor::AsyncPhysicsTickActor(float, float)
+13020 1a 2745 27
+1303a 5 2745 27
+1303f 5 2745 27
+13044 5 2745 27
+13049 6 2745 27
+FUNC 13050 11 0 AActor::SupportsSubRootSelection() const
+13050 8 3015 27
+13058 7 3015 27
+1305f 2 3015 27
+FUNC 13070 24 0 AActor::MarkComponentsAsPendingKill()
+13070 10 3104 27
+13080 e 3104 27
+1308e 6 3104 27
+FUNC 130a0 e 0 AActor::OnConstruction(UE::Math::TTransform<double> const&)
+130a0 c 3264 27
+130ac 2 3264 27
+FUNC 130b0 15 0 AActor::IsComponentRelevantForNavigation(UActorComponent*) const
+130b0 c 4153 27
+130bc 7 4153 27
+130c3 2 4153 27
+FUNC 130d0 e 0 APawn::_getUObject() const
+130d0 c 44 29
+130dc 2 44 29
+FUNC 130e0 3d 0 ACharacter::GetMovementBase() const
+130e0 10 657 28
+130f0 6 657 28
+130f6 1c 657 28
+13112 5 657 28
+13117 6 657 28
+FUNC 13120 12 0 APawn::OnPlayerStateChanged(APlayerState*, APlayerState*)
+13120 10 180 29
+13130 2 180 29
+FUNC 13140 3c 0 ACharacter::GetBaseRotationOffset() const
+13140 f 505 28
+1314f 2b 505 28
+1317a 2 505 28
+FUNC 13180 a 0 ACharacter::Falling()
+13180 8 764 28
+13188 2 764 28
+FUNC 13190 e 0 ACharacter::MoveBlockedBy(FHitResult const&)
+13190 c 823 28
+1319c 2 823 28
+FUNC 131a0 19 0 non-virtual thunk to APawn::_getUObject() const
+131a0 19 0 29
+FUNC 131c0 2e 0 INavAgentInterface::GetMoveGoalOffset(AActor const*) const
+131c0 f 40 25
+131cf 1d 40 25
+131ec 2 40 25
+FUNC 131f0 11 0 INavAgentInterface::ShouldPostponePathUpdates() const
+131f0 8 51 25
+131f8 7 51 25
+131ff 2 51 25
+FUNC 13210 11 0 INavAgentInterface::IsFollowingAPath() const
+13210 8 54 25
+13218 7 54 25
+1321f 2 54 25
+FUNC 13230 c 0 INavAgentInterface::GetPathFollowingAgent() const
+13230 8 57 25
+13238 2 57 25
+1323a 2 57 25
+FUNC 13240 2f 0 INavAgentInterface::GetMoveGoalOffset(AActor*) const
+13240 1b 64 25
+1325b 4 65 25
+1325f a 65 25
+13269 6 65 25
+FUNC 13270 44 0 INavAgentInterface::GetMoveGoalReachTest(AActor*, UE::Math::TVector<double> const&, UE::Math::TVector<double>&, float&, float&) const
+13270 24 70 25
+13294 4 71 25
+13298 4 71 25
+1329c 4 71 25
+132a0 4 71 25
+132a4 4 71 25
+132a8 6 71 25
+132ae 6 72 25
+FUNC 132c0 12 0 AActor::GetNetPushId() const
+132c0 c 197 27
+132cc 4 197 27
+132d0 2 197 27
+FUNC 132e0 2c 0 UE::CoreUObject::Private::ResolveObjectHandle(UE::CoreUObject::Private::FObjectHandlePrivate&)
+132e0 c 227 20
+132ec 4 229 20
+132f0 5 229 20
+132f5 4 229 20
+132f9 4 230 20
+132fd 5 230 20
+13302 4 231 20
+13306 6 231 20
+FUNC 13310 c6 0 UE::CoreUObject::Private::ResolveObjectHandleNoRead(UE::CoreUObject::Private::FObjectHandlePrivate&)
+13310 f 266 20
+1331f b 268 20
+1332a 8 269 20
+13332 9 269 20
+1333b d 269 20
+13348 8 271 20
+13350 9 271 20
+13359 4 271 20
+1335d 4 272 20
+13361 9 272 20
+1336a 8 276 20
+13372 d 276 20
+1337f 8 277 20
+13387 d 277 20
+13394 b 278 20
+1339f 4 278 20
+133a3 4 279 20
+133a7 c 279 20
+133b3 4 279 20
+133b7 a 279 20
+133c1 4 280 20
+133c5 4 280 20
+133c9 4 285 20
+133cd 9 285 20
+FUNC 133e0 35 0 UE::CoreUObject::Private::OnHandleRead(UObject const*)
+133e0 c 117 21
+133ec 11 118 21
+133fd 3 118 21
+13400 6 118 21
+13406 4 120 21
+1340a 5 120 21
+1340f 6 122 21
+FUNC 13420 20 0 IsObjectHandleResolved(UE::CoreUObject::Private::FObjectHandlePrivate)
+13420 8 110 20
+13428 4 112 20
+1342c 4 112 20
+13430 7 112 20
+13437 2 112 20
+13439 5 112 20
+1343e 2 112 20
+FUNC 13440 e 0 UE::CoreUObject::Private::ReadObjectHandlePointerNoCheck(UE::CoreUObject::Private::FObjectHandlePrivate)
+13440 8 304 20
+13448 4 306 20
+1344c 2 306 20
+FUNC 13450 16 0 UE::CoreUObject::Private::ReadObjectHandlePackedObjectRefNoCheck(UE::CoreUObject::Private::FObjectHandlePrivate)
+13450 8 239 20
+13458 4 240 20
+1345c 4 240 20
+13460 4 240 20
+13464 2 240 20
+FUNC 13470 16 0 UE::CoreUObject::Private::MakeObjectHandle(UObject*)
+13470 8 218 20
+13478 4 220 20
+1347c 4 220 20
+13480 4 220 20
+13484 2 220 20
+FUNC 13490 21 0 std::__1::__atomic_base<int, false>::load
+13490 13 1560 36
+134a3 3 1560 36
+134a6 5 1560 36
+134ab 6 1560 36
+FUNC 134c0 64 0 std::__1::__cxx_atomic_load<int>
+134c0 b 956 36
+134cb 8 958 36
+134d3 6 958 36
+134d9 10 958 36
+134e9 3 0 36
+134ec e 958 36
+134fa 4 0 36
+134fe a 958 36
+13508 4 0 36
+1350c a 958 36
+13516 4 0 36
+1351a 8 958 36
+13522 2 958 36
+FUNC 13530 4a 0 TStringView<char16_t>::TStringView<FString>(FString const&)
+13530 18 150 4
+13548 4 148 4
+1354c c 148 4
+13558 3 148 4
+1355b 4 149 4
+1355f 7 149 4
+13566 b 149 4
+13571 3 149 4
+13574 6 151 4
+FUNC 13580 1c 0 TStringView<char16_t>::TStringView()
+13580 c 86 4
+1358c 7 471 4
+13593 7 472 4
+1359a 2 86 4
+FUNC 135a0 23 0 decltype(GetData(Forward<FString const&>(fp))) UE::Core::Private::StringViewGetData<FString const&>(FString const&&&)
+135a0 c 26 4
+135ac 8 27 4
+135b4 4 27 4
+135b8 5 27 4
+135bd 6 27 4
+FUNC 135d0 7c 0 int IntCastChecked<int, int>(int)
+135d0 b 171 15
+135db e 174 15
+135e9 d 174 15
+135f6 5 174 15
+135fb 10 174 15
+1360b 25 174 15
+13630 d 174 15
+1363d 1 174 15
+1363e 5 174 15
+13643 3 180 15
+13646 6 180 15
+FUNC 13650 53 0 GetNum(FString const&)
+13650 8 2268 5
+13658 18 2269 5
+13670 a 2269 5
+1367a c 2269 5
+13686 3 2269 5
+13689 6 2269 5
+1368f f 2269 5
+1369e 3 0 5
+136a1 2 2269 5
+FUNC 136b0 31 0 GetData(FString const&)
+136b0 8 2263 5
+136b8 24 2264 5
+136dc 3 2264 5
+136df 2 2264 5
+FUNC 136f0 25 0 bool IntFitsIn<int, int>(int)
+136f0 7 151 15
+136f7 3 154 15
+136fa 3 154 15
+136fd 3 155 15
+13700 6 155 15
+13706 5 155 15
+1370b 3 164 15
+1370e 5 164 15
+13713 2 164 15
+FUNC 13720 14 0 FNameEntryId::FNameEntryId()
+13720 c 54 16
+1372c 6 54 16
+13732 2 54 16
+FUNC 13740 33 0 ABaseCharacter::__DefaultConstructor(FObjectInitializer const&)
+13740 c 12 41
+1374c c 12 41
+13758 3 12 41
+1375b 12 12 41
+1376d 6 12 41
+FUNC 13780 12 0 ABaseCharacter::operator new(unsigned long, EInternal*)
+13780 c 12 41
+1378c 4 12 41
+13790 2 12 41
+FUNC 137a0 219 0 ABaseCharacter::__VTableCtorCaller(FVTableHelper&)
+137a0 12 12 41
+137b2 2b 12 41
+137dd 2b 12 41
+13808 9 12 41
+13811 4 12 41
+13815 6 12 41
+1381b 9 12 41
+13824 5 12 41
+13829 3 12 41
+1382c 8 12 41
+13834 3 12 41
+13837 6 12 41
+1383d 6 12 41
+13843 c 12 41
+1384f 6 12 41
+13855 6 12 41
+1385b 3 12 41
+1385e 22 12 41
+13880 c 12 41
+1388c 7 12 41
+13893 10 12 41
+138a3 6 12 41
+138a9 6 12 41
+138af 3 12 41
+138b2 3 12 41
+138b5 15 12 41
+138ca 15 12 41
+138df 21 12 41
+13900 27 12 41
+13927 13 12 41
+1393a 76 12 41
+139b0 9 12 41
+FUNC 139c0 12 0 operator|(EObjectFlags, EObjectFlags)
+139c0 a 596 22
+139ca 6 596 22
+139d0 2 596 22
+FUNC 139e0 89 0 ABaseCharacter::operator new(unsigned long, EInternal, UObject*, FName, EObjectFlags)
+139e0 2d 12 41
+13a0d 56 12 41
+13a63 6 12 41
+FUNC 13a70 38 0 InitializeModule
+13a70 8 6 39
+13a78 2a 6 39
+13aa2 6 6 39
+FUNC 13ab0 46 0 operator new(unsigned long)
+13ab0 c 6 39
+13abc 26 6 39
+13ae2 4 0 39
+13ae6 a 6 39
+13af0 6 6 39
+FUNC 13b00 6 0 IMPLEMENT_MODULE_Aura
+13b00 4 6 39
+13b04 2 6 39
+FUNC 13b10 46 0 operator new[](unsigned long)
+13b10 c 6 39
+13b1c 26 6 39
+13b42 4 0 39
+13b46 a 6 39
+13b50 6 6 39
+FUNC 13b60 5f 0 operator new(unsigned long, std::nothrow_t const&)
+13b60 10 6 39
+13b70 26 6 39
+13b96 9 0 39
+13b9f e 6 39
+13bad 4 0 39
+13bb1 6 6 39
+13bb7 3 0 39
+13bba 5 6 39
+FUNC 13bc0 5f 0 operator new[](unsigned long, std::nothrow_t const&)
+13bc0 10 6 39
+13bd0 26 6 39
+13bf6 9 0 39
+13bff e 6 39
+13c0d 4 0 39
+13c11 6 6 39
+13c17 3 0 39
+13c1a 5 6 39
+FUNC 13c20 4b 0 operator new(unsigned long, std::align_val_t)
+13c20 10 6 39
+13c30 26 6 39
+13c56 4 0 39
+13c5a b 6 39
+13c65 6 6 39
+FUNC 13c70 4b 0 operator new[](unsigned long, std::align_val_t)
+13c70 10 6 39
+13c80 26 6 39
+13ca6 4 0 39
+13caa b 6 39
+13cb5 6 6 39
+FUNC 13cc0 61 0 operator new(unsigned long, std::align_val_t, std::nothrow_t const&)
+13cc0 14 6 39
+13cd4 26 6 39
+13cfa 4 0 39
+13cfe 11 6 39
+13d0f 4 0 39
+13d13 6 6 39
+13d19 3 0 39
+13d1c 5 6 39
+FUNC 13d30 61 0 operator new[](unsigned long, std::align_val_t, std::nothrow_t const&)
+13d30 14 6 39
+13d44 26 6 39
+13d6a 4 0 39
+13d6e 11 6 39
+13d7f 4 0 39
+13d83 6 6 39
+13d89 3 0 39
+13d8c 5 6 39
+FUNC 13da0 28 0 operator delete(void*)
+13da0 c 6 39
+13dac e 6 39
+13dba 6 6 39
+13dc0 3 0 39
+13dc3 5 6 39
+FUNC 13dd0 28 0 operator delete[](void*)
+13dd0 c 6 39
+13ddc e 6 39
+13dea 6 6 39
+13df0 3 0 39
+13df3 5 6 39
+FUNC 13e00 2c 0 operator delete(void*, std::nothrow_t const&)
+13e00 10 6 39
+13e10 e 6 39
+13e1e 6 6 39
+13e24 3 0 39
+13e27 5 6 39
+FUNC 13e30 2c 0 operator delete[](void*, std::nothrow_t const&)
+13e30 10 6 39
+13e40 e 6 39
+13e4e 6 6 39
+13e54 3 0 39
+13e57 5 6 39
+FUNC 13e60 2c 0 operator delete(void*, unsigned long)
+13e60 10 6 39
+13e70 e 6 39
+13e7e 6 6 39
+13e84 3 0 39
+13e87 5 6 39
+FUNC 13e90 2c 0 operator delete[](void*, unsigned long)
+13e90 10 6 39
+13ea0 e 6 39
+13eae 6 6 39
+13eb4 3 0 39
+13eb7 5 6 39
+FUNC 13ec0 30 0 operator delete(void*, unsigned long, std::nothrow_t const&)
+13ec0 14 6 39
+13ed4 e 6 39
+13ee2 6 6 39
+13ee8 3 0 39
+13eeb 5 6 39
+FUNC 13ef0 30 0 operator delete[](void*, unsigned long, std::nothrow_t const&)
+13ef0 14 6 39
+13f04 e 6 39
+13f12 6 6 39
+13f18 3 0 39
+13f1b 5 6 39
+FUNC 13f20 2c 0 operator delete(void*, std::align_val_t)
+13f20 10 6 39
+13f30 e 6 39
+13f3e 6 6 39
+13f44 3 0 39
+13f47 5 6 39
+FUNC 13f50 2c 0 operator delete[](void*, std::align_val_t)
+13f50 10 6 39
+13f60 e 6 39
+13f6e 6 6 39
+13f74 3 0 39
+13f77 5 6 39
+FUNC 13f80 30 0 operator delete(void*, std::align_val_t, std::nothrow_t const&)
+13f80 14 6 39
+13f94 e 6 39
+13fa2 6 6 39
+13fa8 3 0 39
+13fab 5 6 39
+FUNC 13fb0 30 0 operator delete[](void*, std::align_val_t, std::nothrow_t const&)
+13fb0 14 6 39
+13fc4 e 6 39
+13fd2 6 6 39
+13fd8 3 0 39
+13fdb 5 6 39
+FUNC 13fe0 30 0 operator delete(void*, unsigned long, std::align_val_t)
+13fe0 14 6 39
+13ff4 e 6 39
+14002 6 6 39
+14008 3 0 39
+1400b 5 6 39
+FUNC 14010 30 0 operator delete[](void*, unsigned long, std::align_val_t)
+14010 14 6 39
+14024 e 6 39
+14032 6 6 39
+14038 3 0 39
+1403b 5 6 39
+FUNC 14040 34 0 operator delete(void*, unsigned long, std::align_val_t, std::nothrow_t const&)
+14040 18 6 39
+14058 e 6 39
+14066 6 6 39
+1406c 3 0 39
+1406f 5 6 39
+FUNC 14080 34 0 operator delete[](void*, unsigned long, std::align_val_t, std::nothrow_t const&)
+14080 18 6 39
+14098 e 6 39
+140a6 6 6 39
+140ac 3 0 39
+140af 5 6 39
+FUNC 140c0 4b 0 StdMalloc(unsigned long, unsigned long)
+140c0 10 6 39
+140d0 26 6 39
+140f6 4 0 39
+140fa b 6 39
+14105 6 6 39
+FUNC 14110 5b 0 StdRealloc(void*, unsigned long, unsigned long)
+14110 14 6 39
+14124 2e 6 39
+14152 8 0 39
+1415a b 6 39
+14165 6 6 39
+FUNC 14170 1b 0 StdFree(void*)
+14170 c 6 39
+1417c 9 6 39
+14185 6 6 39
+FUNC 14190 12 0 __cxx_global_var_init
+14190 4 0 39
+14194 c 9 30
+141a0 2 9 30
+FUNC 141b0 12 0 __cxx_global_var_init.1
+141b0 4 0 39
+141b4 c 10 30
+141c0 2 10 30
+FUNC 141d0 12 0 __cxx_global_var_init.2
+141d0 4 0 39
+141d4 c 11 30
+141e0 2 11 30
+FUNC 141f0 12 0 __cxx_global_var_init.3
+141f0 4 0 39
+141f4 c 12 30
+14200 2 12 30
+FUNC 14210 1e 0 __cxx_global_var_init.46
+14210 4 0 39
+14214 18 24 26
+1422c 2 24 26
+FUNC 14230 12 0 __cxx_global_var_init.53
+14230 4 0 39
+14234 c 6 39
+14240 2 6 39
+FUNC 14250 24 0 <name omitted>
+14250 24 0 39
+FUNC 14280 1e 0 FTargetNameRegistration::FTargetNameRegistration()
+14280 c 6 39
+1428c c 6 39
+14298 6 6 39
+FUNC 142a0 31 0 FDefaultGameModuleImpl::FDefaultGameModuleImpl()
+142a0 14 767 11
+142b4 17 767 11
+142cb 6 767 11
+FUNC 142e0 31 0 FDefaultModuleImpl::FDefaultModuleImpl()
+142e0 14 759 11
+142f4 17 759 11
+1430b 6 759 11
+FUNC 14320 1b 0 FDefaultGameModuleImpl::~FDefaultGameModuleImpl()
+14320 10 767 11
+14330 5 767 11
+14335 6 767 11
+FUNC 14340 28 0 FDefaultGameModuleImpl::~FDefaultGameModuleImpl()
+14340 14 767 11
+14354 e 767 11
+14362 6 767 11
+FUNC 14370 a 0 IModuleInterface::StartupModule()
+14370 8 32 10
+14378 2 33 10
+FUNC 14380 a 0 IModuleInterface::PreUnloadCallback()
+14380 8 39 10
+14388 2 40 10
+FUNC 14390 a 0 IModuleInterface::PostLoadCallback()
+14390 8 46 10
+14398 2 47 10
+FUNC 143a0 a 0 IModuleInterface::ShutdownModule()
+143a0 8 56 10
+143a8 2 57 10
+FUNC 143b0 11 0 IModuleInterface::SupportsDynamicReloading()
+143b0 8 65 10
+143b8 7 66 10
+143bf 2 66 10
+FUNC 143d0 11 0 IModuleInterface::SupportsAutomaticShutdown()
+143d0 8 75 10
+143d8 7 76 10
+143df 2 76 10
+FUNC 143f0 11 0 FDefaultGameModuleImpl::IsGameModule() const
+143f0 8 776 11
+143f8 7 777 11
+143ff 2 777 11
+FUNC 14410 1c 0 IModuleInterface::IModuleInterface()
+14410 c 13 10
+1441c e 13 10
+1442a 2 13 10
+FUNC 14430 1b 0 FDefaultModuleImpl::~FDefaultModuleImpl()
+14430 10 759 11
+14440 5 759 11
+14445 6 759 11
+FUNC 14450 28 0 FDefaultModuleImpl::~FDefaultModuleImpl()
+14450 14 759 11
+14464 e 759 11
+14472 6 759 11
+FUNC 14480 11 0 IModuleInterface::IsGameModule() const
+14480 8 85 10
+14488 7 86 10
+1448f 2 86 10
+FUNC 144a0 a 0 IModuleInterface::~IModuleInterface()
+144a0 8 22 10
+144a8 2 23 10
+FUNC 144b0 28 0 IModuleInterface::~IModuleInterface()
+144b0 14 22 10
+144c4 e 22 10
+144d2 6 23 10
+FUNC 144e0 62 0 ABaseCharacter::ABaseCharacter()
+144e0 14 8 40
+144f4 15 7 40
+14509 27 8 40
+14530 c 10 40
+1453c 6 12 40
+FUNC 14550 1b 0 ABaseCharacter::BeginPlay()
+14550 10 16 40
+14560 5 17 40
+14565 6 19 40
+FUNC 14570 25 0 ABaseCharacter::Tick(float)
+14570 15 23 40
+14585 5 24 40
+1458a 5 24 40
+1458f 6 26 40
+FUNC 145a0 23 0 ABaseCharacter::SetupPlayerInputComponent(UInputComponent*)
+145a0 14 30 40
+145b4 4 31 40
+145b8 5 31 40
+145bd 6 33 40
+FUNC 145d0 12 0 __cxx_global_var_init
+145d0 4 0 40
+145d4 c 9 30
+145e0 2 9 30
+FUNC 145f0 12 0 __cxx_global_var_init.1
+145f0 4 0 40
+145f4 c 10 30
+14600 2 10 30
+FUNC 14610 12 0 __cxx_global_var_init.2
+14610 4 0 40
+14614 c 11 30
+14620 2 11 30
+FUNC 14630 12 0 __cxx_global_var_init.3
+14630 4 0 40
+14634 c 12 30
+14640 2 12 30
+FUNC 14650 1e 0 __cxx_global_var_init.46
+14650 4 0 40
+14654 18 24 26
+1466c 2 24 26
+FUNC 14670 1f 0 <name omitted>
+14670 1f 0 40
+PUBLIC f760 0 deregister_tm_clones
+PUBLIC f78c 0 register_tm_clones
+PUBLIC f7c8 0 __do_global_dtors_aux
+PUBLIC f837 0 frame_dummy
+PUBLIC f860 0 EmptyLinkFunctionForGeneratedCodeAura_init()
+PUBLIC f870 0 Z_Construct_UPackage__Script_Aura()
+PUBLIC f8b0 0 FBufferOwner::~FBufferOwner()
+PUBLIC f8c0 0 __cxx_global_var_init
+PUBLIC f8e0 0 __cxx_global_var_init.1
+PUBLIC f900 0 __cxx_global_var_init.2
+PUBLIC f920 0 __cxx_global_var_init.3
+PUBLIC f940 0 __cxx_global_var_init.46
+PUBLIC f960 0 __cxx_global_var_init.54
+PUBLIC f9b0 0 _GLOBAL__sub_I_Aura.init.gen.cpp
+PUBLIC f9e0 0 FThreadSafeStaticStat<FStat_STAT_ParticlesSequentialFor>::FThreadSafeStaticStat()
+PUBLIC fb60 0 FThreadSafeStaticStat<FStat_STAT_ParticlesParallelFor>::FThreadSafeStaticStat()
+PUBLIC fce0 0 FThreadSafeStaticStat<FStat_STAT_ParticleViewParallelForImp>::FThreadSafeStaticStat()
+PUBLIC fe60 0 FThreadSafeStaticStat<FStat_STAT_HandleViewParallelForImp>::FThreadSafeStaticStat()
+PUBLIC ffe0 0 __cxx_global_var_init.4
+PUBLIC 10060 0 __cxx_global_var_init.5
+PUBLIC 100e0 0 __cxx_global_var_init.7
+PUBLIC 10160 0 __cxx_global_var_init.9
+PUBLIC 101e0 0 __cxx_global_var_init.11
+PUBLIC 10260 0 __cxx_global_var_init.13
+PUBLIC 102e0 0 __cxx_global_var_init.15
+PUBLIC 10360 0 __cxx_global_var_init.17
+PUBLIC 103e0 0 FDeprecateSlateVector2D::FDeprecateSlateVector2D(float, float)
+PUBLIC 10430 0 __cxx_global_var_init.18
+PUBLIC 104b0 0 __cxx_global_var_init.19
+PUBLIC 10530 0 __cxx_global_var_init.20
+PUBLIC 105b0 0 __cxx_global_var_init.21
+PUBLIC 10630 0 __cxx_global_var_init.22
+PUBLIC 106b0 0 __cxx_global_var_init.23
+PUBLIC 10730 0 __cxx_global_var_init.24
+PUBLIC 107b0 0 __cxx_global_var_init.25
+PUBLIC 10830 0 __cxx_global_var_init.26
+PUBLIC 108b0 0 __cxx_global_var_init.27
+PUBLIC 10930 0 __cxx_global_var_init.28
+PUBLIC 109b0 0 __cxx_global_var_init.29
+PUBLIC 10a30 0 __cxx_global_var_init.30
+PUBLIC 10ab0 0 __cxx_global_var_init.31
+PUBLIC 10b30 0 __cxx_global_var_init.32
+PUBLIC 10bb0 0 __cxx_global_var_init.33
+PUBLIC 10c30 0 __cxx_global_var_init.34
+PUBLIC 10cb0 0 __cxx_global_var_init.35
+PUBLIC 10d30 0 __cxx_global_var_init.36
+PUBLIC 10db0 0 __cxx_global_var_init.37
+PUBLIC 10e30 0 __cxx_global_var_init.38
+PUBLIC 10eb0 0 FMargin::FMargin(float, float)
+PUBLIC 10ef0 0 __cxx_global_var_init.39
+PUBLIC 10f80 0 FMargin::FMargin(double, double, double, double)
+PUBLIC 10fe0 0 __cxx_global_var_init.40
+PUBLIC 11070 0 __cxx_global_var_init.41
+PUBLIC 110f0 0 __cxx_global_var_init.42
+PUBLIC 11180 0 __cxx_global_var_init.43
+PUBLIC 11210 0 __cxx_global_var_init.44
+PUBLIC 11290 0 __cxx_global_var_init.48
+PUBLIC 112c0 0 UE::Math::TIntPoint<int>::TIntPoint(int, int)
+PUBLIC 112e0 0 __cxx_global_var_init.49
+PUBLIC 11360 0 TStringView<char16_t>::TStringView(char16_t const*)
+PUBLIC 11410 0 __cxx_global_var_init.51
+PUBLIC 11490 0 FRegisterCompiledInInfo::FRegisterCompiledInInfo<UPackage* (&)(), char16_t const (&) [13], TRegistrationInfo<UPackage, FPackageReloadVersionInfo>&, FPackageReloadVersionInfo>(UPackage* (&&&)(), char16_t const (&&&) [13], TRegistrationInfo<UPackage, FPackageReloadVersionInfo>&&&, FPackageReloadVersionInfo&&)
+PUBLIC 114d0 0 FBufferOwner::~FBufferOwner()
+PUBLIC 114f0 0 FBufferOwner::MaterializeBuffer()
+PUBLIC 11510 0 __cxx_global_var_init.56
+PUBLIC 115a0 0 FCompositeBuffer::FCompositeBuffer<(void*)0>()
+PUBLIC 11620 0 FCompositeBuffer::~FCompositeBuffer()
+PUBLIC 11640 0 TSizedInlineAllocator<1u, 32, TSizedDefaultAllocator<32> >::ForElementType<FSharedBuffer>::ForElementType()
+PUBLIC 11660 0 TSizedInlineAllocator<1u, 32, TSizedDefaultAllocator<32> >::ForElementType<FSharedBuffer>::GetInitialCapacity() const
+PUBLIC 11670 0 TSizedInlineAllocator<1u, 32, TSizedDefaultAllocator<32> >::ForElementType<FSharedBuffer>::~ForElementType()
+PUBLIC 11690 0 TSizedHeapAllocator<32, FMemory>::ForElementType<FSharedBuffer>::ForElementType()
+PUBLIC 116b0 0 TSizedHeapAllocator<32, FMemory>::ForAnyElementType::ForAnyElementType()
+PUBLIC 116d0 0 TSizedHeapAllocator<32, FMemory>::ForElementType<FSharedBuffer>::~ForElementType()
+PUBLIC 11720 0 __clang_call_terminate
+PUBLIC 11730 0 TArray<FSharedBuffer, TSizedInlineAllocator<1u, 32, TSizedDefaultAllocator<32> > >::~TArray()
+PUBLIC 11800 0 FSharedBuffer::~FSharedBuffer()
+PUBLIC 11820 0 UE::SharedBuffer::Private::TBufferOwnerPtr<UE::SharedBuffer::Private::FSharedOps>::~TBufferOwnerPtr()
+PUBLIC 11850 0 UE::SharedBuffer::Private::FSharedOps::Release(FBufferOwner*)
+PUBLIC 11880 0 FBufferOwner::ReleaseSharedReference()
+PUBLIC 11900 0 _ZNSt3__113__atomic_baseIyLb1EE9fetch_subB6v15001EyNS_12memory_orderE
+PUBLIC 11930 0 FBufferOwner::SetSharedRefCount(unsigned int)
+PUBLIC 11940 0 FBufferOwner::GetSharedRefCount(unsigned long long)
+PUBLIC 11960 0 FBufferOwner::ReleaseWeakReference()
+PUBLIC 119d0 0 _ZNSt3__122__cxx_atomic_fetch_subB6v15001IyEET_PNS_22__cxx_atomic_base_implIS1_EES1_NS_12memory_orderE
+PUBLIC 11aa0 0 FBufferOwner::SetWeakRefCount(unsigned int)
+PUBLIC 11ab0 0 FBufferOwner::GetWeakRefCount(unsigned long long)
+PUBLIC 11ad0 0 TSizedInlineAllocator<1u, 32, TSizedDefaultAllocator<32> >::ForElementType<FSharedBuffer>::GetInlineElements() const
+PUBLIC 11ae0 0 __cxx_global_var_init.57
+PUBLIC 11b70 0 FCompressedBuffer::FCompressedBuffer()
+PUBLIC 11b90 0 FCompressedBuffer::~FCompressedBuffer()
+PUBLIC 11bb0 0 bool EnumHasAnyFlags<EStatFlags>(EStatFlags, EStatFlags)
+PUBLIC 11be0 0 operator|(EStatFlags, EStatFlags)
+PUBLIC 11c00 0 __cxx_global_var_init.70
+PUBLIC 11c50 0 UE::FDerivedData::~FDerivedData()
+PUBLIC 11c70 0 TPimplPtr<UE::DerivedData::Private::FEditorData, (EPimplPtrMode)1>::~TPimplPtr()
+PUBLIC 11c90 0 TPimplPtr<UE::DerivedData::Private::FEditorData, (EPimplPtrMode)0>::~TPimplPtr()
+PUBLIC 11cf0 0 FBufferOwner::SetIsMaterialized()
+PUBLIC 11d30 0 _ZNSt3__113__atomic_baseIyLb1EE8fetch_orB6v15001EyNS_12memory_orderE
+PUBLIC 11d60 0 FBufferOwner::SetFlags(FBufferOwner::EBufferOwnerFlags)
+PUBLIC 11d80 0 _ZNSt3__121__cxx_atomic_fetch_orB6v15001IyEET_PNS_22__cxx_atomic_base_implIS1_EES1_NS_12memory_orderE
+PUBLIC 11f90 0 EmptyLinkFunctionForGeneratedCodeBaseCharacter()
+PUBLIC 11fa0 0 ABaseCharacter::StaticRegisterNativesABaseCharacter()
+PUBLIC 11fb0 0 ABaseCharacter::GetPrivateStaticClass()
+PUBLIC 120a0 0 Z_Construct_UClass_ABaseCharacter_NoRegister()
+PUBLIC 120b0 0 Z_Construct_UClass_ABaseCharacter()
+PUBLIC 120f0 0 UClass* StaticClass<ABaseCharacter>()
+PUBLIC 12100 0 ABaseCharacter::ABaseCharacter(FVTableHelper&)
+PUBLIC 12160 0 ABaseCharacter::~ABaseCharacter()
+PUBLIC 12180 0 non-virtual thunk to ABaseCharacter::~ABaseCharacter()
+PUBLIC 121a0 0 ABaseCharacter::~ABaseCharacter()
+PUBLIC 121d0 0 non-virtual thunk to ABaseCharacter::~ABaseCharacter()
+PUBLIC 121f0 0 __cxx_global_var_init
+PUBLIC 12210 0 __cxx_global_var_init.1
+PUBLIC 12230 0 __cxx_global_var_init.2
+PUBLIC 12250 0 __cxx_global_var_init.3
+PUBLIC 12270 0 __cxx_global_var_init.46
+PUBLIC 12290 0 __cxx_global_var_init.55
+PUBLIC 12300 0 _GLOBAL__sub_I_BaseCharacter.gen.cpp
+PUBLIC 12330 0 ABaseCharacter::StaticPackage()
+PUBLIC 12340 0 ABaseCharacter::StaticClassCastFlags()
+PUBLIC 12350 0 APawn::StaticConfigName()
+PUBLIC 12360 0 void InternalConstructor<ABaseCharacter>(FObjectInitializer const&)
+PUBLIC 12380 0 UObject* InternalVTableHelperCtorCaller<ABaseCharacter>(FVTableHelper&)
+PUBLIC 123a0 0 FUObjectCppClassStaticFunctions::FUObjectCppClassStaticFunctions(void (*)(UObject*, FReferenceCollector&), void (*)(FArchive&, UClass const*), void (*)(FAppendToClassSchemaContext&), void (*)(TArray<FTopLevelAssetPath, TSizedDefaultAllocator<32> >&, UClass const*))
+PUBLIC 12530 0 ACharacter::StaticClass()
+PUBLIC 12540 0 UObject::StaticClass()
+PUBLIC 12550 0 ABaseCharacter::StaticClass()
+PUBLIC 12560 0 ABaseCharacter::operator delete(void*)
+PUBLIC 12580 0 FRegisterCompiledInInfo::FRegisterCompiledInInfo<char16_t const (&) [13], FClassRegisterCompiledInInfo const (&) [1], unsigned long, std::nullptr_t, int, std::nullptr_t, int>(char16_t const (&&&) [13], FClassRegisterCompiledInInfo const (&&&) [1], unsigned long&&, std::nullptr_t&&, int&&, std::nullptr_t&&, int&&)
+PUBLIC 125e0 0 UObjectBase::RegisterDependencies()
+PUBLIC 125f0 0 UObjectBaseUtility::CanBeClusterRoot() const
+PUBLIC 12610 0 UObjectBaseUtility::OnClusterMarkedAsPendingKill()
+PUBLIC 12620 0 UObject::GetDetailedInfoInternal() const
+PUBLIC 12650 0 UObject::PostCDOContruct()
+PUBLIC 12660 0 UObject::PostCDOCompiled(FObjectPostCDOCompiledContext const&)
+PUBLIC 12670 0 UObject::PostCDOCompiled()
+PUBLIC 12680 0 UObject::LoadedFromAnotherClass(FName const&)
+PUBLIC 12690 0 UObject::ResolveSubobject(char16_t const*, UObject*&, bool)
+PUBLIC 126b0 0 UObject::IsReadyForAsyncPostLoad() const
+PUBLIC 126d0 0 UObject::PostLinkerChange()
+PUBLIC 126e0 0 UObject::ShutdownAfterError()
+PUBLIC 126f0 0 UObject::PostInterpChange(FProperty*)
+PUBLIC 12700 0 UObject::PreDuplicate(FObjectDuplicationParameters&)
+PUBLIC 12710 0 UObject::PostDuplicate(bool)
+PUBLIC 12730 0 UObject::PostDuplicate(EDuplicateMode::Type)
+PUBLIC 12770 0 UObject::NeedsLoadForEditorGame() const
+PUBLIC 12790 0 UObject::HasNonEditorOnlyReferences() const
+PUBLIC 127b0 0 UObject::IsPostLoadThreadSafe() const
+PUBLIC 127d0 0 UObject::GetPrestreamPackages(TArray<UObject*, TSizedDefaultAllocator<32> >&)
+PUBLIC 127e0 0 UObject::ExportCustomProperties(FOutputDevice&, unsigned int)
+PUBLIC 12800 0 UObject::ImportCustomProperties(char16_t const*, FFeedbackContext*)
+PUBLIC 12820 0 UObject::PostReloadConfig(FProperty*)
+PUBLIC 12830 0 UObject::GetDesc()
+PUBLIC 12860 0 UObject::MoveDataToSparseClassDataStruct() const
+PUBLIC 12870 0 UObject::ConformSparseClassDataStruct(UScriptStruct*, void*) const
+PUBLIC 12890 0 UObject::GetNativePropertyValues(TMap<FString, FString, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<FString, FString, false> >&, unsigned int) const
+PUBLIC 128b0 0 UObject::GetExporterName()
+PUBLIC 128f0 0 UObject::GetRestoreForUObjectOverwrite()
+PUBLIC 12900 0 UObject::AreNativePropertiesIdenticalTo(UObject*) const
+PUBLIC 12920 0 UObject::PostRepNotifies()
+PUBLIC 12930 0 UObject::BeginCacheForCookedPlatformData(ITargetPlatform const*)
+PUBLIC 12940 0 UObject::IsCachedCookedPlatformDataLoaded(ITargetPlatform const*)
+PUBLIC 12960 0 UObject::WillNeverCacheCookedPlatformDataAgain()
+PUBLIC 12970 0 UObject::ClearCachedCookedPlatformData(ITargetPlatform const*)
+PUBLIC 12980 0 UObject::ClearAllCachedCookedPlatformData()
+PUBLIC 12990 0 UObject::CookAdditionalFilesOverride(char16_t const*, ITargetPlatform const*, TFunctionRef<void (char16_t const*, void*, long long)>)
+PUBLIC 129b0 0 UObject::GetConfigOverridePlatform() const
+PUBLIC 129c0 0 UObject::OverrideConfigSection(FString&)
+PUBLIC 129d0 0 UObject::OverridePerObjectConfigSection(FString&)
+PUBLIC 129e0 0 UObject::ProcessConsoleExec(char16_t const*, FOutputDevice&, UObject*)
+PUBLIC 12a20 0 UObject::RegenerateClass(UClass*, UObject*)
+PUBLIC 12a40 0 UObject::MarkAsEditorOnlySubobject()
+PUBLIC 12a50 0 AActor::SetNetPushIdDynamic(unsigned long long)
+PUBLIC 12a70 0 AActor::GetNetPushIdDynamic() const
+PUBLIC 12a90 0 AActor::IsInEditingLevelInstance() const
+PUBLIC 12ac0 0 AActor::ShouldLevelKeepRefIfExternal() const
+PUBLIC 12ae0 0 AActor::GetRuntimeGrid() const
+PUBLIC 12b20 0 AActor::IsLockLocation() const
+PUBLIC 12b50 0 AActor::IsDataLayerTypeSupported(TSubclassOf<UDataLayerInstance>) const
+PUBLIC 12b70 0 AActor::ActorTypeIsMainWorldOnly() const
+PUBLIC 12b90 0 AActor::ActorTypeSupportsDataLayer() const
+PUBLIC 12bb0 0 AActor::ActorTypeSupportsExternalDataLayer() const
+PUBLIC 12bd0 0 AActor::IsRuntimeOnly() const
+PUBLIC 12bf0 0 AActor::PopulatePIEDuplicationSeed(AActor::FDuplicationSeedInterface&)
+PUBLIC 12c00 0 AActor::IsDefaultPreviewEnabled() const
+PUBLIC 12c20 0 AActor::IsUserManaged() const
+PUBLIC 12c40 0 AActor::CanEditChangeComponent(UActorComponent const*, FProperty const*) const
+PUBLIC 12c60 0 AActor::GetDefaultAttachComponent() const
+PUBLIC 12cb0 0 AActor::IsLevelBoundsRelevant() const
+PUBLIC 12ce0 0 AActor::ShouldExport()
+PUBLIC 12d00 0 AActor::ShouldImport(FString*, bool)
+PUBLIC 12db0 0 AActor::ShouldImport(TStringView<char16_t>, bool)
+PUBLIC 12dd0 0 AActor::EditorKeyPressed(FKey, EInputEvent)
+PUBLIC 12de0 0 AActor::OpenAssetEditor()
+PUBLIC 12e00 0 AActor::GetCustomIconName() const
+PUBLIC 12fc0 0 AActor::OnActorChannelOpen(FInBunch&, UNetConnection*)
+PUBLIC 12fe0 0 AActor::UseShortConnectTimeout() const
+PUBLIC 13000 0 AActor::OnSerializeNewActor(FOutBunch&)
+PUBLIC 13010 0 AActor::OnNetCleanup(UNetConnection*)
+PUBLIC 13020 0 AActor::AsyncPhysicsTickActor(float, float)
+PUBLIC 13050 0 AActor::SupportsSubRootSelection() const
+PUBLIC 13070 0 AActor::MarkComponentsAsPendingKill()
+PUBLIC 130a0 0 AActor::OnConstruction(UE::Math::TTransform<double> const&)
+PUBLIC 130b0 0 AActor::IsComponentRelevantForNavigation(UActorComponent*) const
+PUBLIC 130d0 0 APawn::_getUObject() const
+PUBLIC 130e0 0 ACharacter::GetMovementBase() const
+PUBLIC 13120 0 APawn::OnPlayerStateChanged(APlayerState*, APlayerState*)
+PUBLIC 13140 0 ACharacter::GetBaseRotationOffset() const
+PUBLIC 13180 0 ACharacter::Falling()
+PUBLIC 13190 0 ACharacter::MoveBlockedBy(FHitResult const&)
+PUBLIC 131a0 0 non-virtual thunk to APawn::_getUObject() const
+PUBLIC 131c0 0 INavAgentInterface::GetMoveGoalOffset(AActor const*) const
+PUBLIC 131f0 0 INavAgentInterface::ShouldPostponePathUpdates() const
+PUBLIC 13210 0 INavAgentInterface::IsFollowingAPath() const
+PUBLIC 13230 0 INavAgentInterface::GetPathFollowingAgent() const
+PUBLIC 13240 0 INavAgentInterface::GetMoveGoalOffset(AActor*) const
+PUBLIC 13270 0 INavAgentInterface::GetMoveGoalReachTest(AActor*, UE::Math::TVector<double> const&, UE::Math::TVector<double>&, float&, float&) const
+PUBLIC 132c0 0 AActor::GetNetPushId() const
+PUBLIC 132e0 0 UE::CoreUObject::Private::ResolveObjectHandle(UE::CoreUObject::Private::FObjectHandlePrivate&)
+PUBLIC 13310 0 UE::CoreUObject::Private::ResolveObjectHandleNoRead(UE::CoreUObject::Private::FObjectHandlePrivate&)
+PUBLIC 133e0 0 UE::CoreUObject::Private::OnHandleRead(UObject const*)
+PUBLIC 13420 0 IsObjectHandleResolved(UE::CoreUObject::Private::FObjectHandlePrivate)
+PUBLIC 13440 0 UE::CoreUObject::Private::ReadObjectHandlePointerNoCheck(UE::CoreUObject::Private::FObjectHandlePrivate)
+PUBLIC 13450 0 UE::CoreUObject::Private::ReadObjectHandlePackedObjectRefNoCheck(UE::CoreUObject::Private::FObjectHandlePrivate)
+PUBLIC 13470 0 UE::CoreUObject::Private::MakeObjectHandle(UObject*)
+PUBLIC 13490 0 _ZNKSt3__113__atomic_baseIiLb0EE4loadB6v15001ENS_12memory_orderE
+PUBLIC 134c0 0 _ZNSt3__117__cxx_atomic_loadB6v15001IiEET_PKNS_22__cxx_atomic_base_implIS1_EENS_12memory_orderE
+PUBLIC 13530 0 TStringView<char16_t>::TStringView<FString>(FString const&)
+PUBLIC 13580 0 TStringView<char16_t>::TStringView()
+PUBLIC 135a0 0 decltype(GetData(Forward<FString const&>(fp))) UE::Core::Private::StringViewGetData<FString const&>(FString const&&&)
+PUBLIC 135d0 0 int IntCastChecked<int, int>(int)
+PUBLIC 13650 0 GetNum(FString const&)
+PUBLIC 136b0 0 GetData(FString const&)
+PUBLIC 136f0 0 bool IntFitsIn<int, int>(int)
+PUBLIC 13720 0 FNameEntryId::FNameEntryId()
+PUBLIC 13740 0 ABaseCharacter::__DefaultConstructor(FObjectInitializer const&)
+PUBLIC 13780 0 ABaseCharacter::operator new(unsigned long, EInternal*)
+PUBLIC 137a0 0 ABaseCharacter::__VTableCtorCaller(FVTableHelper&)
+PUBLIC 139c0 0 operator|(EObjectFlags, EObjectFlags)
+PUBLIC 139e0 0 ABaseCharacter::operator new(unsigned long, EInternal, UObject*, FName, EObjectFlags)
+PUBLIC 13a70 0 InitializeModule
+PUBLIC 13ab0 0 operator new(unsigned long)
+PUBLIC 13b00 0 IMPLEMENT_MODULE_Aura
+PUBLIC 13b10 0 operator new[](unsigned long)
+PUBLIC 13b60 0 operator new(unsigned long, std::nothrow_t const&)
+PUBLIC 13bc0 0 operator new[](unsigned long, std::nothrow_t const&)
+PUBLIC 13c20 0 operator new(unsigned long, std::align_val_t)
+PUBLIC 13c70 0 operator new[](unsigned long, std::align_val_t)
+PUBLIC 13cc0 0 operator new(unsigned long, std::align_val_t, std::nothrow_t const&)
+PUBLIC 13d30 0 operator new[](unsigned long, std::align_val_t, std::nothrow_t const&)
+PUBLIC 13da0 0 operator delete(void*)
+PUBLIC 13dd0 0 operator delete[](void*)
+PUBLIC 13e00 0 operator delete(void*, std::nothrow_t const&)
+PUBLIC 13e30 0 operator delete[](void*, std::nothrow_t const&)
+PUBLIC 13e60 0 operator delete(void*, unsigned long)
+PUBLIC 13e90 0 operator delete[](void*, unsigned long)
+PUBLIC 13ec0 0 operator delete(void*, unsigned long, std::nothrow_t const&)
+PUBLIC 13ef0 0 operator delete[](void*, unsigned long, std::nothrow_t const&)
+PUBLIC 13f20 0 operator delete(void*, std::align_val_t)
+PUBLIC 13f50 0 operator delete[](void*, std::align_val_t)
+PUBLIC 13f80 0 operator delete(void*, std::align_val_t, std::nothrow_t const&)
+PUBLIC 13fb0 0 operator delete[](void*, std::align_val_t, std::nothrow_t const&)
+PUBLIC 13fe0 0 operator delete(void*, unsigned long, std::align_val_t)
+PUBLIC 14010 0 operator delete[](void*, unsigned long, std::align_val_t)
+PUBLIC 14040 0 operator delete(void*, unsigned long, std::align_val_t, std::nothrow_t const&)
+PUBLIC 14080 0 operator delete[](void*, unsigned long, std::align_val_t, std::nothrow_t const&)
+PUBLIC 140c0 0 StdMalloc(unsigned long, unsigned long)
+PUBLIC 14110 0 StdRealloc(void*, unsigned long, unsigned long)
+PUBLIC 14170 0 StdFree(void*)
+PUBLIC 14190 0 __cxx_global_var_init
+PUBLIC 141b0 0 __cxx_global_var_init.1
+PUBLIC 141d0 0 __cxx_global_var_init.2
+PUBLIC 141f0 0 __cxx_global_var_init.3
+PUBLIC 14210 0 __cxx_global_var_init.46
+PUBLIC 14230 0 __cxx_global_var_init.53
+PUBLIC 14250 0 _GLOBAL__sub_I_Aura.cpp
+PUBLIC 14280 0 FTargetNameRegistration::FTargetNameRegistration()
+PUBLIC 142a0 0 FDefaultGameModuleImpl::FDefaultGameModuleImpl()
+PUBLIC 142e0 0 FDefaultModuleImpl::FDefaultModuleImpl()
+PUBLIC 14320 0 FDefaultGameModuleImpl::~FDefaultGameModuleImpl()
+PUBLIC 14340 0 FDefaultGameModuleImpl::~FDefaultGameModuleImpl()
+PUBLIC 14370 0 IModuleInterface::StartupModule()
+PUBLIC 14380 0 IModuleInterface::PreUnloadCallback()
+PUBLIC 14390 0 IModuleInterface::PostLoadCallback()
+PUBLIC 143a0 0 IModuleInterface::ShutdownModule()
+PUBLIC 143b0 0 IModuleInterface::SupportsDynamicReloading()
+PUBLIC 143d0 0 IModuleInterface::SupportsAutomaticShutdown()
+PUBLIC 143f0 0 FDefaultGameModuleImpl::IsGameModule() const
+PUBLIC 14410 0 IModuleInterface::IModuleInterface()
+PUBLIC 14430 0 FDefaultModuleImpl::~FDefaultModuleImpl()
+PUBLIC 14450 0 FDefaultModuleImpl::~FDefaultModuleImpl()
+PUBLIC 14480 0 IModuleInterface::IsGameModule() const
+PUBLIC 144a0 0 IModuleInterface::~IModuleInterface()
+PUBLIC 144b0 0 IModuleInterface::~IModuleInterface()
+PUBLIC 144e0 0 ABaseCharacter::ABaseCharacter()
+PUBLIC 14550 0 ABaseCharacter::BeginPlay()
+PUBLIC 14570 0 ABaseCharacter::Tick(float)
+PUBLIC 145a0 0 ABaseCharacter::SetupPlayerInputComponent(UInputComponent*)
+PUBLIC 145d0 0 __cxx_global_var_init
+PUBLIC 145f0 0 __cxx_global_var_init.1
+PUBLIC 14610 0 __cxx_global_var_init.2
+PUBLIC 14630 0 __cxx_global_var_init.3
+PUBLIC 14650 0 __cxx_global_var_init.46
+PUBLIC 14670 0 _GLOBAL__sub_I_BaseCharacter.cpp
+PUBLIC 1468f 0 __do_global_ctors_aux
+PUBLIC 146b4 0 _init
+PUBLIC 146d8 0 _fini

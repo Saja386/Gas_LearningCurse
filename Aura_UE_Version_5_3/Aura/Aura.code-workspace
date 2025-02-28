@@ -1,0 +1,865 @@
+{
+	"folders": [
+		{
+			"name": "Aura",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "Aura Linux Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Aura",
+					"Linux",
+					"Debug",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "Aura Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Aura",
+					"Linux",
+					"Debug",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Aura Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "Aura Linux Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Aura",
+					"Linux",
+					"Debug",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "Aura Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Aura",
+					"Linux",
+					"DebugGame",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "Aura Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Aura",
+					"Linux",
+					"DebugGame",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Aura Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "Aura Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Aura",
+					"Linux",
+					"DebugGame",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "Aura Linux Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Aura",
+					"Linux",
+					"Development",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "Aura Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Aura",
+					"Linux",
+					"Development",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Aura Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "Aura Linux Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Aura",
+					"Linux",
+					"Development",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "Aura Linux Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Aura",
+					"Linux",
+					"Test",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "Aura Linux Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Aura",
+					"Linux",
+					"Test",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Aura Linux Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "Aura Linux Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Aura",
+					"Linux",
+					"Test",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "Aura Linux Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Aura",
+					"Linux",
+					"Shipping",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "Aura Linux Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Aura",
+					"Linux",
+					"Shipping",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Aura Linux Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "Aura Linux Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Aura",
+					"Linux",
+					"Shipping",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "Aura LinuxArm64 Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Aura",
+					"LinuxArm64",
+					"Debug",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "Aura LinuxArm64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Aura",
+					"LinuxArm64",
+					"Debug",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Aura LinuxArm64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "Aura LinuxArm64 Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Aura",
+					"LinuxArm64",
+					"Debug",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "Aura LinuxArm64 DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Aura",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "Aura LinuxArm64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Aura",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Aura LinuxArm64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "Aura LinuxArm64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Aura",
+					"LinuxArm64",
+					"DebugGame",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "Aura LinuxArm64 Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Aura",
+					"LinuxArm64",
+					"Development",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "Aura LinuxArm64 Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Aura",
+					"LinuxArm64",
+					"Development",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Aura LinuxArm64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "Aura LinuxArm64 Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Aura",
+					"LinuxArm64",
+					"Development",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "Aura LinuxArm64 Test Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Aura",
+					"LinuxArm64",
+					"Test",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "Aura LinuxArm64 Test Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Aura",
+					"LinuxArm64",
+					"Test",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Aura LinuxArm64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "Aura LinuxArm64 Test Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Aura",
+					"LinuxArm64",
+					"Test",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "Aura LinuxArm64 Shipping Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Aura",
+					"LinuxArm64",
+					"Shipping",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "Aura LinuxArm64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Aura",
+					"LinuxArm64",
+					"Shipping",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Aura LinuxArm64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "Aura LinuxArm64 Shipping Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"Aura",
+					"LinuxArm64",
+					"Shipping",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "AuraEditor Linux Debug Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"AuraEditor",
+					"Linux",
+					"Debug",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "AuraEditor Linux Debug Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"AuraEditor",
+					"Linux",
+					"Debug",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"AuraEditor Linux Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "AuraEditor Linux Debug Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"AuraEditor",
+					"Linux",
+					"Debug",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "AuraEditor Linux DebugGame Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"AuraEditor",
+					"Linux",
+					"DebugGame",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "AuraEditor Linux DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"AuraEditor",
+					"Linux",
+					"DebugGame",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"AuraEditor Linux DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "AuraEditor Linux DebugGame Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"AuraEditor",
+					"Linux",
+					"DebugGame",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "AuraEditor Linux Development Build",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"AuraEditor",
+					"Linux",
+					"Development",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "AuraEditor Linux Development Rebuild",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"AuraEditor",
+					"Linux",
+					"Development",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"AuraEditor Linux Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			},
+			{
+				"label": "AuraEditor Linux Development Clean",
+				"group": "build",
+				"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+				"args": [
+					"AuraEditor",
+					"Linux",
+					"Development",
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-waitmutex",
+					"-clean"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch Aura (Debug)",
+				"request": "launch",
+				"program": "/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Binaries/Linux/UnrealGame-Linux-Debug",
+				"preLaunchTask": "Aura Linux Debug Build",
+				"args": [
+				],
+				"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4",
+				"type": "cppdbg",
+				"visualizerFile": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch Aura (DebugGame)",
+				"request": "launch",
+				"program": "/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Binaries/Linux/UnrealGame-Linux-DebugGame",
+				"preLaunchTask": "Aura Linux DebugGame Build",
+				"args": [
+				],
+				"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4",
+				"type": "cppdbg",
+				"visualizerFile": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch Aura (Development)",
+				"request": "launch",
+				"program": "/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Binaries/Linux/UnrealGame",
+				"preLaunchTask": "Aura Linux Development Build",
+				"args": [
+				],
+				"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4",
+				"type": "cppdbg",
+				"visualizerFile": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch Aura (Test)",
+				"request": "launch",
+				"program": "/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Binaries/Linux/UnrealGame-Linux-Test",
+				"preLaunchTask": "Aura Linux Test Build",
+				"args": [
+				],
+				"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4",
+				"type": "cppdbg",
+				"visualizerFile": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch Aura (Shipping)",
+				"request": "launch",
+				"program": "/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Binaries/Linux/UnrealGame-Linux-Shipping",
+				"preLaunchTask": "Aura Linux Shipping Build",
+				"args": [
+				],
+				"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4",
+				"type": "cppdbg",
+				"visualizerFile": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch AuraEditor (Debug)",
+				"request": "launch",
+				"program": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Binaries/Linux/UnrealEditor-Linux-Debug",
+				"preLaunchTask": "AuraEditor Linux Debug Build",
+				"args": [
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject"
+				],
+				"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4",
+				"type": "cppdbg",
+				"visualizerFile": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch AuraEditor (DebugGame)",
+				"request": "launch",
+				"program": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Binaries/Linux/UnrealEditor-Linux-DebugGame",
+				"preLaunchTask": "AuraEditor Linux DebugGame Build",
+				"args": [
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject"
+				],
+				"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4",
+				"type": "cppdbg",
+				"visualizerFile": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Launch AuraEditor (Development)",
+				"request": "launch",
+				"program": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Binaries/Linux/UnrealEditor",
+				"preLaunchTask": "AuraEditor Linux Development Build",
+				"args": [
+					"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject"
+				],
+				"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4",
+				"type": "cppdbg",
+				"visualizerFile": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+				"showDisplayString": true
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Linux Development Build",
+				"program": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Build/BatchFiles/RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Aura.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "internalConsole",
+				"internalConsoleOptions": "openOnSessionStart",
+				"stopAtEntry": false,
+				"cwd": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4"
+			}
+		]
+	}
+}
