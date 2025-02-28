@@ -24,7 +24,7 @@
 		"directory": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source"
 	},
 	{
-		"file": "/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Private/BaseCharacter.cpp",
+		"file": "/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Private/Characters/AuraCharacter.cpp",
 		"arguments": [
 			"/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
 			"@/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/.vscode/compileCommands_Aura/Aura.1.rsp"
@@ -32,7 +32,39 @@
 		"directory": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source"
 	},
 	{
-		"file": "/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/BaseCharacter.h",
+		"file": "/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Private/Characters/BaseCharacter.cpp",
+		"arguments": [
+			"/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/.vscode/compileCommands_Aura/Aura.1.rsp"
+		],
+		"directory": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source"
+	},
+	{
+		"file": "/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Private/Characters/BaseEnemy.cpp",
+		"arguments": [
+			"/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/.vscode/compileCommands_Aura/Aura.1.rsp"
+		],
+		"directory": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source"
+	},
+	{
+		"file": "/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/Characters/AuraCharacter.h",
+		"arguments": [
+			"/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/.vscode/compileCommands_Aura/Aura.1.rsp"
+		],
+		"directory": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source"
+	},
+	{
+		"file": "/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/Characters/BaseCharacter.h",
+		"arguments": [
+			"/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/.vscode/compileCommands_Aura/Aura.1.rsp"
+		],
+		"directory": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source"
+	},
+	{
+		"file": "/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/Characters/BaseEnemy.h",
 		"arguments": [
 			"/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
 			"@/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/.vscode/compileCommands_Aura/Aura.1.rsp"
