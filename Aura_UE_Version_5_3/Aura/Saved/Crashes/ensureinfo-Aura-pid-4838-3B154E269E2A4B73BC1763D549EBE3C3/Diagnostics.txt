@@ -1,0 +1,35 @@
+Generating report for minidump
+
+Application version 5.4.4.0
+ ... built from changelist 35576357
+
+OS version Linux 6.10.10-arch1-1 (network name: archlinux)
+Running 16 x86_64 processors (24 logical cores)
+Exception was "Ensure condition failed: LocalState == PrevState  [File:/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Misc/MTAccessDetector.h] [Line: 602] "
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libUnrealEditor-ContentBrowserAssetDataSource.so!FMRSWRecursiveAccessDetector::AcquireWriteAccess()::'lambda2'()::operator()() const [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Misc/MTAccessDetector.h:595]
+libUnrealEditor-ContentBrowserAssetDataSource.so!TDelegateAccessHandlerBase<FNotThreadSafeDelegateMode>::FWriteAccessScope::FWriteAccessScope(FMRSWRecursiveAccessDetector&) [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Delegates/DelegateAccessHandler.h:139]
+libUnrealEditor-ContentBrowserAssetDataSource.so!FDelegateHandle TMulticastDelegateBase<FDefaultDelegateUserPolicy>::AddDelegateInstance<TDelegate<void (UObject*, FPropertyChangedEvent&), FDefaultDelegateUserPolicy> >(TDelegate<void (UObject*, FPropertyChangedEvent&), FDefaultDelegateUserPolicy>&&) [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Delegates/MulticastDelegateBase.h:276]
+libUnrealEditor-ContentBrowserAssetDataSource.so!UContentBrowserAssetDataSource::Initialize(bool) [/mnt/horde/++UE5/Sync/Engine/Source/./../Plugins/Editor/ContentBrowser/ContentBrowserAssetDataSource/Source/ContentBrowserAssetDataSource/Private/ContentBrowserAssetDataSource.cpp:73]
+libUnrealEditor-ContentBrowserAssetDataSource.so!FContentBrowserAssetDataSourceModule::StartupModule() [/mnt/horde/++UE5/Sync/Engine/Source/./../Plugins/Editor/ContentBrowser/ContentBrowserAssetDataSource/Source/ContentBrowserAssetDataSource/Private/ContentBrowserAssetDataSourceModule.cpp:15]
+libUnrealEditor-Core.so!FModuleManager::LoadModuleWithFailureReason(FName, EModuleLoadResult&, ELoadModuleFlags) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Core/Private/Modules/ModuleManager.cpp:674]
+libUnrealEditor-Projects.so!FModuleDescriptor::LoadModulesForPhase(ELoadingPhase::Type, TArray<FModuleDescriptor, TSizedDefaultAllocator<32> > const&, TMap<FName, EModuleLoadResult, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<FName, EModuleLoadResult, false> >&) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Projects/Private/ModuleDescriptor.cpp:695]
+libUnrealEditor-Projects.so!FPluginManager::TryLoadModulesForPlugin(FPlugin const&, ELoadingPhase::Type) const [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Projects/Private/PluginManager.cpp:2764]
+libUnrealEditor-Projects.so!FPluginManager::LoadModulesForEnabledPlugins(ELoadingPhase::Type) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Projects/Private/PluginManager.cpp:2903]
+UnrealEditor-Linux-DebugGame!FEngineLoop::LoadStartupModules() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:4738]
+UnrealEditor-Linux-DebugGame!FEngineLoop::PreInitPostStartupScreen(char16_t const*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:4000]
+UnrealEditor-Linux-DebugGame!GuardedMain(char16_t const*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/Launch.cpp:136]
+libUnrealEditor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*), void (*)()) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:269]
+libc.so.6!UnknownFunction(0x25e07)
+libc.so.6!__libc_start_main(+0x8b)
+UnrealEditor-Linux-DebugGame!_start()
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!
