@@ -24,8 +24,6 @@ public: \
 
 
 #define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Characters_AuraCharacter_h_15_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API AAuraCharacter(); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	AAuraCharacter(AAuraCharacter&&); \

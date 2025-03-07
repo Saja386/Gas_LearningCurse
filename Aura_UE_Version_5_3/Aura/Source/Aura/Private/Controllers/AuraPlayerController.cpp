@@ -4,6 +4,44 @@
 #include "Controllers/AuraPlayerController.h"
 #include "EnhancedInputSubsystems.h"
 #include "EnhancedInputComponent.h"
+#include "Interfaces/EnemyInterface.h"
+
+
+void AAuraPlayerController::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+	CorsurTrace();
+}
+void AAuraPlayerController::CorsurTrace()
+{
+	FHitResult CursorHit ;
+	GetHitResultUnderCursor(ECC_Visibility , false , CursorHit);
+	if(!CursorHit.bBlockingHit) return;
+	LastActor = ThisActor ;
+	ThisActor = CursorHit.GetActor();
+	if (LastActor == nullptr)
+	{
+		if (ThisActor != nullptr)
+		{
+			ThisActor->HighlightActor();
+		}
+	}
+	else
+	{
+		if (ThisActor == nullptr)
+		{
+			LastActor->UnHighlightActor();
+		}
+		else
+		{
+			if(ThisActor != LastActor)
+			{
+				LastActor->UnHighlightActor();
+				ThisActor->HighlightActor();
+			}
+		}
+	}
+}
 
 
 void AAuraPlayerController::BeginPlay()

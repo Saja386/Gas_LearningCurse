@@ -13,6 +13,7 @@ void EmptyLinkFunctionForGeneratedCodeBaseEnemy() {}
 AURA_API UClass* Z_Construct_UClass_ABaseCharacter();
 AURA_API UClass* Z_Construct_UClass_ABaseEnemy();
 AURA_API UClass* Z_Construct_UClass_ABaseEnemy_NoRegister();
+AURA_API UClass* Z_Construct_UClass_UEnemyInterface_NoRegister();
 UPackage* Z_Construct_UPackage__Script_Aura();
 // End Cross Module References
 
@@ -38,6 +39,7 @@ struct Z_Construct_UClass_ABaseEnemy_Statics
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
+	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABaseEnemy>::IsAbstract,
 	};
@@ -48,6 +50,9 @@ UObject* (*const Z_Construct_UClass_ABaseEnemy_Statics::DependentSingletons[])()
 	(UObject* (*)())Z_Construct_UPackage__Script_Aura,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseEnemy_Statics::DependentSingletons) < 16);
+const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_ABaseEnemy_Statics::InterfaceParams[] = {
+	{ Z_Construct_UClass_UEnemyInterface_NoRegister, (int32)VTABLE_OFFSET(ABaseEnemy, IEnemyInterface), false },  // 3819103162
+};
 const UECodeGen_Private::FClassParams Z_Construct_UClass_ABaseEnemy_Statics::ClassParams = {
 	&ABaseEnemy::StaticClass,
 	"Game",
@@ -55,11 +60,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_ABaseEnemy_Statics::Cla
 	DependentSingletons,
 	nullptr,
 	nullptr,
-	nullptr,
+	InterfaceParams,
 	UE_ARRAY_COUNT(DependentSingletons),
 	0,
 	0,
-	0,
+	UE_ARRAY_COUNT(InterfaceParams),
 	0x009000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseEnemy_Statics::Class_MetaDataParams), Z_Construct_UClass_ABaseEnemy_Statics::Class_MetaDataParams)
 };
@@ -75,7 +80,6 @@ template<> AURA_API UClass* StaticClass<ABaseEnemy>()
 {
 	return ABaseEnemy::StaticClass();
 }
-ABaseEnemy::ABaseEnemy() {}
 DEFINE_VTABLE_PTR_HELPER_CTOR(ABaseEnemy);
 ABaseEnemy::~ABaseEnemy() {}
 // End Class ABaseEnemy
@@ -84,10 +88,10 @@ ABaseEnemy::~ABaseEnemy() {}
 struct Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Characters_BaseEnemy_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ABaseEnemy, ABaseEnemy::StaticClass, TEXT("ABaseEnemy"), &Z_Registration_Info_UClass_ABaseEnemy, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseEnemy), 4258756986U) },
+		{ Z_Construct_UClass_ABaseEnemy, ABaseEnemy::StaticClass, TEXT("ABaseEnemy"), &Z_Registration_Info_UClass_ABaseEnemy, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseEnemy), 3010620082U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Characters_BaseEnemy_h_4146877541(TEXT("/Script/Aura"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Characters_BaseEnemy_h_535282591(TEXT("/Script/Aura"),
 	Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Characters_BaseEnemy_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Characters_BaseEnemy_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

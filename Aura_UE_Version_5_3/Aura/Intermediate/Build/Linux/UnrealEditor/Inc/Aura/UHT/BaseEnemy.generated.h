@@ -14,18 +14,17 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define AURA_BaseEnemy_generated_h
 
-#define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Characters_BaseEnemy_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Characters_BaseEnemy_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesABaseEnemy(); \
 	friend struct Z_Construct_UClass_ABaseEnemy_Statics; \
 public: \
 	DECLARE_CLASS(ABaseEnemy, ABaseCharacter, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Aura"), NO_API) \
-	DECLARE_SERIALIZER(ABaseEnemy)
+	DECLARE_SERIALIZER(ABaseEnemy) \
+	virtual UObject* _getUObject() const override { return const_cast<ABaseEnemy*>(this); }
 
 
-#define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Characters_BaseEnemy_h_15_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API ABaseEnemy(); \
+#define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Characters_BaseEnemy_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	ABaseEnemy(ABaseEnemy&&); \
@@ -37,12 +36,12 @@ public: \
 	NO_API virtual ~ABaseEnemy();
 
 
-#define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Characters_BaseEnemy_h_12_PROLOG
-#define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Characters_BaseEnemy_h_15_GENERATED_BODY \
+#define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Characters_BaseEnemy_h_13_PROLOG
+#define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Characters_BaseEnemy_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Characters_BaseEnemy_h_15_INCLASS_NO_PURE_DECLS \
-	FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Characters_BaseEnemy_h_15_ENHANCED_CONSTRUCTORS \
+	FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Characters_BaseEnemy_h_16_INCLASS_NO_PURE_DECLS \
+	FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Characters_BaseEnemy_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
