@@ -19,4 +19,6 @@ public:
 	virtual void HighlightActor () override;
 	virtual void UnHighlightActor () override;
 	ABaseEnemy();
+protected:
+	virtual void BeginPlay() override;
 };
