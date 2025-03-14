@@ -2,6 +2,6 @@
 	"BuildId": "33043543",
 	"Modules": 
 	{
-		"Aura": "libUnrealEditor-Aura-9219-Linux-DebugGame.so"
+		"Aura": "libUnrealEditor-Aura-Linux-DebugGame.so"
 	}
 }
