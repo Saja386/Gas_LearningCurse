@@ -8,8 +8,8 @@ UPlayerAttributeSet::UPlayerAttributeSet()
 {
 	InitHealth(100.f );
 	InitMana(200.f);
-	InitMaxHealth(30.f);
-	InitMaxMana(30.f);
+	InitMaxHealth(300.f);
+	InitMaxMana(300.f);
 }
 
 void UPlayerAttributeSet::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const

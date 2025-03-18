@@ -2500,5 +2500,4 @@
   Runtime/Engine/Classes/GameFramework/Actor.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraEffectActor.generated.h \
   Runtime/CoreUObject/Public/UObject/ObjectMacros.h \
-  Runtime/CoreUObject/Public/UObject/ScriptMacros.h \
-  Runtime/Engine/Classes/Engine/HitResult.h
+  Runtime/CoreUObject/Public/UObject/ScriptMacros.h

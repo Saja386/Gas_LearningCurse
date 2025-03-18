@@ -2,44 +2,34 @@
 
 
 #include "Actor/AuraEffectActor.h"
-
+#include "AbilitySystemBlueprintLibrary.h"
 #include "AbilitySystemComponent.h"
-#include "AbilitySystemInterface.h"
-#include "Components/SphereComponent.h"
-#include "GAS/PlayerAttributeSet.h"
+
 
 AAuraEffectActor::AAuraEffectActor()
 {
 	PrimaryActorTick.bCanEverTick = false;
-	SphereComponent = CreateDefaultSubobject<USphereComponent>("Sphere");
-	Mesh = CreateDefaultSubobject<UStaticMeshComponent>("Mesh");
-	SetRootComponent(Mesh);
-
-	SphereComponent->SetupAttachment(GetRootComponent());
-
+	SetRootComponent(CreateDefaultSubobject<USceneComponent>(TEXT("Root")));
 }
 
-void AAuraEffectActor::OnOverLap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
-	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
-{
-	if (IAbilitySystemInterface* ASCInterFace = Cast<IAbilitySystemInterface>(OtherActor))
-	{
-		const UPlayerAttributeSet* AttributeSet =   Cast <UPlayerAttributeSet> ( ASCInterFace->GetAbilitySystemComponent()->GetAttributeSet(UPlayerAttributeSet::StaticClass()));
-		UPlayerAttributeSet* MutableAttributeSet = const_cast<UPlayerAttributeSet*>(AttributeSet);
-		MutableAttributeSet->SetHealth(AttributeSet->GetHealth() + 20.f);
-		Destroy();
-	}
-}
-
-void AAuraEffectActor::EndOverLap(UPrimitiveComponent* OverLappedComponent, AActor* OtherActor,
-	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
-{
-	
-}
 
 void AAuraEffectActor::BeginPlay()
 {
 	Super::BeginPlay();
-	SphereComponent->OnComponentBeginOverlap.AddDynamic(this , &AAuraEffectActor::OnOverLap );
-	SphereComponent->OnComponentEndOverlap.AddDynamic(this , &AAuraEffectActor::EndOverLap );
+
+}
+
+void AAuraEffectActor::ApplyEffectOnTarget(AActor* TargetActor, TSubclassOf<UGameplayEffect> EffectClass)
+{
+	UAbilitySystemComponent* TargetASC = UAbilitySystemBlueprintLibrary::GetAbilitySystemComponent(TargetActor);
+	if (TargetASC == nullptr)return ;
+
+	check (EffectClass);
+	//This is the way of creating Game Play Effect this structure can handle related things to the game play effect context .
+	FGameplayEffectContextHandle GameplayEffectContextHandle =TargetASC-> MakeEffectContext();
+	GameplayEffectContextHandle.AddSourceObject(this);
+	//This is a holder of that effect spec and the thing that is holed is Data And that data is an smort pointer of the effect spec 
+	FGameplayEffectSpecHandle SpecHandle =TargetASC->MakeOutgoingSpec(EffectClass , 1.f , GameplayEffectContextHandle);
+	TargetASC->ApplyGameplayEffectSpecToSelf(*SpecHandle.Data.Get());
+
 }
