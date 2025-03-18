@@ -36,7 +36,9 @@ class AURA_API UAuraWidgetController : public UObject
 {
 	GENERATED_BODY()
 public:
-	void SetWidgetControllerParams (const FWidgetControllerParams Struct); 
+	void SetWidgetControllerParams (const FWidgetControllerParams Struct);
+	virtual void BroadCastInitializedValues ();
+	virtual void BindCallBacksToDependecies ();
 protected:
 	UPROPERTY(BlueprintReadOnly, Category="WidgetController")
 	TObjectPtr<APlayerController> PlayerController ;
