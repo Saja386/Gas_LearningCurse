@@ -16,11 +16,13 @@ class UGameplayEffect;
 #endif
 #define AURA_AuraEffectActor_generated_h
 
-#define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Actor_AuraEffectActor_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Actor_AuraEffectActor_h_28_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execOnEndOverlap); \
+	DECLARE_FUNCTION(execOnOverlap); \
 	DECLARE_FUNCTION(execApplyEffectOnTarget);
 
 
-#define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Actor_AuraEffectActor_h_14_INCLASS_NO_PURE_DECLS \
+#define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Actor_AuraEffectActor_h_28_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAAuraEffectActor(); \
 	friend struct Z_Construct_UClass_AAuraEffectActor_Statics; \
@@ -29,7 +31,7 @@ public: \
 	DECLARE_SERIALIZER(AAuraEffectActor)
 
 
-#define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Actor_AuraEffectActor_h_14_ENHANCED_CONSTRUCTORS \
+#define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Actor_AuraEffectActor_h_28_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	AAuraEffectActor(AAuraEffectActor&&); \
@@ -41,13 +43,13 @@ public: \
 	NO_API virtual ~AAuraEffectActor();
 
 
-#define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Actor_AuraEffectActor_h_11_PROLOG
-#define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Actor_AuraEffectActor_h_14_GENERATED_BODY \
+#define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Actor_AuraEffectActor_h_25_PROLOG
+#define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Actor_AuraEffectActor_h_28_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Actor_AuraEffectActor_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Actor_AuraEffectActor_h_14_INCLASS_NO_PURE_DECLS \
-	FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Actor_AuraEffectActor_h_14_ENHANCED_CONSTRUCTORS \
+	FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Actor_AuraEffectActor_h_28_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Actor_AuraEffectActor_h_28_INCLASS_NO_PURE_DECLS \
+	FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Actor_AuraEffectActor_h_28_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -57,5 +59,22 @@ template<> AURA_API UClass* StaticClass<class AAuraEffectActor>();
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Actor_AuraEffectActor_h
 
+
+#define FOREACH_ENUM_EAPPLICATIONPOLICY(op) \
+	op(EApplicationPolicy::ApplyOverlap) \
+	op(EApplicationPolicy::ApplyOnEndOverlap) \
+	op(EApplicationPolicy::DoNotApply) 
+
+enum class EApplicationPolicy : uint8;
+template<> struct TIsUEnumClass<EApplicationPolicy> { enum { Value = true }; };
+template<> AURA_API UEnum* StaticEnum<EApplicationPolicy>();
+
+#define FOREACH_ENUM_EREMOVALPOLICY(op) \
+	op(ERemovalPolicy::RemoveOnEndOverlap) \
+	op(ERemovalPolicy::DoNotRemove) 
+
+enum class ERemovalPolicy : uint8;
+template<> struct TIsUEnumClass<ERemovalPolicy> { enum { Value = true }; };
+template<> AURA_API UEnum* StaticEnum<ERemovalPolicy>();
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -13,10 +13,119 @@ void EmptyLinkFunctionForGeneratedCodePlayerAttributeSet() {}
 // Begin Cross Module References
 AURA_API UClass* Z_Construct_UClass_UPlayerAttributeSet();
 AURA_API UClass* Z_Construct_UClass_UPlayerAttributeSet_NoRegister();
+AURA_API UScriptStruct* Z_Construct_UScriptStruct_FEffectGamePlayProperties();
+ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
+ENGINE_API UClass* Z_Construct_UClass_ACharacter_NoRegister();
+ENGINE_API UClass* Z_Construct_UClass_AController_NoRegister();
+GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UAbilitySystemComponent_NoRegister();
 GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UAttributeSet();
 GAMEPLAYABILITIES_API UScriptStruct* Z_Construct_UScriptStruct_FGameplayAttributeData();
 UPackage* Z_Construct_UPackage__Script_Aura();
 // End Cross Module References
+
+// Begin ScriptStruct FEffectGamePlayProperties
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_EffectGamePlayProperties;
+class UScriptStruct* FEffectGamePlayProperties::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_EffectGamePlayProperties.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_EffectGamePlayProperties.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FEffectGamePlayProperties, (UObject*)Z_Construct_UPackage__Script_Aura(), TEXT("EffectGamePlayProperties"));
+	}
+	return Z_Registration_Info_UScriptStruct_EffectGamePlayProperties.OuterSingleton;
+}
+template<> AURA_API UScriptStruct* StaticStruct<FEffectGamePlayProperties>()
+{
+	return FEffectGamePlayProperties::StaticStruct();
+}
+struct Z_Construct_UScriptStruct_FEffectGamePlayProperties_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/GAS/PlayerAttributeSet.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SourceASC_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/GAS/PlayerAttributeSet.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SourceAvatarActor_MetaData[] = {
+		{ "ModuleRelativePath", "Public/GAS/PlayerAttributeSet.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SourceController_MetaData[] = {
+		{ "ModuleRelativePath", "Public/GAS/PlayerAttributeSet.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SourceCharacter_MetaData[] = {
+		{ "ModuleRelativePath", "Public/GAS/PlayerAttributeSet.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TargetASC_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/GAS/PlayerAttributeSet.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TargetAvatarActor_MetaData[] = {
+		{ "ModuleRelativePath", "Public/GAS/PlayerAttributeSet.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TargetController_MetaData[] = {
+		{ "ModuleRelativePath", "Public/GAS/PlayerAttributeSet.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TargetCharacter_MetaData[] = {
+		{ "ModuleRelativePath", "Public/GAS/PlayerAttributeSet.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_SourceASC;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_SourceAvatarActor;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_SourceController;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_SourceCharacter;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_TargetASC;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_TargetAvatarActor;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_TargetController;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_TargetCharacter;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static void* NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FEffectGamePlayProperties>();
+	}
+	static const UECodeGen_Private::FStructParams StructParams;
+};
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FEffectGamePlayProperties_Statics::NewProp_SourceASC = { "SourceASC", nullptr, (EPropertyFlags)0x0010000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEffectGamePlayProperties, SourceASC), Z_Construct_UClass_UAbilitySystemComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SourceASC_MetaData), NewProp_SourceASC_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FEffectGamePlayProperties_Statics::NewProp_SourceAvatarActor = { "SourceAvatarActor", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEffectGamePlayProperties, SourceAvatarActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SourceAvatarActor_MetaData), NewProp_SourceAvatarActor_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FEffectGamePlayProperties_Statics::NewProp_SourceController = { "SourceController", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEffectGamePlayProperties, SourceController), Z_Construct_UClass_AController_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SourceController_MetaData), NewProp_SourceController_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FEffectGamePlayProperties_Statics::NewProp_SourceCharacter = { "SourceCharacter", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEffectGamePlayProperties, SourceCharacter), Z_Construct_UClass_ACharacter_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SourceCharacter_MetaData), NewProp_SourceCharacter_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FEffectGamePlayProperties_Statics::NewProp_TargetASC = { "TargetASC", nullptr, (EPropertyFlags)0x0010000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEffectGamePlayProperties, TargetASC), Z_Construct_UClass_UAbilitySystemComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TargetASC_MetaData), NewProp_TargetASC_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FEffectGamePlayProperties_Statics::NewProp_TargetAvatarActor = { "TargetAvatarActor", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEffectGamePlayProperties, TargetAvatarActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TargetAvatarActor_MetaData), NewProp_TargetAvatarActor_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FEffectGamePlayProperties_Statics::NewProp_TargetController = { "TargetController", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEffectGamePlayProperties, TargetController), Z_Construct_UClass_AController_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TargetController_MetaData), NewProp_TargetController_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FEffectGamePlayProperties_Statics::NewProp_TargetCharacter = { "TargetCharacter", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FEffectGamePlayProperties, TargetCharacter), Z_Construct_UClass_ACharacter_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TargetCharacter_MetaData), NewProp_TargetCharacter_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FEffectGamePlayProperties_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FEffectGamePlayProperties_Statics::NewProp_SourceASC,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FEffectGamePlayProperties_Statics::NewProp_SourceAvatarActor,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FEffectGamePlayProperties_Statics::NewProp_SourceController,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FEffectGamePlayProperties_Statics::NewProp_SourceCharacter,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FEffectGamePlayProperties_Statics::NewProp_TargetASC,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FEffectGamePlayProperties_Statics::NewProp_TargetAvatarActor,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FEffectGamePlayProperties_Statics::NewProp_TargetController,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FEffectGamePlayProperties_Statics::NewProp_TargetCharacter,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEffectGamePlayProperties_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FEffectGamePlayProperties_Statics::StructParams = {
+	(UObject* (*)())Z_Construct_UPackage__Script_Aura,
+	nullptr,
+	&NewStructOps,
+	"EffectGamePlayProperties",
+	Z_Construct_UScriptStruct_FEffectGamePlayProperties_Statics::PropPointers,
+	UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEffectGamePlayProperties_Statics::PropPointers),
+	sizeof(FEffectGamePlayProperties),
+	alignof(FEffectGamePlayProperties),
+	RF_Public|RF_Transient|RF_MarkAsNative,
+	EStructFlags(0x00000005),
+	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FEffectGamePlayProperties_Statics::Struct_MetaDataParams), Z_Construct_UScriptStruct_FEffectGamePlayProperties_Statics::Struct_MetaDataParams)
+};
+UScriptStruct* Z_Construct_UScriptStruct_FEffectGamePlayProperties()
+{
+	if (!Z_Registration_Info_UScriptStruct_EffectGamePlayProperties.InnerSingleton)
+	{
+		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_EffectGamePlayProperties.InnerSingleton, Z_Construct_UScriptStruct_FEffectGamePlayProperties_Statics::StructParams);
+	}
+	return Z_Registration_Info_UScriptStruct_EffectGamePlayProperties.InnerSingleton;
+}
+// End ScriptStruct FEffectGamePlayProperties
 
 // Begin Class UPlayerAttributeSet Function OnRep_Health
 struct Z_Construct_UFunction_UPlayerAttributeSet_OnRep_Health_Statics
@@ -326,13 +435,16 @@ UPlayerAttributeSet::~UPlayerAttributeSet() {}
 // Begin Registration
 struct Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_PlayerAttributeSet_h_Statics
 {
+	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
+		{ FEffectGamePlayProperties::StaticStruct, Z_Construct_UScriptStruct_FEffectGamePlayProperties_Statics::NewStructOps, TEXT("EffectGamePlayProperties"), &Z_Registration_Info_UScriptStruct_EffectGamePlayProperties, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FEffectGamePlayProperties), 4058800946U) },
+	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
 		{ Z_Construct_UClass_UPlayerAttributeSet, UPlayerAttributeSet::StaticClass, TEXT("UPlayerAttributeSet"), &Z_Registration_Info_UClass_UPlayerAttributeSet, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPlayerAttributeSet), 1986525705U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_PlayerAttributeSet_h_1946307227(TEXT("/Script/Aura"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_PlayerAttributeSet_h_216172389(TEXT("/Script/Aura"),
 	Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_PlayerAttributeSet_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_PlayerAttributeSet_h_Statics::ClassInfo),
-	nullptr, 0,
+	Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_PlayerAttributeSet_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_PlayerAttributeSet_h_Statics::ScriptStructInfo),
 	nullptr, 0);
 // End Registration
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

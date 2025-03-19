@@ -2,6 +2,10 @@
 
 
 #include "GAS/PlayerAttributeSet.h"
+
+#include "AbilitySystemBlueprintLibrary.h"
+#include "GameFramework/Character.h"
+#include "GameplayEffectExtension.h"
 #include "Net/UnrealNetwork.h"
 
 UPlayerAttributeSet::UPlayerAttributeSet()
@@ -21,6 +25,28 @@ void UPlayerAttributeSet::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& 
 	DOREPLIFETIME_CONDITION_NOTIFY(UPlayerAttributeSet , MaxMana , COND_None , REPNOTIFY_Always) ;
 
 }
+
+void UPlayerAttributeSet::PreAttributeChange(const FGameplayAttribute& Attribute, float& NewValue)
+{
+	Super::PreAttributeChange(Attribute, NewValue);
+	if (Attribute == GetHealthAttribute())
+	{
+		NewValue = FMath::Clamp(NewValue, 0.f ,GetMaxHealth());
+	}
+	if (Attribute == GetManaAttribute())
+	{
+		NewValue = FMath::Clamp(NewValue, 0.f ,GetMaxMana());
+	}
+		
+}
+
+void UPlayerAttributeSet::PostGameplayEffectExecute(const  FGameplayEffectModCallbackData& Data)
+{
+	Super::PostGameplayEffectExecute(Data);
+	FEffectGamePlayProperties props ;
+	SetEffectProperties(Data , props);
+}
+
 
 void UPlayerAttributeSet::OnRep_Health(const FGameplayAttributeData& CurrentHealth) const
 {
@@ -42,4 +68,34 @@ void UPlayerAttributeSet::OnRep_MaxMana(const FGameplayAttributeData& CurrentMax
 {
 	GAMEPLAYATTRIBUTE_REPNOTIFY(UPlayerAttributeSet , MaxMana , CurrentMaxMana) ;
 
+}
+
+void UPlayerAttributeSet::SetEffectProperties(const FGameplayEffectModCallbackData& Data,
+	FEffectGamePlayProperties& Proprties) const 
+{
+	Proprties.EffectContextHandle =Data.EffectSpec.GetContext();
+	Proprties.SourceASC=  Proprties.EffectContextHandle.GetOriginalInstigatorAbilitySystemComponent();
+	if(IsValid(Proprties.SourceASC) && Proprties.SourceASC->AbilityActorInfo.IsValid() && Proprties.SourceASC->AbilityActorInfo->AvatarActor.IsValid())
+	{
+		Proprties.SourceAvatarActor = Proprties.SourceASC->AbilityActorInfo->AvatarActor.Get(); 
+		Proprties.SourceController = Proprties.SourceASC->AbilityActorInfo->PlayerController.Get();
+		if(Proprties.SourceController == nullptr && Proprties.SourceAvatarActor != nullptr)
+		{
+			if (const APawn* pawn = Cast <APawn>(Proprties.SourceAvatarActor))
+			{
+				Proprties.SourceController = pawn->GetController();
+			}
+		}
+		if(Proprties.SourceController)
+		{
+			ACharacter* SourceCharacter = Cast <ACharacter>(Proprties.SourceController->GetCharacter());
+		}
+	}
+	if (Data.Target.AbilityActorInfo.IsValid() && Data.Target.AbilityActorInfo->AvatarActor.IsValid())
+	{
+		Proprties.TargetAvatarActor = Data.Target.AbilityActorInfo->AvatarActor.Get();
+		Proprties.TargetController = Data.Target.AbilityActorInfo->PlayerController.Get();
+		Proprties.TargetCharacter = Cast <ACharacter>(Proprties.TargetAvatarActor);
+		Proprties.TargetASC = UAbilitySystemBlueprintLibrary::GetAbilitySystemComponent(Proprties.TargetAvatarActor);
+	}
 }
