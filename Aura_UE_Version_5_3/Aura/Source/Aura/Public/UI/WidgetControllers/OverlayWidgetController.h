@@ -3,14 +3,34 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "GameplayTagContainer.h"
 #include "UI/WidgetControllers/AuraWidgetController.h"
 #include "OverlayWidgetController.generated.h"
 
+class UAuraUserWidget;
 struct FOnAttributeChangeData;
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnHealthChangedSignuture, float, NewHealth);
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnMaxHealthChangedSignuture , float , NewMaxHealth);
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnManaChangedSignuture, float, NewMana);
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnMaxManaChangedSignuture , float , NewMaxMana);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnAttributeChangedSignuture , float , NewMaxHealth);
+
+USTRUCT(BlueprintType)
+struct FUIWidgetRow : public FTableRowBase
+{
+	GENERATED_BODY()
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	FGameplayTag MassageTag = FGameplayTag();
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	FText MassageText = FText();
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	TSubclassOf<UAuraUserWidget> MassageWidget ;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	UTexture2D* MassageTexture = nullptr ;
+};
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FMessageWidgetRowSignuture , FUIWidgetRow , Row);
+
+
 
 /**
  * 
@@ -20,22 +40,38 @@ class AURA_API UOverlayWidgetController : public UAuraWidgetController
 {
 	GENERATED_BODY()
 public:
+	
 	virtual void  BroadCastInitializedValues() override;
 	virtual void BindCallBacksToDependecies() override;
 
 	
 	UPROPERTY(BlueprintAssignable , Category="GAS")
-	FOnHealthChangedSignuture OnHealthChanged;
+	FOnAttributeChangedSignuture OnHealthChanged;
+	
 	UPROPERTY(BlueprintAssignable , Category="GAS")
-	FOnMaxHealthChangedSignuture OnMaxHealthChanged;
+	FOnAttributeChangedSignuture OnMaxHealthChanged;
 
 	UPROPERTY(BlueprintAssignable , Category="GAS")
-	FOnManaChangedSignuture OnManaChanged;
+	FOnAttributeChangedSignuture OnManaChanged;
+	
 	UPROPERTY(BlueprintAssignable , Category="GAS")
-	FOnMaxManaChangedSignuture OnMaxManaChanged;
+	FOnAttributeChangedSignuture OnMaxManaChanged;
 
-	void HealthChanged(const FOnAttributeChangeData& Data) const;
-	void MaxHealthChanged(const FOnAttributeChangeData& Data)const;
-	void ManaChanged(const FOnAttributeChangeData& Data) const;
-	void MaxManaChanged(const FOnAttributeChangeData& Data)const;
+	UPROPERTY(BlueprintAssignable , Category="GAS")
+	FMessageWidgetRowSignuture MessageWidgetRowSignuture ;
+	
+protected:
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="GAS")
+	TObjectPtr<UDataTable> MessageWidgetDataTable;
+	
+	
+
+	template<typename T>
+	T* GetDataTableRowByTag(UDataTable* DataTable , const FGameplayTag& Tag);
 };
+
+template <typename T>
+T* UOverlayWidgetController::GetDataTableRowByTag(UDataTable* DataTable, const FGameplayTag& Tag)
+{
+	return DataTable->FindRow<T>(Tag.GetTagName(), TEXT(""));
+}

@@ -21,4 +21,5 @@ public:
 	ABaseEnemy();
 protected:
 	virtual void BeginPlay() override;
+	virtual void SetInitInfo() override;
 };

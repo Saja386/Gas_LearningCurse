@@ -7,33 +7,29 @@
 #include "UObject/GeneratedCppIncludes.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeAura_init() {}
-	AURA_API UFunction* Z_Construct_UDelegateFunction_Aura_OnHealthChangedSignuture__DelegateSignature();
-	AURA_API UFunction* Z_Construct_UDelegateFunction_Aura_OnManaChangedSignuture__DelegateSignature();
-	AURA_API UFunction* Z_Construct_UDelegateFunction_Aura_OnMaxHealthChangedSignuture__DelegateSignature();
-	AURA_API UFunction* Z_Construct_UDelegateFunction_Aura_OnMaxManaChangedSignuture__DelegateSignature();
+	AURA_API UFunction* Z_Construct_UDelegateFunction_Aura_MessageWidgetRowSignuture__DelegateSignature();
+	AURA_API UFunction* Z_Construct_UDelegateFunction_Aura_OnAttributeChangedSignuture__DelegateSignature();
 	static FPackageRegistrationInfo Z_Registration_Info_UPackage__Script_Aura;
 	FORCENOINLINE UPackage* Z_Construct_UPackage__Script_Aura()
 	{
 		if (!Z_Registration_Info_UPackage__Script_Aura.OuterSingleton)
 		{
 			static UObject* (*const SingletonFuncArray[])() = {
-				(UObject* (*)())Z_Construct_UDelegateFunction_Aura_OnHealthChangedSignuture__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_Aura_OnManaChangedSignuture__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_Aura_OnMaxHealthChangedSignuture__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_Aura_OnMaxManaChangedSignuture__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_Aura_MessageWidgetRowSignuture__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_Aura_OnAttributeChangedSignuture__DelegateSignature,
 			};
 			static const UECodeGen_Private::FPackageParams PackageParams = {
 				"/Script/Aura",
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x9EBFAD3D,
-				0x8019AE67,
+				0xD530126A,
+				0xE8F95F20,
 				METADATA_PARAMS(0, nullptr)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_Aura.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_Aura.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_Aura(Z_Construct_UPackage__Script_Aura, TEXT("/Script/Aura"), Z_Registration_Info_UPackage__Script_Aura, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x9EBFAD3D, 0x8019AE67));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_Aura(Z_Construct_UPackage__Script_Aura, TEXT("/Script/Aura"), Z_Registration_Info_UPackage__Script_Aura, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xD530126A, 0xE8F95F20));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

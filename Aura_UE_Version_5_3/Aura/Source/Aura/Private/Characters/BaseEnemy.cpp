@@ -25,7 +25,14 @@ ABaseEnemy::ABaseEnemy()
 void ABaseEnemy::BeginPlay()
 {
 	Super::BeginPlay();
+	SetInitInfo();
+}
+
+void ABaseEnemy::SetInitInfo()
+{
 	AbilitySystemComponent->InitAbilityActorInfo(this , this);
+	Cast <UPlayerAbilitySystemComponent>(AbilitySystemComponent)->AbilityActorInfoSet();
+
 }
 
 void ABaseEnemy::HighlightActor()

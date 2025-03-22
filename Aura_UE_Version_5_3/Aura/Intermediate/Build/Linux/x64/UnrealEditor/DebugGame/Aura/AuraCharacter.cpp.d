@@ -2769,6 +2769,8 @@
   Runtime/Engine/Public/Engine/OverlapInfo.h \
   ../Intermediate/Build/Linux/UnrealEditor/Inc/Engine/UHT/CharacterMovementComponentAsync.generated.h \
   ../Intermediate/Build/Linux/UnrealEditor/Inc/Engine/UHT/CharacterMovementComponent.generated.h \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/GAS/PlayerAbilitySystemComponent.h \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/PlayerAbilitySystemComponent.generated.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/States/AuraPlayerState.h \
   Runtime/Engine/Classes/GameFramework/PlayerState.h \
   Runtime/CoreOnline/Public/Online/CoreOnline.h \
