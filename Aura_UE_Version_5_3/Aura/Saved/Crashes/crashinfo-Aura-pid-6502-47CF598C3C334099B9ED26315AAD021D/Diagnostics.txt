@@ -1,0 +1,60 @@
+Generating report for minidump
+
+Application version 5.4.4.0
+ ... built from changelist 35576357
+
+OS version Linux 6.10.10-arch1-1 (network name: archlinux)
+Running 16 x86_64 processors (24 logical cores)
+Exception was "SIGSEGV: invalid attempt to write memory at address 0x0000000000000003"
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libUnrealEditor-Aura-Linux-DebugGame.so!AAuraEffectActor::ApplyEffectOnTarget(AActor*, TSubclassOf<UGameplayEffect>) [/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Private/Actor/AuraEffectActor.cpp:27]
+libUnrealEditor-Aura-Linux-DebugGame.so!AAuraEffectActor::execApplyEffectOnTarget(UObject*, FFrame&, void*) [/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraEffectActor.gen.cpp:172]
+libUnrealEditor-CoreUObject.so!UFunction::Invoke(UObject*, FFrame&, void*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/Class.cpp:6847]
+libUnrealEditor-CoreUObject.so!UObject::CallFunction(FFrame&, void*, UFunction*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/ScriptCore.cpp:1139]
+libUnrealEditor-CoreUObject.so!UObject::execFinalFunction(UObject*, FFrame&, void*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/ScriptCore.cpp:3205]
+libUnrealEditor-CoreUObject.so!ProcessLocalScriptFunction(UObject*, FFrame&, void*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/ScriptCore.cpp:1233]
+libUnrealEditor-CoreUObject.so!void ProcessScriptFunction<void (*)(UObject*, FFrame&, void*)>(UObject*, UFunction*, FFrame&, void*, void (*)(UObject*, FFrame&, void*)) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/ScriptCore.cpp:1036]
+libUnrealEditor-CoreUObject.so!ProcessLocalFunction(UObject*, UFunction*, FFrame&, void*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/ScriptCore.cpp:1276]
+libUnrealEditor-CoreUObject.so!UObject::execLocalFinalFunction(UObject*, FFrame&, void*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/ScriptCore.cpp:3219]
+libUnrealEditor-CoreUObject.so!ProcessLocalScriptFunction(UObject*, FFrame&, void*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/ScriptCore.cpp:1233]
+libUnrealEditor-CoreUObject.so!UObject::ProcessInternal(UObject*, FFrame&, void*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/ScriptCore.cpp:1303]
+libUnrealEditor-CoreUObject.so!UFunction::Invoke(UObject*, FFrame&, void*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/Class.cpp:6847]
+libUnrealEditor-CoreUObject.so!UObject::ProcessEvent(UFunction*, void*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/ScriptCore.cpp:2142]
+libUnrealEditor-Engine.so!AActor::ProcessEvent(UFunction*, void*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/Actor.cpp:1092]
+libUnrealEditor-Engine.so!void TMulticastScriptDelegate<FNotThreadSafeDelegateMode>::ProcessMulticastDelegate<UObject>(void*) const [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/UObject/ScriptDelegates.h:916]
+libUnrealEditor-Engine.so!FComponentBeginOverlapSignature_DelegateWrapper(TMulticastScriptDelegate<FNotThreadSafeDelegateMode> const&, UPrimitiveComponent*, AActor*, UPrimitiveComponent*, int, bool, FHitResult const&) [/mnt/horde/++UE5/Sync/Engine/Source/./../Intermediate/Build/Linux/UnrealEditor/Inc/Engine/UHT/PrimitiveComponent.gen.cpp:604]
+libUnrealEditor-Engine.so!void TSparseDynamicDelegate<FComponentBeginOverlapSignature_MCSignature, UPrimitiveComponent, FComponentBeginOverlapSignatureInfoGetter>::Broadcast<UPrimitiveComponent*, AActor*, UPrimitiveComponent*, $_43, bool, FHitResult>(UPrimitiveComponent*, AActor*, UPrimitiveComponent*, $_43, bool, FHitResult) [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/CoreUObject/Public/UObject/SparseDelegate.h:329]
+libUnrealEditor-Engine.so!UPrimitiveComponent::BeginComponentOverlap(FOverlapInfo const&, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/Components/PrimitiveComponent.cpp:3512]
+libUnrealEditor-Engine.so!UPrimitiveComponent::UpdateOverlapsImpl(TArrayView<FOverlapInfo const, int> const*, bool, TArrayView<FOverlapInfo const, int> const*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/Components/PrimitiveComponent.cpp:3868]
+libUnrealEditor-Engine.so!USceneComponent::EndScopedMovementUpdate(FScopedMovementUpdate&) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/Components/SceneComponent.cpp:1027]
+libUnrealEditor-Engine.so!FScopedMovementUpdate::~FScopedMovementUpdate() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/Engine/ScopedMovementUpdate.cpp:61]
+libUnrealEditor-Engine.so!UCharacterMovementComponent::PerformMovement(float) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/Components/CharacterMovementComponent.cpp:2886]
+libUnrealEditor-Engine.so!UCharacterMovementComponent::ControlledCharacterMove(UE::Math::TVector<double> const&, float) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/Components/CharacterMovementComponent.cpp:6114]
+libUnrealEditor-Engine.so!UCharacterMovementComponent::TickComponent(float, ELevelTick, FActorComponentTickFunction*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/Components/CharacterMovementComponent.cpp:1609]
+libUnrealEditor-Engine.so!FActorComponentTickFunction::ExecuteTick(float, ELevelTick, ENamedThreads::Type, TRefCountPtr<FGraphEvent> const&) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/Components/ActorComponent.cpp:1170]
+libUnrealEditor-Engine.so!FTickFunctionTask::DoTask(ENamedThreads::Type, TRefCountPtr<FGraphEvent> const&) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/TickTaskManager.cpp:275]
+libUnrealEditor-Engine.so!TGraphTask<FTickFunctionTask>::ExecuteTask(TArray<FBaseGraphTask*, TSizedDefaultAllocator<32> >&, ENamedThreads::Type, bool) [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Async/TaskGraphInterfaces.h:1235]
+libUnrealEditor-Core.so!FNamedTaskThread::ProcessTasksNamedThread(int, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Core/Private/Async/TaskGraph.cpp:760]
+libUnrealEditor-Core.so!FNamedTaskThread::ProcessTasksUntilQuit(int) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Core/Private/Async/TaskGraph.cpp:650]
+libUnrealEditor-Core.so!FTaskGraphCompatibilityImplementation::WaitUntilTasksComplete(TArray<TRefCountPtr<FGraphEvent>, TSizedInlineAllocator<4u, 32, TSizedDefaultAllocator<32> > > const&, ENamedThreads::Type) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Core/Private/Async/TaskGraph.cpp:2122]
+libUnrealEditor-Engine.so!FTickTaskSequencer::ReleaseTickGroup(ETickingGroup, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/TickTaskManager.cpp:555]
+libUnrealEditor-Engine.so!FTickTaskManager::RunTickGroup(ETickingGroup, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/TickTaskManager.cpp:1582]
+libUnrealEditor-Engine.so!UWorld::Tick(ELevelTick, float) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/LevelTick.cpp:1499]
+libUnrealEditor-UnrealEd.so!UEditorEngine::Tick(float, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/EditorEngine.cpp:2013]
+libUnrealEditor-UnrealEd.so!UUnrealEdEngine::Tick(float, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/UnrealEdEngine.cpp:547]
+UnrealEditor-Linux-DebugGame!FEngineLoop::Tick() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:5915]
+UnrealEditor-Linux-DebugGame!GuardedMain(char16_t const*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/Launch.cpp:182]
+libUnrealEditor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*), void (*)()) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:269]
+libc.so.6!UnknownFunction(0x25e07)
+libc.so.6!__libc_start_main(+0x8b)
+UnrealEditor-Linux-DebugGame!_start()
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!

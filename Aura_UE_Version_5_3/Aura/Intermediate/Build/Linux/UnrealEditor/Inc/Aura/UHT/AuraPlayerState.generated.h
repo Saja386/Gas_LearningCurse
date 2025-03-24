@@ -14,6 +14,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define AURA_AuraPlayerState_generated_h
 
+#define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_States_AuraPlayerState_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execOnRep_Level);
+
+
 #define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_States_AuraPlayerState_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAAuraPlayerState(); \
@@ -21,7 +25,13 @@ private: \
 public: \
 	DECLARE_CLASS(AAuraPlayerState, APlayerState, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Aura"), NO_API) \
 	DECLARE_SERIALIZER(AAuraPlayerState) \
-	virtual UObject* _getUObject() const override { return const_cast<AAuraPlayerState*>(this); }
+	virtual UObject* _getUObject() const override { return const_cast<AAuraPlayerState*>(this); } \
+	enum class ENetFields_Private : uint16 \
+	{ \
+		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
+		Level=NETFIELD_REP_START, \
+		NETFIELD_REP_END=Level	}; \
+	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override;
 
 
 #define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_States_AuraPlayerState_h_18_ENHANCED_CONSTRUCTORS \
@@ -40,6 +50,7 @@ public: \
 #define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_States_AuraPlayerState_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
+	FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_States_AuraPlayerState_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
 	FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_States_AuraPlayerState_h_18_INCLASS_NO_PURE_DECLS \
 	FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_States_AuraPlayerState_h_18_ENHANCED_CONSTRUCTORS \
 private: \

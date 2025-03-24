@@ -35,6 +35,11 @@ void ABaseEnemy::SetInitInfo()
 
 }
 
+int32 ABaseEnemy::GetPlayerLevel()
+{
+	return Level;
+}
+
 void ABaseEnemy::HighlightActor()
 {
 	GetMesh()->SetRenderCustomDepth(true);

@@ -24,6 +24,18 @@ struct FGameplayAttributeData;
 template<> AURA_API UScriptStruct* StaticStruct<struct FEffectGamePlayProperties>();
 
 #define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_PlayerAttributeSet_h_55_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execOnRep_ManaRegeneration); \
+	DECLARE_FUNCTION(execOnRep_HealthRegeneration); \
+	DECLARE_FUNCTION(execOnRep_CriticalHitResistance); \
+	DECLARE_FUNCTION(execOnRep_CriticalHitDamage); \
+	DECLARE_FUNCTION(execOnRep_CriticalHitChance); \
+	DECLARE_FUNCTION(execOnRep_BlockChance); \
+	DECLARE_FUNCTION(execOnRep_ArmorPenetration); \
+	DECLARE_FUNCTION(execOnRep_Armor); \
+	DECLARE_FUNCTION(execOnRep_Vigor); \
+	DECLARE_FUNCTION(execOnRep_Resilience); \
+	DECLARE_FUNCTION(execOnRep_Intelligence); \
+	DECLARE_FUNCTION(execOnRep_Strength); \
 	DECLARE_FUNCTION(execOnRep_MaxMana); \
 	DECLARE_FUNCTION(execOnRep_Mana); \
 	DECLARE_FUNCTION(execOnRep_MaxHealth); \
@@ -40,11 +52,23 @@ public: \
 	enum class ENetFields_Private : uint16 \
 	{ \
 		NETFIELD_REP_START=(uint16)((int32)Super::ENetFields_Private::NETFIELD_REP_END + (int32)1), \
-		Health=NETFIELD_REP_START, \
-		MaxHealth, \
-		Mana, \
+		Strength=NETFIELD_REP_START, \
+		Intelligence, \
+		Resilience, \
+		Vigor, \
+		Armor, \
+		ArmorPenetration, \
+		BlockChance, \
+		CriticalHitChance, \
+		CriticalHitDamage, \
+		CriticalHitResistance, \
+		HealthRegeneration, \
+		ManaRegeneration, \
 		MaxMana, \
-		NETFIELD_REP_END=MaxMana	}; \
+		MaxHealth, \
+		Health, \
+		Mana, \
+		NETFIELD_REP_END=Mana	}; \
 	NO_API virtual void ValidateGeneratedRepEnums(const TArray<struct FRepRecord>& ClassReps) const override; \
 private: \
 	REPLICATED_BASE_CLASS(UPlayerAttributeSet) \
@@ -52,6 +76,8 @@ public:
 
 
 #define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_PlayerAttributeSet_h_55_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UPlayerAttributeSet(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	UPlayerAttributeSet(UPlayerAttributeSet&&); \
@@ -59,7 +85,7 @@ private: \
 public: \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UPlayerAttributeSet); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UPlayerAttributeSet); \
-	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UPlayerAttributeSet) \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UPlayerAttributeSet) \
 	NO_API virtual ~UPlayerAttributeSet();
 
 

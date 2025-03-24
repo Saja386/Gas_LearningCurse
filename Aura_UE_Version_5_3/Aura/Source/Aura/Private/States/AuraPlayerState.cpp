@@ -5,6 +5,18 @@
 
 #include "GAS/PlayerAbilitySystemComponent.h"
 #include "GAS/PlayerAttributeSet.h"
+#include "Net/UnrealNetwork.h"
+
+void AAuraPlayerState::GetLifetimeReplicatedProps(TArray<class FLifetimeProperty>& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+	DOREPLIFETIME(AAuraPlayerState, Level) ;
+}
+
+int32 AAuraPlayerState::GetPlayerLevel() const
+{
+	return Level;
+}
 
 AAuraPlayerState::AAuraPlayerState()
 {
@@ -22,4 +34,9 @@ AAuraPlayerState::AAuraPlayerState()
 UAbilitySystemComponent* AAuraPlayerState::GetAbilitySystemComponent() const
 {
 	return AbilitySystemComponent;
+}
+
+void AAuraPlayerState::OnRep_Level(int32 CurrentLevel)
+{
+	
 }

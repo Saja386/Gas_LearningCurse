@@ -17,13 +17,23 @@ class AURA_API AAuraPlayerState : public APlayerState , public IAbilitySystemInt
 {
 	GENERATED_BODY()
 public:
+	virtual void GetLifetimeReplicatedProps(TArray<class FLifetimeProperty>& OutLifetimeProps) const override;
+
+	int32 GetPlayerLevel () const;
 	AAuraPlayerState();
 	virtual  UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 	UAttributeSet* GetAttributeSet() const {return AttributeSet ;};
 protected:
-	UPROPERTY()
+	UPROPERTY(VisibleAnywhere)
 	TObjectPtr<UAbilitySystemComponent> AbilitySystemComponent ;
 
 	UPROPERTY()
 	TObjectPtr<UAttributeSet> AttributeSet ;
+
+private:
+	UPROPERTY(VisibleAnywhere , ReplicatedUsing=OnRep_Level)
+	int32 Level = 1;
+
+	UFUNCTION()
+	void OnRep_Level(int32 CurrentLevel);
 };
