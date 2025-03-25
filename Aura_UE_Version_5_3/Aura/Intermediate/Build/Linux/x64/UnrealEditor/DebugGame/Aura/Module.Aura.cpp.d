@@ -2496,17 +2496,69 @@
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/x64/UnrealEditor/DebugGame/Aura/Definitions.Aura.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/Aura.init.gen.cpp \
   Runtime/CoreUObject/Public/UObject/GeneratedCppIncludes.h \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraAssetManager.gen.cpp \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/AuraAssetManager.h \
+  Runtime/Core/Public/CoreMinimal.h \
+  Runtime/Engine/Classes/Engine/AssetManager.h \
+  /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/Engine/Classes/Engine/AssetManagerTypes.h \
+  Runtime/CoreUObject/Public/AssetRegistry/AssetIdentifier.h \
+  Runtime/Core/Public/Containers/Array.h \
+  Runtime/Core/Public/Containers/Set.h \
+  Runtime/Core/Public/Containers/UnrealString.h \
+  Runtime/Core/Public/Delegates/Delegate.h \
+  Runtime/Core/Public/HAL/Platform.h \
+  Runtime/Core/Public/Misc/EnumClassFlags.h \
+  Runtime/Core/Public/Misc/Optional.h \
+  Runtime/Core/Public/Templates/Tuple.h \
+  Runtime/CoreUObject/Public/UObject/Class.h \
+  Runtime/CoreUObject/Public/UObject/Object.h \
+  Runtime/CoreUObject/Public/UObject/ObjectMacros.h \
+  Runtime/Core/Public/UObject/NameTypes.h \
+  Runtime/CoreUObject/Public/UObject/ObjectPtr.h \
+  Runtime/CoreUObject/Public/UObject/PrimaryAssetId.h \
+  Runtime/CoreUObject/Public/UObject/SoftObjectPtr.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/Engine/UHT/AssetManagerTypes.generated.h \
+  Runtime/CoreUObject/Public/UObject/ScriptMacros.h \
+  Runtime/CoreUObject/Public/Misc/AssetRegistryInterface.h \
+  Runtime/Core/Public/Containers/ContainersFwd.h \
+  Runtime/Core/Public/CoreTypes.h \
+  Runtime/Core/Public/Modules/ModuleInterface.h \
+  Runtime/Core/Public/Modules/ModuleManager.h \
+  Runtime/CoreUObject/Public/UObject/TopLevelAssetPath.h \
+  /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/Engine/Classes/Engine/StreamableManager.h \
+  Runtime/Core/Public/Containers/ArrayView.h \
+  Runtime/Core/Public/Math/NumericLimits.h \
+  Runtime/CoreUObject/Public/Misc/PackageAccessTracking.h \
+  Runtime/CoreUObject/Public/Misc/PackageName.h \
+  Runtime/CoreUObject/Public/UObject/ObjectHandle.h \
+  Runtime/CoreUObject/Public/UObject/Package.h \
+  Runtime/CoreUObject/Public/Templates/Casts.h \
+  Runtime/Core/Public/Templates/Function.h \
+  Runtime/CoreUObject/Public/UObject/GCObject.h \
+  Runtime/CoreUObject/Public/AssetRegistry/AssetBundleData.h \
+  Runtime/AssetRegistry/Public/AssetRegistry/AssetRegistryModule.h \
+  Runtime/AssetRegistry/Public/AssetRegistry/IAssetRegistry.h \
+  Runtime/CoreUObject/Public/AssetRegistry/ARFilter.h \
+  Runtime/CoreUObject/Public/UObject/SoftObjectPath.h \
+  Runtime/Core/Public/Containers/BitArray.h \
+  Runtime/Core/Public/Containers/StringFwd.h \
+  Runtime/CoreUObject/Public/UObject/Interface.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/AssetRegistry/UHT/IAssetRegistry.generated.h \
+  Runtime/Core/Public/GenericPlatform/GenericPlatformChunkInstall.h \
+  Runtime/Core/Public/HAL/PlatformCrt.h \
+  Runtime/Core/Public/Logging/LogMacros.h \
+  /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/Engine/Classes/Engine/ContentEncryptionConfig.h \
+  Runtime/Core/Public/Containers/Map.h Runtime/Core/Public/Misc/Guid.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/Engine/UHT/AssetManager.generated.h \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraAssetManager.generated.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraBaseHUD.gen.cpp \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/UI/HUD/AuraBaseHUD.h \
-  Runtime/Core/Public/CoreMinimal.h \
   Runtime/Engine/Classes/GameFramework/HUD.h \
-  Runtime/CoreUObject/Public/UObject/ObjectMacros.h \
   Runtime/CoreUObject/Public/Templates/SubclassOf.h \
   Runtime/Engine/Classes/GameFramework/Actor.h \
   Runtime/Engine/Classes/GameFramework/HUDHitBox.h \
   Runtime/Engine/Classes/GameFramework/DebugTextInfo.h \
   ../Intermediate/Build/Linux/UnrealEditor/Inc/Engine/UHT/DebugTextInfo.generated.h \
-  Runtime/CoreUObject/Public/UObject/ScriptMacros.h \
   ../Intermediate/Build/Linux/UnrealEditor/Inc/Engine/UHT/HUD.generated.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraBaseHUD.generated.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraCharacter.gen.cpp \
@@ -2520,20 +2572,16 @@
   Runtime/Engine/Classes/Components/ActorComponent.h \
   Runtime/Engine/Classes/GameFramework/Pawn.h \
   Runtime/Engine/Classes/GameFramework/CharacterMovementReplication.h \
-  Runtime/CoreUObject/Public/UObject/Object.h \
   Runtime/Core/Public/Serialization/BitWriter.h \
-  Runtime/Core/Public/Containers/BitArray.h \
   Runtime/Experimental/Iris/Core/Public/Iris/Serialization/IrisObjectReferencePackageMap.h \
   ../Intermediate/Build/Linux/UnrealEditor/Inc/IrisCore/UHT/IrisObjectReferencePackageMap.generated.h \
   ../Intermediate/Build/Linux/UnrealEditor/Inc/Engine/UHT/CharacterMovementReplication.generated.h \
   Runtime/Engine/Classes/Animation/AnimationAsset.h \
   Runtime/Engine/Classes/GameFramework/RootMotionSource.h \
   Runtime/Core/Public/HAL/IConsoleManager.h \
-  Runtime/CoreUObject/Public/UObject/Class.h \
   ../Intermediate/Build/Linux/UnrealEditor/Inc/Engine/UHT/RootMotionSource.generated.h \
   ../Intermediate/Build/Linux/UnrealEditor/Inc/Engine/UHT/Character.generated.h \
   ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/AbilitySystemInterface.h \
-  Runtime/CoreUObject/Public/UObject/Interface.h \
   ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/AbilitySystemInterface.generated.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/Interfaces/CombatInterface.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/CombatInterface.generated.h \
@@ -2547,7 +2595,6 @@
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraGameModeBase.gen.cpp \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/Game/AuraGameModeBase.h \
   Runtime/Engine/Classes/GameFramework/GameModeBase.h \
-  Runtime/Core/Public/Misc/Guid.h \
   Runtime/Engine/Classes/GameFramework/Info.h \
   Runtime/Engine/Classes/Engine/ServerStatReplicator.h \
   ../Intermediate/Build/Linux/UnrealEditor/Inc/Engine/UHT/ServerStatReplicator.generated.h \
@@ -2572,12 +2619,9 @@
   Runtime/CoreUObject/Public/UObject/WeakObjectPtr.h \
   ../Intermediate/Build/Linux/UnrealEditor/Inc/UMG/UHT/WidgetChild.generated.h \
   Runtime/CoreUObject/Public/UObject/ObjectSaveContext.h \
-  Runtime/Core/Public/Containers/UnrealString.h \
-  Runtime/Core/Public/HAL/Platform.h \
   Runtime/CoreUObject/Public/UObject/CookEnums.h \
   Runtime/Core/Public/HAL/PlatformMath.h \
   Runtime/CoreUObject/Public/UObject/ObjectSaveOverride.h \
-  Runtime/Core/Public/Containers/Array.h \
   Runtime/CoreUObject/Public/UObject/FieldPath.h \
   Runtime/SlateCore/Public/Styling/SlateColor.h \
   Runtime/SlateCore/Public/Layout/Geometry.h \
@@ -2640,23 +2684,13 @@
   Runtime/Core/Public/Misc/FallbackStruct.h \
   Runtime/Core/Public/Misc/DateTime.h \
   Runtime/Core/Public/Misc/Timespan.h \
-  Runtime/CoreUObject/Public/UObject/TopLevelAssetPath.h \
-  Runtime/CoreUObject/Public/UObject/SoftObjectPath.h \
   Runtime/CoreUObject/Public/UObject/PropertyAccessUtil.h \
   Runtime/Core/Public/CoreGlobals.h \
-  Runtime/Core/Public/Misc/EnumClassFlags.h \
-  Runtime/Core/Public/Templates/Function.h \
   Runtime/Core/Public/Templates/UniquePtr.h \
-  Runtime/Core/Public/UObject/NameTypes.h \
   Runtime/CoreUObject/Public/Serialization/TestUndeclaredScriptStructObjectReferences.h \
-  Runtime/CoreUObject/Public/UObject/ObjectPtr.h \
-  Runtime/CoreUObject/Public/UObject/SoftObjectPtr.h \
   Runtime/Core/Public/Math/InterpCurvePoint.h \
   Runtime/Core/Public/Math/UnitConversion.h \
-  Runtime/Core/Public/CoreTypes.h \
-  Runtime/Core/Public/Delegates/Delegate.h \
   Runtime/Core/Public/Internationalization/Text.h \
-  Runtime/Core/Public/Misc/Optional.h \
   Runtime/Core/Public/Templates/ValueOrError.h \
   Runtime/Core/Public/Math/UnitConversion.inl \
   Runtime/Core/Public/CoreFwd.h Runtime/Core/Public/Misc/OptionalFwd.h \
@@ -2675,10 +2709,7 @@
   Runtime/Core/Public/Math/RangeBound.h \
   Runtime/Core/Public/Math/Interval.h Runtime/Core/Public/Math/Sphere.h \
   Runtime/Core/Public/Internationalization/PolyglotTextData.h \
-  Runtime/Core/Public/Containers/Map.h \
   Runtime/Core/Public/Internationalization/LocalizedTextSourceTypes.h \
-  Runtime/CoreUObject/Public/AssetRegistry/ARFilter.h \
-  Runtime/CoreUObject/Public/AssetRegistry/AssetBundleData.h \
   Runtime/CoreUObject/Public/AssetRegistry/AssetData.h \
   /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/CoreUObject/Public/UObject/../../../ApplicationCore/Public/GenericPlatform/ICursor.h \
   /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/CoreUObject/Public/UObject/../../../ApplicationCore/Public/GenericPlatform/IInputInterface.h \
@@ -2700,7 +2731,6 @@
   ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/GameplayEffectAttributeCaptureDefinition.generated.h \
   Runtime/GameplayTags/Classes/GameplayTagContainer.h \
   Runtime/Core/Public/Misc/ComparisonUtility.h \
-  Runtime/Core/Public/Containers/StringFwd.h \
   Runtime/Core/Public/Containers/StringView.h \
   ../Intermediate/Build/Linux/UnrealEditor/Inc/GameplayTags/UHT/GameplayTagContainer.generated.h \
   Runtime/PhysicsCore/Public/PhysicalMaterials/PhysicalMaterial.h \
@@ -2715,10 +2745,7 @@
   Runtime/Net/Core/Classes/Net/Serialization/FastArraySerializer.h \
   Runtime/Core/Public/Serialization/BitReader.h \
   Runtime/Core/Public/Misc/NetworkGuid.h \
-  Runtime/Core/Public/Containers/ArrayView.h \
   Runtime/Net/Core/Public/Net/Core/Misc/GuidReferences.h \
-  Runtime/Core/Public/Containers/Set.h \
-  Runtime/Core/Public/Templates/Tuple.h \
   Runtime/Net/Core/Public/Net/Core/PushModel/PushModel.h \
   Runtime/CoreUObject/Public/UObject/ObjectKey.h \
   Runtime/Net/Core/Public/Net/Core/NetCoreModule.h \
@@ -2759,7 +2786,6 @@
   Runtime/CoreUObject/Public/UObject/ScriptInterface.h \
   Runtime/GameplayTasks/Classes/GameplayTaskOwnerInterface.h \
   Runtime/GameplayTasks/Public/GameplayTaskTypes.h \
-  Runtime/CoreUObject/Public/Templates/Casts.h \
   ../Intermediate/Build/Linux/UnrealEditor/Inc/GameplayTasks/UHT/GameplayTaskOwnerInterface.generated.h \
   Runtime/GameplayTasks/Classes/GameplayTask.h \
   Runtime/CoreUObject/Public/UObject/WeakInterfacePtr.h \
