@@ -16,6 +16,7 @@
 	GAMEPLAYATTRIBUTE_VALUE_GETTER(PropertyName) \
 	GAMEPLAYATTRIBUTE_VALUE_SETTER(PropertyName) \
 	GAMEPLAYATTRIBUTE_VALUE_INITTER(PropertyName)
+
 USTRUCT()
 struct FEffectGamePlayProperties
 {
@@ -54,11 +55,17 @@ class AURA_API UPlayerAttributeSet : public UAttributeSet
 {
 	GENERATED_BODY()
 public:
+	UPlayerAttributeSet();
 	//We Need to add a function tp make avariable Replicated
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps ) const override;
 	
-
 	virtual void PostGameplayEffectExecute(const  FGameplayEffectModCallbackData& Data) override;
+
+
+
+	TMap<FGameplayTag , FGameplayAttribute(*)()>TagsToAttributes ;
+	
+	
 	// primary attributes
 	UPROPERTY(BlueprintReadOnly,ReplicatedUsing = OnRep_Strength ,Category="Primary Attributes")
 	FGameplayAttributeData Strength ;

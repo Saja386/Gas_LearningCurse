@@ -9,6 +9,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+struct FWidgetControllerParams;
 #ifdef AURA_AuraWidgetController_generated_h
 #error "AuraWidgetController.generated.h already included, missing '#pragma once' in AuraWidgetController.h"
 #endif
@@ -20,6 +21,11 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 
 template<> AURA_API UScriptStruct* StaticStruct<struct FWidgetControllerParams>();
+
+#define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_UI_WidgetControllers_AuraWidgetController_h_37_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execBroadCastInitializedValues); \
+	DECLARE_FUNCTION(execSetWidgetControllerParams);
+
 
 #define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_UI_WidgetControllers_AuraWidgetController_h_37_INCLASS_NO_PURE_DECLS \
 private: \
@@ -48,6 +54,7 @@ public: \
 #define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_UI_WidgetControllers_AuraWidgetController_h_37_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
+	FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_UI_WidgetControllers_AuraWidgetController_h_37_RPC_WRAPPERS_NO_PURE_DECLS \
 	FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_UI_WidgetControllers_AuraWidgetController_h_37_INCLASS_NO_PURE_DECLS \
 	FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_UI_WidgetControllers_AuraWidgetController_h_37_ENHANCED_CONSTRUCTORS \
 private: \

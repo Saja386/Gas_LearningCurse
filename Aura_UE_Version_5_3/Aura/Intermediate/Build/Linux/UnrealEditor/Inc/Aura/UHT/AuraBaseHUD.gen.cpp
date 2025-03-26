@@ -12,6 +12,7 @@ void EmptyLinkFunctionForGeneratedCodeAuraBaseHUD() {}
 // Begin Cross Module References
 AURA_API UClass* Z_Construct_UClass_AAuraBaseHUD();
 AURA_API UClass* Z_Construct_UClass_AAuraBaseHUD_NoRegister();
+AURA_API UClass* Z_Construct_UClass_UAttributeMenuWidgetController_NoRegister();
 AURA_API UClass* Z_Construct_UClass_UAuraUserWidget_NoRegister();
 AURA_API UClass* Z_Construct_UClass_UOverlayWidgetController_NoRegister();
 COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
@@ -56,11 +57,20 @@ struct Z_Construct_UClass_AAuraBaseHUD_Statics
 		{ "Category", "AuraBaseHUD" },
 		{ "ModuleRelativePath", "Public/UI/HUD/AuraBaseHUD.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AttributeMenuWidgetController_MetaData[] = {
+		{ "ModuleRelativePath", "Public/UI/HUD/AuraBaseHUD.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AttributeMenuWidgetControllerClass_MetaData[] = {
+		{ "Category", "AuraBaseHUD" },
+		{ "ModuleRelativePath", "Public/UI/HUD/AuraBaseHUD.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_OverLayWidget;
 	static const UECodeGen_Private::FClassPropertyParams NewProp_OverLayWidgetClass;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_OverlayWidgetController;
 	static const UECodeGen_Private::FClassPropertyParams NewProp_OverlayWidgetControllerClass;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_AttributeMenuWidgetController;
+	static const UECodeGen_Private::FClassPropertyParams NewProp_AttributeMenuWidgetControllerClass;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -68,15 +78,19 @@ struct Z_Construct_UClass_AAuraBaseHUD_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAuraBaseHUD_Statics::NewProp_OverLayWidget = { "OverLayWidget", nullptr, (EPropertyFlags)0x0114000000080008, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAuraBaseHUD, OverLayWidget), Z_Construct_UClass_UAuraUserWidget_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OverLayWidget_MetaData), NewProp_OverLayWidget_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAuraBaseHUD_Statics::NewProp_OverLayWidget = { "OverLayWidget", nullptr, (EPropertyFlags)0x0144000000080008, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAuraBaseHUD, OverLayWidget), Z_Construct_UClass_UAuraUserWidget_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OverLayWidget_MetaData), NewProp_OverLayWidget_MetaData) };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AAuraBaseHUD_Statics::NewProp_OverLayWidgetClass = { "OverLayWidgetClass", nullptr, (EPropertyFlags)0x0044000000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAuraBaseHUD, OverLayWidgetClass), Z_Construct_UClass_UClass, Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OverLayWidgetClass_MetaData), NewProp_OverLayWidgetClass_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAuraBaseHUD_Statics::NewProp_OverlayWidgetController = { "OverlayWidgetController", nullptr, (EPropertyFlags)0x0144000000000000, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAuraBaseHUD, OverlayWidgetController), Z_Construct_UClass_UOverlayWidgetController_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OverlayWidgetController_MetaData), NewProp_OverlayWidgetController_MetaData) };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AAuraBaseHUD_Statics::NewProp_OverlayWidgetControllerClass = { "OverlayWidgetControllerClass", nullptr, (EPropertyFlags)0x0044000000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAuraBaseHUD, OverlayWidgetControllerClass), Z_Construct_UClass_UClass, Z_Construct_UClass_UOverlayWidgetController_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OverlayWidgetControllerClass_MetaData), NewProp_OverlayWidgetControllerClass_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAuraBaseHUD_Statics::NewProp_AttributeMenuWidgetController = { "AttributeMenuWidgetController", nullptr, (EPropertyFlags)0x0144000000000000, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAuraBaseHUD, AttributeMenuWidgetController), Z_Construct_UClass_UAttributeMenuWidgetController_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AttributeMenuWidgetController_MetaData), NewProp_AttributeMenuWidgetController_MetaData) };
+const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AAuraBaseHUD_Statics::NewProp_AttributeMenuWidgetControllerClass = { "AttributeMenuWidgetControllerClass", nullptr, (EPropertyFlags)0x0044000000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAuraBaseHUD, AttributeMenuWidgetControllerClass), Z_Construct_UClass_UClass, Z_Construct_UClass_UAttributeMenuWidgetController_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AttributeMenuWidgetControllerClass_MetaData), NewProp_AttributeMenuWidgetControllerClass_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AAuraBaseHUD_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAuraBaseHUD_Statics::NewProp_OverLayWidget,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAuraBaseHUD_Statics::NewProp_OverLayWidgetClass,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAuraBaseHUD_Statics::NewProp_OverlayWidgetController,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAuraBaseHUD_Statics::NewProp_OverlayWidgetControllerClass,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAuraBaseHUD_Statics::NewProp_AttributeMenuWidgetController,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAuraBaseHUD_Statics::NewProp_AttributeMenuWidgetControllerClass,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AAuraBaseHUD_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_AAuraBaseHUD_Statics::DependentSingletons[])() = {
@@ -120,10 +134,10 @@ AAuraBaseHUD::~AAuraBaseHUD() {}
 struct Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_UI_HUD_AuraBaseHUD_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AAuraBaseHUD, AAuraBaseHUD::StaticClass, TEXT("AAuraBaseHUD"), &Z_Registration_Info_UClass_AAuraBaseHUD, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAuraBaseHUD), 1953425275U) },
+		{ Z_Construct_UClass_AAuraBaseHUD, AAuraBaseHUD::StaticClass, TEXT("AAuraBaseHUD"), &Z_Registration_Info_UClass_AAuraBaseHUD, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAuraBaseHUD), 1173174989U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_UI_HUD_AuraBaseHUD_h_2089720975(TEXT("/Script/Aura"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_UI_HUD_AuraBaseHUD_h_3853923025(TEXT("/Script/Aura"),
 	Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_UI_HUD_AuraBaseHUD_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_UI_HUD_AuraBaseHUD_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

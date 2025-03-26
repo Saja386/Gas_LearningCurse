@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define AURA_AuraBaseHUD_generated_h
 
-#define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_UI_HUD_AuraBaseHUD_h_20_INCLASS_NO_PURE_DECLS \
+#define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_UI_HUD_AuraBaseHUD_h_21_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAAuraBaseHUD(); \
 	friend struct Z_Construct_UClass_AAuraBaseHUD_Statics; \
@@ -23,7 +23,7 @@ public: \
 	DECLARE_SERIALIZER(AAuraBaseHUD)
 
 
-#define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_UI_HUD_AuraBaseHUD_h_20_ENHANCED_CONSTRUCTORS \
+#define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_UI_HUD_AuraBaseHUD_h_21_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AAuraBaseHUD(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
@@ -37,12 +37,12 @@ public: \
 	NO_API virtual ~AAuraBaseHUD();
 
 
-#define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_UI_HUD_AuraBaseHUD_h_17_PROLOG
-#define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_UI_HUD_AuraBaseHUD_h_20_GENERATED_BODY \
+#define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_UI_HUD_AuraBaseHUD_h_18_PROLOG
+#define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_UI_HUD_AuraBaseHUD_h_21_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_UI_HUD_AuraBaseHUD_h_20_INCLASS_NO_PURE_DECLS \
-	FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_UI_HUD_AuraBaseHUD_h_20_ENHANCED_CONSTRUCTORS \
+	FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_UI_HUD_AuraBaseHUD_h_21_INCLASS_NO_PURE_DECLS \
+	FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_UI_HUD_AuraBaseHUD_h_21_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

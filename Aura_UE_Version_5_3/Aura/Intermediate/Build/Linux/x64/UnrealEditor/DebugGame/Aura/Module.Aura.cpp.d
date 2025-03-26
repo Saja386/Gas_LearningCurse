@@ -2494,68 +2494,181 @@
   /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/ThirdParty/Unix/LibCxx/include/c++/v1/__algorithm/transform.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/x64/UnrealEditor/DebugGame/Aura/Module.Aura.cpp \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/x64/UnrealEditor/DebugGame/Aura/Definitions.Aura.h \
-  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/Aura.init.gen.cpp \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AttributeInfo.gen.cpp \
   Runtime/CoreUObject/Public/UObject/GeneratedCppIncludes.h \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/GAS/Data/AttributeInfo.h \
+  Runtime/Core/Public/CoreMinimal.h \
+  Runtime/Engine/Classes/Engine/DataAsset.h \
+  Runtime/GameplayTags/Classes/GameplayTagContainer.h \
+  Runtime/Core/Public/Stats/Stats.h \
+  Runtime/CoreUObject/Public/UObject/ObjectMacros.h \
+  Runtime/CoreUObject/Public/UObject/Object.h \
+  Runtime/CoreUObject/Public/UObject/Class.h \
+  Runtime/Core/Public/Misc/ComparisonUtility.h \
+  Runtime/Core/Public/Containers/StringFwd.h \
+  Runtime/Core/Public/Containers/StringView.h \
+  Runtime/Core/Public/HAL/Platform.h \
+  Runtime/Core/Public/UObject/NameTypes.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/GameplayTags/UHT/GameplayTagContainer.generated.h \
+  Runtime/CoreUObject/Public/UObject/ScriptMacros.h \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AttributeInfo.generated.h \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AttributeMenuWidgetController.gen.cpp \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/UI/WidgetControllers/AttributeMenuWidgetController.h \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/UI/WidgetControllers/AuraWidgetController.h \
+  ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/AttributeSet.h \
+  Runtime/CoreUObject/Public/Templates/SubclassOf.h \
+  Runtime/CoreUObject/Public/UObject/UnrealType.h \
+  Runtime/Engine/Classes/Engine/DataTable.h \
+  ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/AttributeSet.generated.h \
+  Runtime/CoreUObject/Public/UObject/NoExportTypes.h \
+  Runtime/Core/Public/PixelFormat.h \
+  Runtime/Core/Public/Misc/FallbackStruct.h \
+  Runtime/Core/Public/Misc/Guid.h Runtime/Core/Public/Misc/DateTime.h \
+  Runtime/Core/Public/Misc/Timespan.h \
+  Runtime/CoreUObject/Public/UObject/TopLevelAssetPath.h \
+  Runtime/CoreUObject/Public/UObject/SoftObjectPath.h \
+  Runtime/CoreUObject/Public/UObject/PropertyAccessUtil.h \
+  Runtime/Core/Public/Containers/UnrealString.h \
+  Runtime/Core/Public/CoreGlobals.h \
+  Runtime/Core/Public/Misc/EnumClassFlags.h \
+  Runtime/Core/Public/Templates/Function.h \
+  Runtime/Core/Public/Templates/UniquePtr.h \
+  Runtime/CoreUObject/Public/Serialization/TestUndeclaredScriptStructObjectReferences.h \
+  Runtime/CoreUObject/Public/UObject/ObjectPtr.h \
+  Runtime/CoreUObject/Public/UObject/SoftObjectPtr.h \
+  Runtime/CoreUObject/Public/UObject/WeakObjectPtr.h \
+  Runtime/Core/Public/Math/InterpCurvePoint.h \
+  Runtime/Core/Public/Math/UnitConversion.h \
+  Runtime/Core/Public/Containers/Array.h Runtime/Core/Public/CoreTypes.h \
+  Runtime/Core/Public/Delegates/Delegate.h \
+  Runtime/Core/Public/Internationalization/Text.h \
+  Runtime/Core/Public/Misc/Optional.h \
+  Runtime/Core/Public/Templates/ValueOrError.h \
+  Runtime/Core/Public/Math/UnitConversion.inl \
+  Runtime/Core/Public/CoreFwd.h Runtime/Core/Public/Misc/OptionalFwd.h \
+  Runtime/Core/Public/Math/Vector.h Runtime/Core/Public/Math/Vector4.h \
+  Runtime/Core/Public/Math/Vector2D.h \
+  Runtime/Core/Public/Math/TwoVectors.h Runtime/Core/Public/Math/Plane.h \
+  Runtime/Core/Public/Math/Rotator.h Runtime/Core/Public/Math/Quat.h \
+  Runtime/Core/Public/Math/IntPoint.h \
+  Runtime/Core/Public/Math/IntVector.h Runtime/Core/Public/Math/Color.h \
+  Runtime/Core/Public/Math/Box.h Runtime/Core/Public/Math/Box2D.h \
+  Runtime/Core/Public/Math/BoxSphereBounds.h \
+  Runtime/Core/Public/Math/OrientedBox.h \
+  Runtime/Core/Public/Math/Matrix.h \
+  Runtime/Core/Public/Math/ScalarRegister.h \
+  Runtime/Core/Public/Math/RandomStream.h \
+  Runtime/Core/Public/Math/RangeBound.h \
+  Runtime/Core/Public/Math/Interval.h Runtime/Core/Public/Math/Sphere.h \
+  Runtime/Core/Public/Internationalization/PolyglotTextData.h \
+  Runtime/Core/Public/Containers/Map.h \
+  Runtime/Core/Public/Internationalization/LocalizedTextSourceTypes.h \
+  Runtime/CoreUObject/Public/AssetRegistry/ARFilter.h \
+  Runtime/CoreUObject/Public/AssetRegistry/AssetBundleData.h \
+  Runtime/CoreUObject/Public/AssetRegistry/AssetData.h \
+  /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/CoreUObject/Public/UObject/../../../ApplicationCore/Public/GenericPlatform/ICursor.h \
+  /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/CoreUObject/Public/UObject/../../../ApplicationCore/Public/GenericPlatform/IInputInterface.h \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraWidgetController.generated.h \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AttributeMenuWidgetController.generated.h \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/Aura.init.gen.cpp \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraAbilities.gen.cpp \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/GAS/GameplayAbilities/AuraAbilities.h \
+  ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/Abilities/GameplayAbility.h \
+  ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/GameplayEffectTypes.h \
+  ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/ActiveGameplayEffectHandle.h \
+  ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/ActiveGameplayEffectHandle.generated.h \
+  ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/GameplayEffectAttributeCaptureDefinition.h \
+  ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/GameplayEffectAttributeCaptureDefinition.generated.h \
+  Runtime/Engine/Classes/Engine/NetSerialization.h \
+  Runtime/Engine/Classes/GameFramework/Actor.h \
+  Runtime/PhysicsCore/Public/PhysicalMaterials/PhysicalMaterial.h \
+  ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/GameplayEffectTypes.generated.h \
+  ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/GameplayAbilitySpec.h \
+  ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/GameplayAbilitySpecHandle.h \
+  ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/GameplayAbilitySpecHandle.generated.h \
+  ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/GameplayPrediction.h \
+  Runtime/Engine/Classes/Engine/NetDriver.h \
+  Runtime/Net/Core/Classes/Net/Serialization/FastArraySerializer.h \
+  Runtime/Core/Public/Serialization/BitReader.h \
+  Runtime/Core/Public/Misc/NetworkGuid.h \
+  Runtime/CoreUObject/Public/UObject/CoreNet.h \
+  Runtime/Core/Public/Containers/ArrayView.h \
+  Runtime/Net/Core/Public/Net/Core/Misc/GuidReferences.h \
+  Runtime/Core/Public/Containers/Set.h \
+  Runtime/Core/Public/Templates/Tuple.h \
+  Runtime/Net/Core/Public/Net/Core/PushModel/PushModel.h \
+  Runtime/CoreUObject/Public/UObject/ObjectKey.h \
+  Runtime/Net/Core/Public/Net/Core/NetCoreModule.h \
+  Runtime/Core/Public/HAL/IConsoleManager.h \
+  Runtime/Core/Public/Templates/EnableIf.h \
+  Runtime/Core/Public/ProfilingDebugging/CsvProfiler.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/NetCore/UHT/FastArraySerializer.generated.h \
+  ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/GameplayPrediction.generated.h \
+  ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/ScalableFloat.h \
+  Runtime/Engine/Classes/Engine/CurveTable.h \
+  ../Plugins/Runtime/DataRegistry/Source/DataRegistry/Public/DataRegistryId.h \
+  ../Plugins/Runtime/DataRegistry/Intermediate/Build/Linux/UnrealEditor/Inc/DataRegistry/UHT/DataRegistryId.generated.h \
+  ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/ScalableFloat.generated.h \
+  ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/GameplayAbilitySpec.generated.h \
+  ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/GameplayEffect.h \
+  Runtime/Engine/Classes/Engine/EngineTypes.h \
+  Runtime/Engine/Public/EngineDefines.h \
+  ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/GameplayEffectAggregator.h \
+  Runtime/GameplayTags/Classes/GameplayTagAssetInterface.h \
+  Runtime/CoreUObject/Public/UObject/Interface.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/GameplayTags/UHT/GameplayTagAssetInterface.generated.h \
+  ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/ActiveGameplayEffectIterator.h \
+  Runtime/Engine/Public/VisualLogger/VisualLoggerDebugSnapshotInterface.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/Engine/UHT/VisualLoggerDebugSnapshotInterface.generated.h \
+  Runtime/Engine/Public/VisualLogger/VisualLoggerTypes.h \
+  ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/GameplayEffect.generated.h \
+  ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/Abilities/GameplayAbilityTypes.h \
+  ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/Abilities/GameplayAbilityTargetTypes.h \
+  Runtime/Engine/Classes/Engine/HitResult.h \
+  ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/GameplayAbilityTargetTypes.generated.h \
+  ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/GameplayAbilityTypes.generated.h \
+  Runtime/GameplayTasks/Classes/GameplayTaskOwnerInterface.h \
+  Runtime/GameplayTasks/Public/GameplayTaskTypes.h \
+  Runtime/CoreUObject/Public/Templates/Casts.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/GameplayTasks/UHT/GameplayTaskOwnerInterface.generated.h \
+  Runtime/Net/Core/Public/Net/Core/PushModel/PushModelMacros.h \
+  ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/GameplayAbility.generated.h \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraAbilities.generated.h \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraAbilitySystemLiberary.gen.cpp \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/GAS/AuraAbilitySystemLiberary.h \
+  Runtime/Engine/Classes/Kismet/BlueprintFunctionLibrary.h \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraAbilitySystemLiberary.generated.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraAssetManager.gen.cpp \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/AuraAssetManager.h \
-  Runtime/Core/Public/CoreMinimal.h \
   Runtime/Engine/Classes/Engine/AssetManager.h \
   /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/Engine/Classes/Engine/AssetManagerTypes.h \
   Runtime/CoreUObject/Public/AssetRegistry/AssetIdentifier.h \
-  Runtime/Core/Public/Containers/Array.h \
-  Runtime/Core/Public/Containers/Set.h \
-  Runtime/Core/Public/Containers/UnrealString.h \
-  Runtime/Core/Public/Delegates/Delegate.h \
-  Runtime/Core/Public/HAL/Platform.h \
-  Runtime/Core/Public/Misc/EnumClassFlags.h \
-  Runtime/Core/Public/Misc/Optional.h \
-  Runtime/Core/Public/Templates/Tuple.h \
-  Runtime/CoreUObject/Public/UObject/Class.h \
-  Runtime/CoreUObject/Public/UObject/Object.h \
-  Runtime/CoreUObject/Public/UObject/ObjectMacros.h \
-  Runtime/Core/Public/UObject/NameTypes.h \
-  Runtime/CoreUObject/Public/UObject/ObjectPtr.h \
   Runtime/CoreUObject/Public/UObject/PrimaryAssetId.h \
-  Runtime/CoreUObject/Public/UObject/SoftObjectPtr.h \
   ../Intermediate/Build/Linux/UnrealEditor/Inc/Engine/UHT/AssetManagerTypes.generated.h \
-  Runtime/CoreUObject/Public/UObject/ScriptMacros.h \
   Runtime/CoreUObject/Public/Misc/AssetRegistryInterface.h \
   Runtime/Core/Public/Containers/ContainersFwd.h \
-  Runtime/Core/Public/CoreTypes.h \
   Runtime/Core/Public/Modules/ModuleInterface.h \
   Runtime/Core/Public/Modules/ModuleManager.h \
-  Runtime/CoreUObject/Public/UObject/TopLevelAssetPath.h \
   /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/Engine/Classes/Engine/StreamableManager.h \
-  Runtime/Core/Public/Containers/ArrayView.h \
   Runtime/Core/Public/Math/NumericLimits.h \
   Runtime/CoreUObject/Public/Misc/PackageAccessTracking.h \
   Runtime/CoreUObject/Public/Misc/PackageName.h \
   Runtime/CoreUObject/Public/UObject/ObjectHandle.h \
   Runtime/CoreUObject/Public/UObject/Package.h \
-  Runtime/CoreUObject/Public/Templates/Casts.h \
-  Runtime/Core/Public/Templates/Function.h \
   Runtime/CoreUObject/Public/UObject/GCObject.h \
-  Runtime/CoreUObject/Public/AssetRegistry/AssetBundleData.h \
   Runtime/AssetRegistry/Public/AssetRegistry/AssetRegistryModule.h \
   Runtime/AssetRegistry/Public/AssetRegistry/IAssetRegistry.h \
-  Runtime/CoreUObject/Public/AssetRegistry/ARFilter.h \
-  Runtime/CoreUObject/Public/UObject/SoftObjectPath.h \
   Runtime/Core/Public/Containers/BitArray.h \
-  Runtime/Core/Public/Containers/StringFwd.h \
-  Runtime/CoreUObject/Public/UObject/Interface.h \
   ../Intermediate/Build/Linux/UnrealEditor/Inc/AssetRegistry/UHT/IAssetRegistry.generated.h \
   Runtime/Core/Public/GenericPlatform/GenericPlatformChunkInstall.h \
   Runtime/Core/Public/HAL/PlatformCrt.h \
   Runtime/Core/Public/Logging/LogMacros.h \
   /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/Engine/Classes/Engine/ContentEncryptionConfig.h \
-  Runtime/Core/Public/Containers/Map.h Runtime/Core/Public/Misc/Guid.h \
   ../Intermediate/Build/Linux/UnrealEditor/Inc/Engine/UHT/AssetManager.generated.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraAssetManager.generated.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraBaseHUD.gen.cpp \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/UI/HUD/AuraBaseHUD.h \
   Runtime/Engine/Classes/GameFramework/HUD.h \
-  Runtime/CoreUObject/Public/Templates/SubclassOf.h \
-  Runtime/Engine/Classes/GameFramework/Actor.h \
   Runtime/Engine/Classes/GameFramework/HUDHitBox.h \
   Runtime/Engine/Classes/GameFramework/DebugTextInfo.h \
   ../Intermediate/Build/Linux/UnrealEditor/Inc/Engine/UHT/DebugTextInfo.generated.h \
@@ -2566,9 +2679,6 @@
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/Characters/BaseCharacter.h \
   Runtime/Engine/Classes/GameFramework/Character.h \
   Runtime/CoreUObject/Public/UObject/UObjectGlobals.h \
-  Runtime/CoreUObject/Public/UObject/CoreNet.h \
-  Runtime/Engine/Classes/Engine/NetSerialization.h \
-  Runtime/Engine/Classes/Engine/EngineTypes.h \
   Runtime/Engine/Classes/Components/ActorComponent.h \
   Runtime/Engine/Classes/GameFramework/Pawn.h \
   Runtime/Engine/Classes/GameFramework/CharacterMovementReplication.h \
@@ -2578,7 +2688,6 @@
   ../Intermediate/Build/Linux/UnrealEditor/Inc/Engine/UHT/CharacterMovementReplication.generated.h \
   Runtime/Engine/Classes/Animation/AnimationAsset.h \
   Runtime/Engine/Classes/GameFramework/RootMotionSource.h \
-  Runtime/Core/Public/HAL/IConsoleManager.h \
   ../Intermediate/Build/Linux/UnrealEditor/Inc/Engine/UHT/RootMotionSource.generated.h \
   ../Intermediate/Build/Linux/UnrealEditor/Inc/Engine/UHT/Character.generated.h \
   ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/AbilitySystemInterface.h \
@@ -2589,8 +2698,6 @@
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraCharacter.generated.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraEffectActor.gen.cpp \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/Actor/AuraEffectActor.h \
-  ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/ActiveGameplayEffectHandle.h \
-  ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/ActiveGameplayEffectHandle.generated.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraEffectActor.generated.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraGameModeBase.gen.cpp \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/Game/AuraGameModeBase.h \
@@ -2616,7 +2723,6 @@
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/UI/Widgets/AuraUserWidget.h \
   Runtime/UMG/Public/Blueprint/UserWidget.h \
   Runtime/UMG/Public/Blueprint/WidgetChild.h \
-  Runtime/CoreUObject/Public/UObject/WeakObjectPtr.h \
   ../Intermediate/Build/Linux/UnrealEditor/Inc/UMG/UHT/WidgetChild.generated.h \
   Runtime/CoreUObject/Public/UObject/ObjectSaveContext.h \
   Runtime/CoreUObject/Public/UObject/CookEnums.h \
@@ -2666,7 +2772,7 @@
   Runtime/Slate/Public/Widgets/Layout/Anchors.h \
   ../Intermediate/Build/Linux/UnrealEditor/Inc/Slate/UHT/Anchors.generated.h \
   Runtime/Core/Public/Logging/MessageLog.h \
-  Runtime/Core/Public/Stats/Stats.h Runtime/Engine/Public/EngineStats.h \
+  Runtime/Engine/Public/EngineStats.h \
   Runtime/SlateCore/Public/SlateGlobals.h \
   Runtime/UMG/Public/Animation/WidgetAnimationEvents.h \
   Runtime/Core/Public/Delegates/DelegateCombinations.h \
@@ -2674,46 +2780,6 @@
   ../Intermediate/Build/Linux/UnrealEditor/Inc/UMG/UHT/UserWidget.generated.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraUserWidget.generated.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraWidgetController.gen.cpp \
-  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/UI/WidgetControllers/AuraWidgetController.h \
-  ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/AttributeSet.h \
-  Runtime/CoreUObject/Public/UObject/UnrealType.h \
-  Runtime/Engine/Classes/Engine/DataTable.h \
-  ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/AttributeSet.generated.h \
-  Runtime/CoreUObject/Public/UObject/NoExportTypes.h \
-  Runtime/Core/Public/PixelFormat.h \
-  Runtime/Core/Public/Misc/FallbackStruct.h \
-  Runtime/Core/Public/Misc/DateTime.h \
-  Runtime/Core/Public/Misc/Timespan.h \
-  Runtime/CoreUObject/Public/UObject/PropertyAccessUtil.h \
-  Runtime/Core/Public/CoreGlobals.h \
-  Runtime/Core/Public/Templates/UniquePtr.h \
-  Runtime/CoreUObject/Public/Serialization/TestUndeclaredScriptStructObjectReferences.h \
-  Runtime/Core/Public/Math/InterpCurvePoint.h \
-  Runtime/Core/Public/Math/UnitConversion.h \
-  Runtime/Core/Public/Internationalization/Text.h \
-  Runtime/Core/Public/Templates/ValueOrError.h \
-  Runtime/Core/Public/Math/UnitConversion.inl \
-  Runtime/Core/Public/CoreFwd.h Runtime/Core/Public/Misc/OptionalFwd.h \
-  Runtime/Core/Public/Math/Vector.h Runtime/Core/Public/Math/Vector4.h \
-  Runtime/Core/Public/Math/Vector2D.h \
-  Runtime/Core/Public/Math/TwoVectors.h Runtime/Core/Public/Math/Plane.h \
-  Runtime/Core/Public/Math/Rotator.h Runtime/Core/Public/Math/Quat.h \
-  Runtime/Core/Public/Math/IntPoint.h \
-  Runtime/Core/Public/Math/IntVector.h Runtime/Core/Public/Math/Color.h \
-  Runtime/Core/Public/Math/Box.h Runtime/Core/Public/Math/Box2D.h \
-  Runtime/Core/Public/Math/BoxSphereBounds.h \
-  Runtime/Core/Public/Math/OrientedBox.h \
-  Runtime/Core/Public/Math/Matrix.h \
-  Runtime/Core/Public/Math/ScalarRegister.h \
-  Runtime/Core/Public/Math/RandomStream.h \
-  Runtime/Core/Public/Math/RangeBound.h \
-  Runtime/Core/Public/Math/Interval.h Runtime/Core/Public/Math/Sphere.h \
-  Runtime/Core/Public/Internationalization/PolyglotTextData.h \
-  Runtime/Core/Public/Internationalization/LocalizedTextSourceTypes.h \
-  Runtime/CoreUObject/Public/AssetRegistry/AssetData.h \
-  /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/CoreUObject/Public/UObject/../../../ApplicationCore/Public/GenericPlatform/ICursor.h \
-  /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/CoreUObject/Public/UObject/../../../ApplicationCore/Public/GenericPlatform/IInputInterface.h \
-  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraWidgetController.generated.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/BaseCharacter.gen.cpp \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/BaseEnemy.gen.cpp \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/Characters/BaseEnemy.h \
@@ -2726,48 +2792,7 @@
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/GAS/MMC/MMC_MaxHealth.h \
   ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/GameplayModMagnitudeCalculation.h \
   ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/GameplayEffectCalculation.h \
-  ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/GameplayEffectTypes.h \
-  ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/GameplayEffectAttributeCaptureDefinition.h \
-  ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/GameplayEffectAttributeCaptureDefinition.generated.h \
-  Runtime/GameplayTags/Classes/GameplayTagContainer.h \
-  Runtime/Core/Public/Misc/ComparisonUtility.h \
-  Runtime/Core/Public/Containers/StringView.h \
-  ../Intermediate/Build/Linux/UnrealEditor/Inc/GameplayTags/UHT/GameplayTagContainer.generated.h \
-  Runtime/PhysicsCore/Public/PhysicalMaterials/PhysicalMaterial.h \
-  ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/GameplayEffectTypes.generated.h \
   ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/GameplayEffectCalculation.generated.h \
-  ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/GameplayEffect.h \
-  Runtime/Engine/Classes/Engine/CurveTable.h \
-  Runtime/Engine/Public/EngineDefines.h \
-  ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/GameplayEffectAggregator.h \
-  ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/GameplayPrediction.h \
-  Runtime/Engine/Classes/Engine/NetDriver.h \
-  Runtime/Net/Core/Classes/Net/Serialization/FastArraySerializer.h \
-  Runtime/Core/Public/Serialization/BitReader.h \
-  Runtime/Core/Public/Misc/NetworkGuid.h \
-  Runtime/Net/Core/Public/Net/Core/Misc/GuidReferences.h \
-  Runtime/Net/Core/Public/Net/Core/PushModel/PushModel.h \
-  Runtime/CoreUObject/Public/UObject/ObjectKey.h \
-  Runtime/Net/Core/Public/Net/Core/NetCoreModule.h \
-  Runtime/Core/Public/Templates/EnableIf.h \
-  Runtime/Core/Public/ProfilingDebugging/CsvProfiler.h \
-  ../Intermediate/Build/Linux/UnrealEditor/Inc/NetCore/UHT/FastArraySerializer.generated.h \
-  ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/GameplayPrediction.generated.h \
-  Runtime/GameplayTags/Classes/GameplayTagAssetInterface.h \
-  ../Intermediate/Build/Linux/UnrealEditor/Inc/GameplayTags/UHT/GameplayTagAssetInterface.generated.h \
-  ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/GameplayAbilitySpec.h \
-  ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/GameplayAbilitySpecHandle.h \
-  ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/GameplayAbilitySpecHandle.generated.h \
-  ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/ScalableFloat.h \
-  ../Plugins/Runtime/DataRegistry/Source/DataRegistry/Public/DataRegistryId.h \
-  ../Plugins/Runtime/DataRegistry/Intermediate/Build/Linux/UnrealEditor/Inc/DataRegistry/UHT/DataRegistryId.generated.h \
-  ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/ScalableFloat.generated.h \
-  ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/GameplayAbilitySpec.generated.h \
-  ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/ActiveGameplayEffectIterator.h \
-  Runtime/Engine/Public/VisualLogger/VisualLoggerDebugSnapshotInterface.h \
-  ../Intermediate/Build/Linux/UnrealEditor/Inc/Engine/UHT/VisualLoggerDebugSnapshotInterface.generated.h \
-  Runtime/Engine/Public/VisualLogger/VisualLoggerTypes.h \
-  ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/GameplayEffect.generated.h \
   ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/GameplayModMagnitudeCalculation.generated.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/MMC_MaxHealth.generated.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/MMC_MaxMana.gen.cpp \
@@ -2784,9 +2809,6 @@
   ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/GameplayCueInterface.generated.h \
   Runtime/GameplayTasks/Classes/GameplayTasksComponent.h \
   Runtime/CoreUObject/Public/UObject/ScriptInterface.h \
-  Runtime/GameplayTasks/Classes/GameplayTaskOwnerInterface.h \
-  Runtime/GameplayTasks/Public/GameplayTaskTypes.h \
-  ../Intermediate/Build/Linux/UnrealEditor/Inc/GameplayTasks/UHT/GameplayTaskOwnerInterface.generated.h \
   Runtime/GameplayTasks/Classes/GameplayTask.h \
   Runtime/CoreUObject/Public/UObject/WeakInterfacePtr.h \
   ../Intermediate/Build/Linux/UnrealEditor/Inc/GameplayTasks/UHT/GameplayTask.generated.h \
@@ -2795,14 +2817,6 @@
   ../Intermediate/Build/Linux/UnrealEditor/Inc/GameplayTasks/UHT/GameplayTasksComponent.generated.h \
   ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/Abilities/GameplayAbilityRepAnimMontage.h \
   ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/GameplayAbilityRepAnimMontage.generated.h \
-  ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/Abilities/GameplayAbilityTargetTypes.h \
-  Runtime/Engine/Classes/Engine/HitResult.h \
-  ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/GameplayAbilityTargetTypes.generated.h \
-  ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/Abilities/GameplayAbility.h \
-  ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/Abilities/GameplayAbilityTypes.h \
-  ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/GameplayAbilityTypes.generated.h \
-  Runtime/Net/Core/Public/Net/Core/PushModel/PushModelMacros.h \
-  ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/GameplayAbility.generated.h \
   ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/AbilitySystemReplicationProxyInterface.h \
   ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/AbilitySystemReplicationProxyInterface.generated.h \
   ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/AbilitySystemComponent.generated.h \

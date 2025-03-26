@@ -1118,7 +1118,6 @@ void UPlayerAttributeSet::ValidateGeneratedRepEnums(const TArray<struct FRepReco
 		&& Name_Mana == ClassReps[(int32)ENetFields_Private::Mana].Property->GetFName();
 	checkf(bIsValid, TEXT("UHT Generated Rep Indices do not match runtime populated Rep Indices for properties in UPlayerAttributeSet"));
 }
-UPlayerAttributeSet::UPlayerAttributeSet(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
 DEFINE_VTABLE_PTR_HELPER_CTOR(UPlayerAttributeSet);
 UPlayerAttributeSet::~UPlayerAttributeSet() {}
 // End Class UPlayerAttributeSet

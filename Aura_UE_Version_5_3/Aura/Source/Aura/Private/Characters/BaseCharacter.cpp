@@ -3,6 +3,7 @@
 
 #include "Characters/BaseCharacter.h"
 #include "AbilitySystemComponent.h"	
+#include "GAS/PlayerAbilitySystemComponent.h"
 #include "GAS/PlayerAttributeSet.h"
 
 
@@ -45,5 +46,13 @@ void ABaseCharacter::InitializeDefaultAttributes() const
 	ApplyEffectToSelf(DefaultPrimaryAttributes , 1.0f) ;
 	ApplyEffectToSelf(DefaultSecondaryAttributes , 1.0f) ;
 	ApplyEffectToSelf(DefaultVitalAttributes , 1.0f) ;
+}
+
+void ABaseCharacter::AddAbilitiesToCharacter()
+{
+	UPlayerAbilitySystemComponent* ASC = CastChecked<UPlayerAbilitySystemComponent>(AbilitySystemComponent);
+	if(!HasAuthority()){return;}
+	ASC->AddCharacterAbilities(StartUpAbilities);
+	
 }
 

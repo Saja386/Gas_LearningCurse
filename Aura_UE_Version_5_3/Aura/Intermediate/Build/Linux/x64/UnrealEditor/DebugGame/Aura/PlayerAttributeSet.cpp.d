@@ -2623,4 +2623,5 @@
   Runtime/Core/Public/Delegates/IDelegateInstance.h \
   Runtime/Core/Public/Templates/SharedPointer.h \
   Runtime/Engine/Public/Net/ReplayResult.h \
-  ThirdParty/Unix/LibCxx/include/c++/v1/type_traits
+  ThirdParty/Unix/LibCxx/include/c++/v1/type_traits \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/AuraGamePlayTags.h
