@@ -5,8 +5,11 @@
 #include "CoreMinimal.h"
 #include "Characters/BaseCharacter.h"
 #include "Interfaces/EnemyInterface.h"
+#include "UI/WidgetControllers/OverlayWidgetController.h"
 #include "BaseEnemy.generated.h"
 
+
+class UWidgetComponent;
 /**
  * 
  */
@@ -19,12 +22,19 @@ public:
 	virtual void HighlightActor () override;
 	virtual void UnHighlightActor () override;
 	ABaseEnemy();
+
+	UPROPERTY(BlueprintAssignable)
+	FOnAttributeChangedSignuture OnHealthChanged ;
+
+	UPROPERTY(BlueprintAssignable)
+	FOnAttributeChangedSignuture OnMaxHealthChanged ; 
 protected:
 	virtual void BeginPlay() override;
 	virtual void SetInitInfo() override;
 	UPROPERTY(VisibleAnywhere , BlueprintReadOnly, Category = "CharacterClassDefaults")
 	int32 Level = 1;
 
-	
+	UPROPERTY(VisibleAnywhere , BlueprintReadOnly)
+	TObjectPtr<UWidgetComponent> HealthBarComponent;
 	
 };
