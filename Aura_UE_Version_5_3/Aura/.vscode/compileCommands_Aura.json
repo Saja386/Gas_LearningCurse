@@ -32,6 +32,14 @@
 		"directory": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source"
 	},
 	{
+		"file": "/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Private/Actor/AuraProjectile.cpp",
+		"arguments": [
+			"/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/.vscode/compileCommands_Aura/Aura.1.rsp"
+		],
+		"directory": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source"
+	},
+	{
 		"file": "/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Private/AuraAssetManager.cpp",
 		"arguments": [
 			"/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
@@ -80,6 +88,14 @@
 		"directory": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source"
 	},
 	{
+		"file": "/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Private/GAS/AbilityTasks/TargetDataUnderMouse.cpp",
+		"arguments": [
+			"/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/.vscode/compileCommands_Aura/Aura.1.rsp"
+		],
+		"directory": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source"
+	},
+	{
 		"file": "/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Private/GAS/AuraAbilitySystemLiberary.cpp",
 		"arguments": [
 			"/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
@@ -97,6 +113,14 @@
 	},
 	{
 		"file": "/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Private/GAS/GameplayAbilities/AuraAbilities.cpp",
+		"arguments": [
+			"/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/.vscode/compileCommands_Aura/Aura.1.rsp"
+		],
+		"directory": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source"
+	},
+	{
+		"file": "/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Private/GAS/GameplayAbilities/Spells/AuraSpell.cpp",
 		"arguments": [
 			"/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
 			"@/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/.vscode/compileCommands_Aura/Aura.1.rsp"
@@ -137,6 +161,22 @@
 	},
 	{
 		"file": "/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Private/Game/AuraGameModeBase.cpp",
+		"arguments": [
+			"/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/.vscode/compileCommands_Aura/Aura.1.rsp"
+		],
+		"directory": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source"
+	},
+	{
+		"file": "/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Private/Input/AuraInputConf.cpp",
+		"arguments": [
+			"/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/.vscode/compileCommands_Aura/Aura.1.rsp"
+		],
+		"directory": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source"
+	},
+	{
+		"file": "/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Private/Input/AuraInputCpmponent.cpp",
 		"arguments": [
 			"/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
 			"@/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/.vscode/compileCommands_Aura/Aura.1.rsp"
@@ -216,6 +256,14 @@
 		"directory": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source"
 	},
 	{
+		"file": "/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/Actor/AuraProjectile.h",
+		"arguments": [
+			"/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/.vscode/compileCommands_Aura/Aura.1.rsp"
+		],
+		"directory": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source"
+	},
+	{
 		"file": "/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/AuraAssetManager.h",
 		"arguments": [
 			"/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
@@ -264,6 +312,14 @@
 		"directory": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source"
 	},
 	{
+		"file": "/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/GAS/AbilityTasks/TargetDataUnderMouse.h",
+		"arguments": [
+			"/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/.vscode/compileCommands_Aura/Aura.1.rsp"
+		],
+		"directory": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source"
+	},
+	{
 		"file": "/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/GAS/AuraAbilitySystemLiberary.h",
 		"arguments": [
 			"/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
@@ -281,6 +337,14 @@
 	},
 	{
 		"file": "/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/GAS/GameplayAbilities/AuraAbilities.h",
+		"arguments": [
+			"/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/.vscode/compileCommands_Aura/Aura.1.rsp"
+		],
+		"directory": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source"
+	},
+	{
+		"file": "/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/GAS/GameplayAbilities/Spells/AuraSpell.h",
 		"arguments": [
 			"/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
 			"@/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/.vscode/compileCommands_Aura/Aura.1.rsp"
@@ -321,6 +385,22 @@
 	},
 	{
 		"file": "/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/Game/AuraGameModeBase.h",
+		"arguments": [
+			"/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/.vscode/compileCommands_Aura/Aura.1.rsp"
+		],
+		"directory": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source"
+	},
+	{
+		"file": "/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/Input/AuraInputConf.h",
+		"arguments": [
+			"/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/.vscode/compileCommands_Aura/Aura.1.rsp"
+		],
+		"directory": "/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source"
+	},
+	{
+		"file": "/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/Input/AuraInputCpmponent.h",
 		"arguments": [
 			"/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v22_clang-16.0.6-centos7/x86_64-unknown-linux-gnu/bin/clang++",
 			"@/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/.vscode/compileCommands_Aura/Aura.1.rsp"

@@ -1,0 +1,52 @@
+Generating report for minidump
+
+Application version 5.4.4.0
+ ... built from changelist 35576357
+
+OS version Linux 6.13.8-arch1-1 (network name: archlinux)
+Running 16 x86_64 processors (24 logical cores)
+Exception was "Ensure condition failed: InvocationList[ CurFunctionIndex ] != InDelegate  [File:Runtime/Core/Public/UObject/ScriptDelegates.h] [Line: 1003] "
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libUnrealEditor-CoreUObject.so!TMulticastScriptDelegate<FNotThreadSafeDelegateMode>::AddInternal(TScriptDelegate<FNotThreadSafeNotCheckedDelegateMode>&&) [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/UObject/ScriptDelegates.h:1003]
+libUnrealEditor-CoreUObject.so!TMulticastScriptDelegate<FNotThreadSafeDelegateMode>::Add(TScriptDelegate<FNotThreadSafeDelegateMode> const&) [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/UObject/ScriptDelegates.h:655]
+libUnrealEditor-CoreUObject.so!FSparseDelegateStorage::Add(UObject const*, FName, TScriptDelegate<FNotThreadSafeDelegateMode>) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/SparseDelegate.cpp:153]
+libUnrealEditor-Aura-9887-Linux-DebugGame.so!TSparseDynamicDelegate<FComponentBeginOverlapSignature_MCSignature, UPrimitiveComponent, FComponentBeginOverlapSignatureInfoGetter>::Add(TScriptDelegate<FNotThreadSafeDelegateMode>) [/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/CoreUObject/Public/UObject/SparseDelegate.h:257]
+libUnrealEditor-Aura-9887-Linux-DebugGame.so!void TSparseDynamicDelegate<FComponentBeginOverlapSignature_MCSignature, UPrimitiveComponent, FComponentBeginOverlapSignatureInfoGetter>::__Internal_AddDynamic<AAuraProjectile>(AAuraProjectile*, TBaseDynamicDelegate<FNotThreadSafeDelegateMode, void, UPrimitiveComponent*, AActor*, UPrimitiveComponent*, int, bool, FHitResult const&>::TMethodPtrResolver<AAuraProjectile>::FMethodPtr, FName) [/home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Source/Runtime/CoreUObject/Public/UObject/SparseDelegate.h:374]
+libUnrealEditor-Aura-9887-Linux-DebugGame.so!AAuraProjectile::BeginPlay() [/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Private/Actor/AuraProjectile.cpp:35]
+libUnrealEditor-Engine.so!AActor::DispatchBeginPlay(bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/Actor.cpp:4191]
+libUnrealEditor-UnrealEd.so!FActorReplacementHelper::Finalize(TMap<UObject*, UObject*, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<UObject*, UObject*, false> > const&, TSet<UObject*, DefaultKeyFuncs<UObject*, false>, FDefaultSetAllocator> const*, TArray<UObject*, TSizedDefaultAllocator<32> > const&, TMap<FSoftObjectPath, UObject*, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<FSoftObjectPath, UObject*, false> > const&) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/Kismet2/KismetReinstanceUtilities.cpp:1573]
+libUnrealEditor-UnrealEd.so!FBlueprintCompileReinstancer::ReplaceInstancesOfClass_Inner(TMap<UClass*, UClass*, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<UClass*, UClass*, false> > const&, FReplaceInstancesOfClassParameters const&) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/Kismet2/KismetReinstanceUtilities.cpp:2914]
+libUnrealEditor-Kismet.so!FBlueprintCompilationManagerImpl::FlushReinstancingQueueImpl(bool, TMap<UClass*, TMap<UObject*, UObject*, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<UObject*, UObject*, false> >, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<UClass*, TMap<UObject*, UObject*, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<UObject*, UObject*, false> >, false> >*) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/Kismet/Private/BlueprintCompilationManager.cpp:1963]
+libUnrealEditor-Kismet.so!FBlueprintCompilationManagerImpl::CompileSynchronouslyImpl(FBPCompileRequestInternal const&) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/Kismet/Private/BlueprintCompilationManager.cpp:313]
+libUnrealEditor-Kismet.so!FBlueprintCompilationManager::CompileSynchronously(FBPCompileRequest const&) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/Kismet/Private/BlueprintCompilationManager.cpp:3716]
+libUnrealEditor-UnrealEd.so!FKismetEditorUtilities::CompileBlueprint(UBlueprint*, EBlueprintCompileOptions, FCompilerResultsLog*) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/Kismet2/Kismet2.cpp:777]
+libUnrealEditor-UnrealEd.so!FBlueprintCompileReinstancer::CompileChildren() [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/Kismet2/KismetReinstanceUtilities.cpp:896]
+libUnrealEditor-UnrealEd.so!FBlueprintCompileReinstancer::ReinstanceObjects(bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/Kismet2/KismetReinstanceUtilities.cpp:982]
+libUnrealEditor-UnrealEd.so!UE::Reload::Private::FReloadClassHelper::ReinstanceClass(UClass*, UE::Reload::Private::FReloadClassHelper::ClassReinstanceState&) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/Kismet2/ReloadUtilities.cpp:738]
+libUnrealEditor-UnrealEd.so!UE::Reload::Private::FReloadClassHelper::ReinstanceClasses(TMap<UClass*, UClass*, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<UClass*, UClass*, false> > const&) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/Kismet2/ReloadUtilities.cpp:688]
+libUnrealEditor-UnrealEd.so!FReload::Reinstance() [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/Kismet2/ReloadUtilities.cpp:1135]
+libUnrealEditor-CoreUObject.so!ProcessNewlyLoadedUObjects(FName, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/UObjectBase.cpp:905]
+libUnrealEditor-CoreUObject.so!TBaseStaticDelegateInstance<void (FName, bool), FDefaultDelegateUserPolicy>::ExecuteIfSafe(FName, bool) const [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:775]
+libUnrealEditor-Core.so!void TMulticastDelegateBase<FDefaultDelegateUserPolicy>::Broadcast<IBaseDelegateInstance<void (FName, bool), FDefaultDelegateUserPolicy>, FName, bool>(FName, bool) const [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Delegates/MulticastDelegateBase.h:254]
+libUnrealEditor-Core.so!FModuleManager::LoadModuleWithFailureReason(FName, EModuleLoadResult&, ELoadModuleFlags) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Core/Private/Modules/ModuleManager.cpp:648]
+libUnrealEditor-Core.so!FModuleManager::LoadModule(FName, ELoadModuleFlags) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Core/Private/Modules/ModuleManager.cpp:411]
+libUnrealEditor-HotReload.so!FHotReloadModule::DoHotReloadInternal(TMap<FName, FString, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<FName, FString, false> > const&, TArray<UPackage*, TSizedDefaultAllocator<32> > const&, TArray<FName, TSizedDefaultAllocator<32> > const&, FOutputDevice&) [/mnt/horde/++UE5/Sync/Engine/Source/./Developer/HotReload/Private/HotReload.cpp:819]
+libUnrealEditor-HotReload.so!FHotReloadModule::CheckForFinishedModuleDLLCompile(EHotReloadFlags, bool&, bool&, FOutputDevice&, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Developer/HotReload/Private/HotReload.cpp:1688]
+libUnrealEditor-HotReload.so!FHotReloadModule::Tick(float) [/mnt/horde/++UE5/Sync/Engine/Source/./Developer/HotReload/Private/HotReload.cpp:1234]
+libUnrealEditor-Core.so!FTSTicker::Tick(float) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Core/Private/Containers/Ticker.cpp:110]
+UnrealEditor-Linux-DebugGame!FEngineLoop::Tick() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:6161]
+UnrealEditor-Linux-DebugGame!GuardedMain(char16_t const*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/Launch.cpp:182]
+libUnrealEditor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*), void (*)()) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:269]
+libc.so.6!UnknownFunction(0x27487)
+libc.so.6!__libc_start_main(+0x8b)
+UnrealEditor-Linux-DebugGame!_start()
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!

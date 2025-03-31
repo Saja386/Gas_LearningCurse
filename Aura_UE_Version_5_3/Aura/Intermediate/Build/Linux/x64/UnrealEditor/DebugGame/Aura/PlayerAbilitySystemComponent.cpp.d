@@ -2595,4 +2595,6 @@
   ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/AbilitySystemReplicationProxyInterface.h \
   ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/AbilitySystemReplicationProxyInterface.generated.h \
   ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/AbilitySystemComponent.generated.h \
-  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/PlayerAbilitySystemComponent.generated.h
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/PlayerAbilitySystemComponent.generated.h \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/GAS/GameplayAbilities/AuraAbilities.h \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraAbilities.generated.h

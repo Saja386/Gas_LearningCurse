@@ -35,7 +35,11 @@ protected:
 	UPROPERTY()
 	TObjectPtr<UAttributeSet> AttributeSet ;
 	virtual void SetInitInfo ();
+	UPROPERTY(EditAnywhere , Category = "Combat" )
+	FName WeaponSucketName ;
 
+	FVector GetCombatSucetLocation() override;
+	
 	UPROPERTY(EditAnywhere , BlueprintReadOnly , Category = "Attributes" )
 	TSubclassOf<UGameplayEffect> DefaultPrimaryAttributes ;
 

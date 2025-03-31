@@ -1,0 +1,36 @@
+Generating report for minidump
+
+Application version 5.4.4.0
+ ... built from changelist 35576357
+
+OS version Linux 6.13.8-arch1-1 (network name: archlinux)
+Running 16 x86_64 processors (24 logical cores)
+Exception was "Ensure condition failed: bIsValidObjectReference  [File:./Runtime/Engine/Private/BlueprintGeneratedClass.cpp] [Line: 2376] "
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libUnrealEditor-Engine.so!FPersistentFrameCollector::HandleObjectReference(UObject*&, UObject const*, FProperty const*)::'lambda'()::operator()() const [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/BlueprintGeneratedClass.cpp:2370]
+libUnrealEditor-Engine.so!FPersistentFrameCollector::HandleObjectReference(UObject*&, UObject const*, FProperty const*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/BlueprintGeneratedClass.cpp:2370]
+libUnrealEditor-CoreUObject.so!void CollectPropertyReferences<(EPropertyCollectFlags)2>(FReferenceCollector&, FProperty&, void*, UObject const*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/UObjectGlobals.cpp:5007]
+libUnrealEditor-CoreUObject.so!void CollectStructReferences<(EPropertyCollectFlags)2, UStruct>(FReferenceCollector&, UStruct const*, void*, UObject const*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/CoreUObject/Private/UObject/UObjectGlobals.cpp:4824]
+libUnrealEditor-Engine.so!UBlueprintGeneratedClass::AddReferencedObjectsInUbergraphFrame(UObject*, FReferenceCollector&) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/BlueprintGeneratedClass.cpp:2470]
+libUnrealEditor-CoreUObject.so!UE::GC::TFastReferenceCollector<FAllReferencesProcessor, UE::GC::TDefaultCollector<FAllReferencesProcessor> >::ProcessObjectArray(UE::GC::FWorkerContext&) [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/CoreUObject/Public/UObject/FastReferenceCollector.h:867]
+libUnrealEditor-CoreUObject.so!UE::Core::Private::Function::TFunctionRefCaller<FReferencerFinder::GetAllReferencers(TSet<UObject*, DefaultKeyFuncs<UObject*, false>, FDefaultSetAllocator> const&, TSet<UObject*, DefaultKeyFuncs<UObject*, false>, FDefaultSetAllocator> const*, EReferencerFinderFlags)::$_0, void (int)>::Call(void*, int&) [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Templates/Function.h:405]
+libUnrealEditor-CoreUObject.so!void ParallelForImpl::ParallelForInternal<TFunctionRef<void (int)>, ParallelFor(int, TFunctionRef<void (int)>, EParallelForFlags)::'lambda'(), std::nullptr_t>(char16_t const*, int, int, TFunctionRef<void (int)>, ParallelFor(int, TFunctionRef<void (int)>, EParallelForFlags)::'lambda'(), EParallelForFlags, TArrayView<std::nullptr_t, int> const&)::FParallelExecutor::operator()(bool) const [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Async/ParallelFor.h:353]
+libUnrealEditor-CoreUObject.so!LowLevelTasks::TTaskDelegate<LowLevelTasks::FTask* (bool), 48u>::TTaskDelegateImpl<void LowLevelTasks::FTask::Init<void ParallelForImpl::ParallelForInternal<TFunctionRef<void (int)>, ParallelFor(int, TFunctionRef<void (int)>, EParallelForFlags)::'lambda'(), std::nullptr_t>(char16_t const*, int, int, TFunctionRef<void (int)>, ParallelFor(int, TFunctionRef<void (int)>, EParallelForFlags)::'lambda'(), EParallelForFlags, TArrayView<std::nullptr_t, int> const&)::FParallelExecutor>(char16_t const*, LowLevelTasks::ETaskPriority, TFunctionRef<void (int)>&&, LowLevelTasks::ETaskFlags)::'lambda'(bool), false>::CallAndMove(LowLevelTasks::TTaskDelegate<LowLevelTasks::FTask* (bool), 48u>&, void*, unsigned int, bool) [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Async/Fundamental/TaskDelegate.h:171]
+libUnrealEditor-Core.so!LowLevelTasks::FTask::ExecuteTask() [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Async/Fundamental/Task.h:627]
+libUnrealEditor-Core.so!LowLevelTasks::FScheduler::ExecuteTask(LowLevelTasks::FTask*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Core/Private/Async/Fundamental/Scheduler.cpp:155]
+libUnrealEditor-Core.so!LowLevelTasks::FScheduler::WorkerMain(LowLevelTasks::Private::FWaitEvent*, LowLevelTasks::Private::TLocalQueueRegistry<1024u>::TLocalQueue*, unsigned int, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Core/Private/Async/Fundamental/Scheduler.cpp:396]
+libUnrealEditor-Core.so!FThreadImpl::Run() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Core/Private/HAL/Thread.cpp:66]
+libUnrealEditor-Core.so!FRunnableThreadPThread::Run() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Core/Private/HAL/PThreadRunnableThread.cpp:25]
+libUnrealEditor-Core.so!FRunnableThreadPThread::_ThreadProc(void*) [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Private/HAL/PThreadRunnableThread.h:187]
+libc.so.6!UnknownFunction(0x95709)
+libc.so.6!UnknownFunction(0x119aab)
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!

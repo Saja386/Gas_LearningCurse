@@ -4,14 +4,17 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/PlayerController.h"
+#include "GameplayTagContainer.h"
 #include "AuraPlayerController.generated.h"
 
 
+class UAuraInputConf;
 struct FInputActionValue;
 class UInputMappingContext ;
 class UInputAction ;
 class IEnemyInterface;
-
+class UPlayerAbilitySystemComponent ;
+class USplineComponent ;
 /**
  * 
  */
@@ -34,9 +37,40 @@ private:
 	UPROPERTY(EditAnywhere , Category = "Input")
 	TObjectPtr<UInputAction> MoveAction ;
 	void Move (const FInputActionValue& MoveInputAction);
+	UPROPERTY(EditAnywhere , Category = "Input")
+	TObjectPtr<UInputAction> ShiftAction;
+
+	void ShiftPressed(){ BShiftPressed = true;};
+	void ShiftReleased(){BShiftPressed = false;};
+	bool BShiftPressed = false ; 
 
 	void CorsurTrace();
 
 	TScriptInterface<IEnemyInterface> LastActor ;
 	TScriptInterface<IEnemyInterface> ThisActor ;
+	FHitResult CursorHit ;
+
+	void AbilityInputTagPressed (FGameplayTag InputTag);
+	void AbilityInputTagReleased (FGameplayTag InputTag);
+	void AbilityInputTagHeld (FGameplayTag InputTag);
+
+	UPROPERTY(EditDefaultsOnly, Category = "Input")
+	TObjectPtr<UAuraInputConf> InputConf ;
+	
+	TObjectPtr<UPlayerAbilitySystemComponent> AbilitySystemComponent;
+	UPlayerAbilitySystemComponent* GetASC ();
+
+	FVector CashedDestination = FVector::ZeroVector;
+	float FollowTime = 0.0f ;
+	float ShortPressTime = 0.5f ;
+	bool BAutoRunning = false;
+	bool BTargeting = false;
+	
+	UPROPERTY(EditDefaultsOnly, Category = "Input")
+	float AutoRunAcceptanceRadius = 50.0f ;
+
+	UPROPERTY(VisibleAnywhere, Category = "Input")
+	TObjectPtr<USplineComponent> Spline;
+
+	void AutoRun();
 };

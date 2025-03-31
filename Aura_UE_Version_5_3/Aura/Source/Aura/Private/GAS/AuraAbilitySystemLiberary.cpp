@@ -28,7 +28,6 @@ UAttributeMenuWidgetController* UAuraAbilitySystemLiberary::GetAttributeMenuWidg
 {
 	if (APlayerController* PC = UGameplayStatics::GetPlayerController(WorldContextObject , 0))
 	{
-		UE_LOG(LogTemp, Display, TEXT("GetAttributeMenuWidgetController"));
 		if(AAuraBaseHUD* PlayerHUD = Cast<AAuraBaseHUD>(PC->GetHUD()))
 		{
 			AAuraPlayerState* PS = PC->GetPlayerState<AAuraPlayerState>();

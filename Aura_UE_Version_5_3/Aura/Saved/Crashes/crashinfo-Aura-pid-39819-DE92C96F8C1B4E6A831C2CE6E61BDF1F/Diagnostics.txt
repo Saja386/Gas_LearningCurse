@@ -1,0 +1,45 @@
+Generating report for minidump
+
+Application version 5.4.4.0
+ ... built from changelist 35576357
+
+OS version Linux 6.13.8-arch1-1 (network name: archlinux)
+Running 16 x86_64 processors (24 logical cores)
+Exception was "SIGSEGV: invalid attempt to read memory at address 0x0000000000000000"
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libUnrealEditor-Aura-4933-Linux-DebugGame.so!AAuraProjectile::Destroyed() [/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Private/Actor/AuraProjectile.cpp:65]
+libUnrealEditor-Engine.so!UWorld::DestroyActor(AActor*, bool, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/LevelActor.cpp:879]
+libUnrealEditor-Engine.so!UWorld::EditorDestroyActor(AActor*, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/LevelActor.cpp:783]
+libUnrealEditor-UnrealEd.so!FBlueprintCompileReinstancer::ReplaceInstancesOfClass_Inner(TMap<UClass*, UClass*, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<UClass*, UClass*, false> > const&, FReplaceInstancesOfClassParameters const&) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/Kismet2/KismetReinstanceUtilities.cpp:2859]
+libUnrealEditor-Kismet.so!FBlueprintCompilationManagerImpl::FlushReinstancingQueueImpl(bool, TMap<UClass*, TMap<UObject*, UObject*, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<UObject*, UObject*, false> >, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<UClass*, TMap<UObject*, UObject*, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<UObject*, UObject*, false> >, false> >*) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/Kismet/Private/BlueprintCompilationManager.cpp:1963]
+libUnrealEditor-Kismet.so!FBlueprintCompilationManagerImpl::CompileSynchronouslyImpl(FBPCompileRequestInternal const&) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/Kismet/Private/BlueprintCompilationManager.cpp:313]
+libUnrealEditor-Kismet.so!FBlueprintCompilationManager::CompileSynchronously(FBPCompileRequest const&) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/Kismet/Private/BlueprintCompilationManager.cpp:3716]
+libUnrealEditor-UnrealEd.so!FKismetEditorUtilities::CompileBlueprint(UBlueprint*, EBlueprintCompileOptions, FCompilerResultsLog*) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/Kismet2/Kismet2.cpp:777]
+libUnrealEditor-Kismet.so!FBlueprintEditor::Compile() [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/Kismet/Private/BlueprintEditor.cpp:4165]
+libUnrealEditor-Kismet.so!TBaseSPMethodDelegateInstance<false, FBlueprintEditor, (ESPMode)1, void (), FDefaultDelegateUserPolicy>::ExecuteIfSafe() const [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:298]
+libUnrealEditor-Slate.so!FUICommandList::ExecuteAction(TSharedRef<FUICommandInfo const, (ESPMode)1>) const [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Slate/Private/Framework/Commands/UICommandList.cpp:117]
+libUnrealEditor-Slate.so!SToolBarButtonBlock::OnClicked() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Slate/Private/Framework/MultiBox/SToolBarButtonBlock.cpp:445]
+libUnrealEditor-Slate.so!TBaseSPMethodDelegateInstance<false, SToolBarButtonBlock, (ESPMode)1, FReply (), FDefaultDelegateUserPolicy>::Execute() const [/mnt/horde/++UE5/Sync/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:281]
+libUnrealEditor-Slate.so!SButton::ExecuteOnClick() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Slate/Private/Widgets/Input/SButton.cpp:465]
+libUnrealEditor-Slate.so!SButton::OnMouseButtonUp(FGeometry const&, FPointerEvent const&) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Slate/Private/Widgets/Input/SButton.cpp:390]
+libUnrealEditor-Slate.so!FSlateApplication::RoutePointerUpEvent(FWidgetPath const&, FPointerEvent const&) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5280]
+libUnrealEditor-Slate.so!FSlateApplication::ProcessMouseButtonUpEvent(FPointerEvent const&) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5857]
+libUnrealEditor-Slate.so!FSlateApplication::OnMouseUp(EMouseButtons::Type, UE::Math::TVector2<double>) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5813]
+libUnrealEditor-ApplicationCore.so!FLinuxApplication::ProcessDeferredMessage(SDL_Event) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/ApplicationCore/Private/Linux/LinuxApplication.cpp:427]
+libUnrealEditor-ApplicationCore.so!FLinuxPlatformApplicationMisc::PumpMessages(bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/ApplicationCore/Private/Linux/LinuxPlatformApplicationMisc.cpp:442]
+UnrealEditor-Linux-DebugGame!FEngineLoop::Tick() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:5844]
+UnrealEditor-Linux-DebugGame!GuardedMain(char16_t const*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/Launch.cpp:182]
+libUnrealEditor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*), void (*)()) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:269]
+libc.so.6!UnknownFunction(0x27487)
+libc.so.6!__libc_start_main(+0x8b)
+UnrealEditor-Linux-DebugGame!_start()
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!

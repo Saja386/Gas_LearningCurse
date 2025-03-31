@@ -3,6 +3,7 @@
 
 #include "Characters/BaseCharacter.h"
 #include "AbilitySystemComponent.h"	
+#include "Components/CapsuleComponent.h"
 #include "GAS/PlayerAbilitySystemComponent.h"
 #include "GAS/PlayerAttributeSet.h"
 
@@ -10,6 +11,9 @@
 ABaseCharacter::ABaseCharacter()
 {
 	PrimaryActorTick.bCanEverTick = false;
+	GetCapsuleComponent()->SetCollisionResponseToChannel(ECC_Camera, ECR_Ignore);
+	GetMesh()->SetCollisionResponseToChannel(ECC_Camera, ECR_Ignore);
+	GetMesh()->SetGenerateOverlapEvents(true);
 	Weapon = CreateDefaultSubobject<USkeletalMeshComponent>("Weapon");
 	Weapon->SetupAttachment(GetMesh(), FName("WeaponHandSocket"));
 	Weapon->SetCollisionEnabled(ECollisionEnabled::NoCollision);
@@ -28,6 +32,12 @@ void ABaseCharacter::BeginPlay()
 
 void ABaseCharacter::SetInitInfo()
 {
+}
+
+FVector ABaseCharacter::GetCombatSucetLocation()
+{
+	check(Weapon);
+	return Weapon->GetSocketLocation(WeaponSucketName);
 }
 
 void ABaseCharacter::ApplyEffectToSelf(TSubclassOf<UGameplayEffect> GamePlayEffectClass, float Level) const
