@@ -32,6 +32,7 @@ void ABaseEnemy::SetInitInfo()
 {
 	AbilitySystemComponent->InitAbilityActorInfo(this , this);
 	Cast <UPlayerAbilitySystemComponent>(AbilitySystemComponent)->AbilityActorInfoSet();
+	InitializeDefaultAttributes();
 
 }
 

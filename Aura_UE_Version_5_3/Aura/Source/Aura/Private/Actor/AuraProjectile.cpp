@@ -49,6 +49,10 @@ void AAuraProjectile::OnSphereOverlap(UPrimitiveComponent* OverlapedComponent, A
 	LoopingSoundComponent->Stop();
 	if(HasAuthority())
 	{
+		if(UAbilitySystemComponent* TargetAsc = UAbilitySystemBlueprintLibrary::GetAbilitySystemComponent(OtherActor))
+		{
+			TargetAsc->ApplyGameplayEffectSpecToSelf(*AuraEffectHandle.Data.Get());
+		}
 		Destroy();
 	}
 	else

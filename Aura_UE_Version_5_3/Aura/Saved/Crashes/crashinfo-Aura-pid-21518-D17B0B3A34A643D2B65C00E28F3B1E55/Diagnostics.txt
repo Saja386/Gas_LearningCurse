@@ -1,0 +1,43 @@
+Generating report for minidump
+
+Application version 5.4.4.0
+ ... built from changelist 35576357
+
+OS version Linux 6.13.8-arch1-1 (network name: archlinux)
+Running 16 x86_64 processors (24 logical cores)
+Exception was "SIGSEGV: invalid attempt to write memory at address 0x0000000000000003"
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libUnrealEditor-Aura-Linux-DebugGame.so!ABaseCharacter::ApplyEffectToSelf(TSubclassOf<UGameplayEffect>, float) const [/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Private/Characters/BaseCharacter.cpp:46]
+libUnrealEditor-Aura-Linux-DebugGame.so!ABaseCharacter::InitializeDefaultAttributes() const [/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Private/Characters/BaseCharacter.cpp:56]
+libUnrealEditor-Aura-Linux-DebugGame.so!ABaseEnemy::SetInitInfo() [/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Private/Characters/BaseEnemy.cpp:35]
+libUnrealEditor-Aura-Linux-DebugGame.so!ABaseEnemy::BeginPlay() [/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Private/Characters/BaseEnemy.cpp:28]
+libUnrealEditor-Engine.so!AActor::DispatchBeginPlay(bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/Actor.cpp:4191]
+libUnrealEditor-Engine.so!AWorldSettings::NotifyBeginPlay() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/WorldSettings.cpp:305]
+libUnrealEditor-Engine.so!AGameStateBase::HandleBeginPlay() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/GameStateBase.cpp:227]
+libUnrealEditor-Engine.so!AGameModeBase::StartPlay() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/GameModeBase.cpp:205]
+libUnrealEditor-Engine.so!UWorld::BeginPlay() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/World.cpp:5329]
+libUnrealEditor-Engine.so!UGameInstance::StartPlayInEditorGameInstance(ULocalPlayer*, FGameInstancePIEParameters const&) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Engine/Private/GameInstance.cpp:566]
+libUnrealEditor-UnrealEd.so!UEditorEngine::CreateInnerProcessPIEGameInstance(FRequestPlaySessionParams&, FGameInstancePIEParameters const&, int) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/PlayLevel.cpp:3141]
+libUnrealEditor-UnrealEd.so!UEditorEngine::OnLoginPIEComplete_Deferred(int, bool, FString, FPieLoginStruct) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/PlayLevel.cpp:1589]
+libUnrealEditor-UnrealEd.so!UEditorEngine::CreateNewPlayInEditorInstance(FRequestPlaySessionParams&, bool, EPlayNetMode) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/PlayLevel.cpp:1849]
+libUnrealEditor-UnrealEd.so!UEditorEngine::StartPlayInEditorSession(FRequestPlaySessionParams&) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/PlayLevel.cpp:2868]
+libUnrealEditor-UnrealEd.so!UEditorEngine::StartQueuedPlaySessionRequestImpl() [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/PlayLevel.cpp:1154]
+libUnrealEditor-UnrealEd.so!UEditorEngine::StartQueuedPlaySessionRequest() [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/PlayLevel.cpp:1064]
+libUnrealEditor-UnrealEd.so!UEditorEngine::Tick(float, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/EditorEngine.cpp:1901]
+libUnrealEditor-UnrealEd.so!UUnrealEdEngine::Tick(float, bool) [/mnt/horde/++UE5/Sync/Engine/Source/./Editor/UnrealEd/Private/UnrealEdEngine.cpp:547]
+UnrealEditor-Linux-DebugGame!FEngineLoop::Tick() [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:5915]
+UnrealEditor-Linux-DebugGame!GuardedMain(char16_t const*) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Launch/Private/Launch.cpp:182]
+libUnrealEditor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*), void (*)()) [/mnt/horde/++UE5/Sync/Engine/Source/./Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:269]
+libc.so.6!UnknownFunction(0x27487)
+libc.so.6!__libc_start_main(+0x8b)
+UnrealEditor-Linux-DebugGame!_start()
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!

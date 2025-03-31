@@ -70,10 +70,11 @@ void UPlayerAttributeSet::PostGameplayEffectExecute(const  FGameplayEffectModCal
 	if (Data.EvaluatedData.Attribute == GetHealthAttribute())
 	{
 		SetHealth(FMath::Clamp(GetHealth(),0.f , GetMaxHealth()));
+		UE_LOG(LogTemp , Warning , TEXT("Actor %s Took %f Damage") , *props.TargetAvatarActor->GetName() ,GetHealth());
 	}
 	if (Data.EvaluatedData.Attribute == GetManaAttribute())
 	{
-		SetHealth(FMath::Clamp(GetMana(),0.f , GetMaxMana()));
+		SetMana(FMath::Clamp(GetMana(),0.f , GetMaxMana()));
 	}
 }
 

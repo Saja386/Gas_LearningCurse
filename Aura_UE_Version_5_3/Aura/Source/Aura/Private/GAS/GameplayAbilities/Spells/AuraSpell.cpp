@@ -43,6 +43,15 @@ void UAuraSpell::SpawnProjectile(const FVector& TargetLocation)
 			SpawnTransform.SetLocation(SocketLocation);
 			SpawnTransform.SetRotation(SpawnRotation.Quaternion());
 			AAuraProjectile* Projectile = GetWorld()->SpawnActorDeferred<AAuraProjectile>(ProjectileClass, SpawnTransform , GetOwningActorFromActorInfo(), Cast<APawn>(GetOwningActorFromActorInfo()), ESpawnActorCollisionHandlingMethod::AlwaysSpawn);
+
+			const UAbilitySystemComponent* SourceAsc = UAbilitySystemBlueprintLibrary::GetAbilitySystemComponent(GetAvatarActorFromActorInfo());
+
+			const FGameplayEffectSpecHandle DamageSpec = SourceAsc->MakeOutgoingSpec(DamageEffectClass , GetAbilityLevel() ,	SourceAsc->MakeEffectContext());
+
+			Projectile->AuraEffectHandle = DamageSpec;
+				
+
+			
 			Projectile -> FinishSpawning(SpawnTransform);
 		
 		}
