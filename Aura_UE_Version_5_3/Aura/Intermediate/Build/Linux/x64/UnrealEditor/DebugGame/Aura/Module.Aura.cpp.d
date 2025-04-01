@@ -2636,6 +2636,8 @@
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraAbilities.generated.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraAbilitySystemLiberary.gen.cpp \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/GAS/AuraAbilitySystemLiberary.h \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/GAS/Data/CharacterDefaultClassInfo.h \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/CharacterDefaultClassInfo.generated.h \
   Runtime/Engine/Classes/Kismet/BlueprintFunctionLibrary.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraAbilitySystemLiberary.generated.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraAssetManager.gen.cpp \
@@ -2813,8 +2815,6 @@
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/OverlayWidgetController.generated.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/BaseEnemy.generated.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/CharacterDefaultClassInfo.gen.cpp \
-  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/GAS/Data/CharacterDefaultClassInfo.h \
-  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/CharacterDefaultClassInfo.generated.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/CombatInterface.gen.cpp \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/EnemyInterface.gen.cpp \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/MMC_MaxHealth.gen.cpp \

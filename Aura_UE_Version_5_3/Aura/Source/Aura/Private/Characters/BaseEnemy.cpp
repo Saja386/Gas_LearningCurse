@@ -4,6 +4,7 @@
 #include "Characters/BaseEnemy.h"
 
 #include "Components/WidgetComponent.h"
+#include "GAS/AuraAbilitySystemLiberary.h"
 #include "GAS/PlayerAbilitySystemComponent.h"
 #include "GAS/PlayerAttributeSet.h"
 #include "UI/Widgets/AuraUserWidget.h"
@@ -63,7 +64,12 @@ void ABaseEnemy::SetInitInfo()
 	AbilitySystemComponent->InitAbilityActorInfo(this , this);
 	Cast <UPlayerAbilitySystemComponent>(AbilitySystemComponent)->AbilityActorInfoSet();
 	InitializeDefaultAttributes();
+	
+}
 
+void ABaseEnemy::InitializeDefaultAttributes() const
+{
+	UAuraAbilitySystemLiberary::InitializeDefaultAttributesbyClass(this , EnemyClass , Level , AbilitySystemComponent);
 }
 
 int32 ABaseEnemy::GetPlayerLevel()

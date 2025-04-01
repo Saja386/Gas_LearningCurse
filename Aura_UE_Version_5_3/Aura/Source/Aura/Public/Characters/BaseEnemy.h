@@ -6,6 +6,7 @@
 #include "Characters/BaseCharacter.h"
 #include "Interfaces/EnemyInterface.h"
 #include "UI/WidgetControllers/OverlayWidgetController.h"
+#include "GAS/Data/CharacterDefaultClassInfo.h"
 #include "BaseEnemy.generated.h"
 
 
@@ -31,10 +32,14 @@ public:
 protected:
 	virtual void BeginPlay() override;
 	virtual void SetInitInfo() override;
-	UPROPERTY(VisibleAnywhere , BlueprintReadOnly, Category = "CharacterClassDefaults")
+	UPROPERTY(EditAnywhere , BlueprintReadOnly, Category = "CharacterClassDefaults")
 	int32 Level = 1;
+	UPROPERTY(EditAnywhere , BlueprintReadOnly, Category = "CharacterClassDefaults")
+	ECharacterClasses EnemyClass = ECharacterClasses::Warrior;
 
 	UPROPERTY(VisibleAnywhere , BlueprintReadOnly)
 	TObjectPtr<UWidgetComponent> HealthBarComponent;
+
+	void InitializeDefaultAttributes() const override;
 	
 };
