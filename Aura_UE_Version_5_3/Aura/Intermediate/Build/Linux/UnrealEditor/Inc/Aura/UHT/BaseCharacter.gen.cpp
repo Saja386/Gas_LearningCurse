@@ -25,9 +25,48 @@ GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UGameplayEffect_NoRegister();
 UPackage* Z_Construct_UPackage__Script_Aura();
 // End Cross Module References
 
+// Begin Class ABaseCharacter Function MultiCastHandleDeath
+static FName NAME_ABaseCharacter_MultiCastHandleDeath = FName(TEXT("MultiCastHandleDeath"));
+void ABaseCharacter::MultiCastHandleDeath()
+{
+	ProcessEvent(FindFunctionChecked(NAME_ABaseCharacter_MultiCastHandleDeath),NULL);
+}
+struct Z_Construct_UFunction_ABaseCharacter_MultiCastHandleDeath_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Characters/BaseCharacter.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseCharacter_MultiCastHandleDeath_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseCharacter, nullptr, "MultiCastHandleDeath", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00024CC0, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacter_MultiCastHandleDeath_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABaseCharacter_MultiCastHandleDeath_Statics::Function_MetaDataParams) };
+UFunction* Z_Construct_UFunction_ABaseCharacter_MultiCastHandleDeath()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABaseCharacter_MultiCastHandleDeath_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(ABaseCharacter::execMultiCastHandleDeath)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->MultiCastHandleDeath_Implementation();
+	P_NATIVE_END;
+}
+// End Class ABaseCharacter Function MultiCastHandleDeath
+
 // Begin Class ABaseCharacter
 void ABaseCharacter::StaticRegisterNativesABaseCharacter()
 {
+	UClass* Class = ABaseCharacter::StaticClass();
+	static const FNameNativePtrPair Funcs[] = {
+		{ "MultiCastHandleDeath", &ABaseCharacter::execMultiCastHandleDeath },
+	};
+	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
 IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(ABaseCharacter);
 UClass* Z_Construct_UClass_ABaseCharacter_NoRegister()
@@ -92,6 +131,10 @@ struct Z_Construct_UClass_ABaseCharacter_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_HitReactMontage;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
+	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_ABaseCharacter_MultiCastHandleDeath, "MultiCastHandleDeath" }, // 2543882667
+	};
+	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ABaseCharacter>::IsAbstract,
@@ -135,11 +178,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_ABaseCharacter_Statics:
 	"Game",
 	&StaticCppClassTypeInfo,
 	DependentSingletons,
-	nullptr,
+	FuncInfo,
 	Z_Construct_UClass_ABaseCharacter_Statics::PropPointers,
 	InterfaceParams,
 	UE_ARRAY_COUNT(DependentSingletons),
-	0,
+	UE_ARRAY_COUNT(FuncInfo),
 	UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::PropPointers),
 	UE_ARRAY_COUNT(InterfaceParams),
 	0x009000A5u,
@@ -165,10 +208,10 @@ ABaseCharacter::~ABaseCharacter() {}
 struct Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Characters_BaseCharacter_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ABaseCharacter, ABaseCharacter::StaticClass, TEXT("ABaseCharacter"), &Z_Registration_Info_UClass_ABaseCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacter), 2322138165U) },
+		{ Z_Construct_UClass_ABaseCharacter, ABaseCharacter::StaticClass, TEXT("ABaseCharacter"), &Z_Registration_Info_UClass_ABaseCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacter), 716838474U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Characters_BaseCharacter_h_4111304648(TEXT("/Script/Aura"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Characters_BaseCharacter_h_3095856617(TEXT("/Script/Aura"),
 	Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Characters_BaseCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Characters_BaseCharacter_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

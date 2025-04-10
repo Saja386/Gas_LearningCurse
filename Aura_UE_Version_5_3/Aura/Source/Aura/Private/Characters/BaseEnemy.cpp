@@ -37,6 +37,12 @@ void ABaseEnemy::HitReactTagChanged(const FGameplayTag IncomingTag, int32 NewCou
 	
 }
 
+void ABaseEnemy::Die()
+{
+	SetLifeSpan(LifeSpan);
+	Super::Die();
+}
+
 void ABaseEnemy::BeginPlay()
 {
 	Super::BeginPlay();

@@ -2624,4 +2624,6 @@
   Runtime/Core/Public/Templates/SharedPointer.h \
   Runtime/Engine/Public/Net/ReplayResult.h \
   ThirdParty/Unix/LibCxx/include/c++/v1/type_traits \
-  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/AuraGamePlayTags.h
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/AuraGamePlayTags.h \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/Interfaces/CombatInterface.h \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/CombatInterface.generated.h

@@ -35,8 +35,12 @@ public:
 
 	UPROPERTY(BlueprintReadOnly , Category = "Movement")
 	float BaseMaxWalkSpeed = 400.f ;
-	
+
+	UPROPERTY(EditAnywhere , BlueprintReadOnly , Category = "Movement")
+	float LifeSpan = 5.f ;
 	void HitReactTagChanged (const FGameplayTag IncomingTag , int32 NewCount);
+
+	virtual void Die() override;
 protected:
 	virtual void BeginPlay() override;
 	virtual void SetInitInfo() override;
