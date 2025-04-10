@@ -76,6 +76,23 @@ void UPlayerAttributeSet::PostGameplayEffectExecute(const  FGameplayEffectModCal
 	{
 		SetMana(FMath::Clamp(GetMana(),0.f , GetMaxMana()));
 	}
+	if (Data.EvaluatedData.Attribute == GetIncomingDamageAttribute())
+	{
+		const float LocalIncomingDamage = GetIncomingDamage();
+		SetIncomingDamage(0);
+		if (LocalIncomingDamage > 0)
+		{
+			const float LocalHealth = GetHealth() - LocalIncomingDamage;
+			SetHealth(FMath::Clamp(LocalHealth,0.f , GetMaxHealth()));
+			const bool BFatal = LocalHealth <= 0.f ;
+			if (!BFatal)
+			{
+				FGameplayTagContainer TagContainer;
+				TagContainer.AddTag(FAuraGamePlayTags::Get().Effect_HitReact);
+				props.TargetASC->TryActivateAbilitiesByTag(TagContainer);
+			}
+		}
+	}
 }
 
 

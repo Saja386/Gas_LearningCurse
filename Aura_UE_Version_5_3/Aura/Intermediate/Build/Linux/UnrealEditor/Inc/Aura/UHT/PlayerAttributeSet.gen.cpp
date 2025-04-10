@@ -971,6 +971,16 @@ struct Z_Construct_UClass_UPlayerAttributeSet_Statics
 		{ "Category", "Vital Attributes" },
 		{ "ModuleRelativePath", "Public/GAS/PlayerAttributeSet.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_IncomingDamage_MetaData[] = {
+		{ "Category", "MetaAttributes" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//Meta attributes\n" },
+#endif
+		{ "ModuleRelativePath", "Public/GAS/PlayerAttributeSet.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Meta attributes" },
+#endif
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Strength;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Intelligence;
@@ -988,6 +998,7 @@ struct Z_Construct_UClass_UPlayerAttributeSet_Statics
 	static const UECodeGen_Private::FStructPropertyParams NewProp_MaxHealth;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Health;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Mana;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_IncomingDamage;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
@@ -1030,6 +1041,7 @@ const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UPlayerAttribu
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UPlayerAttributeSet_Statics::NewProp_MaxHealth = { "MaxHealth", "OnRep_MaxHealth", (EPropertyFlags)0x0010000100000034, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UPlayerAttributeSet, MaxHealth), Z_Construct_UScriptStruct_FGameplayAttributeData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxHealth_MetaData), NewProp_MaxHealth_MetaData) }; // 675369593
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UPlayerAttributeSet_Statics::NewProp_Health = { "Health", "OnRep_Health", (EPropertyFlags)0x0010000100000034, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UPlayerAttributeSet, Health), Z_Construct_UScriptStruct_FGameplayAttributeData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Health_MetaData), NewProp_Health_MetaData) }; // 675369593
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UPlayerAttributeSet_Statics::NewProp_Mana = { "Mana", "OnRep_Mana", (EPropertyFlags)0x0010000100000034, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UPlayerAttributeSet, Mana), Z_Construct_UScriptStruct_FGameplayAttributeData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Mana_MetaData), NewProp_Mana_MetaData) }; // 675369593
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UPlayerAttributeSet_Statics::NewProp_IncomingDamage = { "IncomingDamage", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UPlayerAttributeSet, IncomingDamage), Z_Construct_UScriptStruct_FGameplayAttributeData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IncomingDamage_MetaData), NewProp_IncomingDamage_MetaData) }; // 675369593
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UPlayerAttributeSet_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerAttributeSet_Statics::NewProp_Strength,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerAttributeSet_Statics::NewProp_Intelligence,
@@ -1047,6 +1059,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UPlayerAt
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerAttributeSet_Statics::NewProp_MaxHealth,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerAttributeSet_Statics::NewProp_Health,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerAttributeSet_Statics::NewProp_Mana,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPlayerAttributeSet_Statics::NewProp_IncomingDamage,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UPlayerAttributeSet_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_UPlayerAttributeSet_Statics::DependentSingletons[])() = {
@@ -1129,10 +1142,10 @@ struct Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Vers
 		{ FEffectGamePlayProperties::StaticStruct, Z_Construct_UScriptStruct_FEffectGamePlayProperties_Statics::NewStructOps, TEXT("EffectGamePlayProperties"), &Z_Registration_Info_UScriptStruct_EffectGamePlayProperties, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FEffectGamePlayProperties), 4058800946U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UPlayerAttributeSet, UPlayerAttributeSet::StaticClass, TEXT("UPlayerAttributeSet"), &Z_Registration_Info_UClass_UPlayerAttributeSet, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPlayerAttributeSet), 49248707U) },
+		{ Z_Construct_UClass_UPlayerAttributeSet, UPlayerAttributeSet::StaticClass, TEXT("UPlayerAttributeSet"), &Z_Registration_Info_UClass_UPlayerAttributeSet, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPlayerAttributeSet), 3896685571U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_PlayerAttributeSet_h_786160645(TEXT("/Script/Aura"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_PlayerAttributeSet_h_963003553(TEXT("/Script/Aura"),
 	Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_PlayerAttributeSet_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_PlayerAttributeSet_h_Statics::ClassInfo),
 	Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_PlayerAttributeSet_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_PlayerAttributeSet_h_Statics::ScriptStructInfo),
 	nullptr, 0);

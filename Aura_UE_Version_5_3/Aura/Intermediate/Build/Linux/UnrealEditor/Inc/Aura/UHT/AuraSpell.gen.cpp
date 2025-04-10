@@ -165,10 +165,10 @@ UAuraSpell::~UAuraSpell() {}
 struct Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_GameplayAbilities_Spells_AuraSpell_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UAuraSpell, UAuraSpell::StaticClass, TEXT("UAuraSpell"), &Z_Registration_Info_UClass_UAuraSpell, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAuraSpell), 2292541301U) },
+		{ Z_Construct_UClass_UAuraSpell, UAuraSpell::StaticClass, TEXT("UAuraSpell"), &Z_Registration_Info_UClass_UAuraSpell, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAuraSpell), 3775851817U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_GameplayAbilities_Spells_AuraSpell_h_594116481(TEXT("/Script/Aura"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_GameplayAbilities_Spells_AuraSpell_h_2527682862(TEXT("/Script/Aura"),
 	Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_GameplayAbilities_Spells_AuraSpell_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_GameplayAbilities_Spells_AuraSpell_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

@@ -9,10 +9,16 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UAnimMontage;
 #ifdef AURA_CombatInterface_generated_h
 #error "CombatInterface.generated.h already included, missing '#pragma once' in CombatInterface.h"
 #endif
 #define AURA_CombatInterface_generated_h
+
+#define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Interfaces_CombatInterface_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	virtual UAnimMontage* GetHitReactMontage_Implementation() { return NULL; }; \
+	DECLARE_FUNCTION(execGetHitReactMontage);
+
 
 #define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Interfaces_CombatInterface_h_13_CALLBACK_WRAPPERS
 #define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Interfaces_CombatInterface_h_13_ENHANCED_CONSTRUCTORS \
@@ -52,6 +58,7 @@ protected: \
 public: \
 	typedef UCombatInterface UClassType; \
 	typedef ICombatInterface ThisClass; \
+	static UAnimMontage* Execute_GetHitReactMontage(UObject* O); \
 	static void Execute_SetFacingTarget(UObject* O, FVector const& target); \
 	virtual UObject* _getUObject() const { return nullptr; }
 
@@ -60,6 +67,7 @@ public: \
 #define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Interfaces_CombatInterface_h_21_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
+	FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Interfaces_CombatInterface_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
 	FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Interfaces_CombatInterface_h_13_CALLBACK_WRAPPERS \
 	FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Interfaces_CombatInterface_h_13_INCLASS_IINTERFACE_NO_PURE_DECLS \
 private: \

@@ -2605,26 +2605,6 @@
   ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/AbilitySystemComponent.generated.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/Actor/AuraProjectile.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraProjectile.generated.h \
-  Runtime/Engine/Classes/GameFramework/ProjectileMovementComponent.h \
-  Runtime/Engine/Classes/GameFramework/MovementComponent.h \
-  Runtime/PhysicsCore/Public/Chaos/ChaosEngineInterface.h \
-  Runtime/Engine/Classes/Components/SceneComponent.h \
-  ../Intermediate/Build/Linux/UnrealEditor/Inc/Engine/UHT/MovementComponent.generated.h \
-  ../Intermediate/Build/Linux/UnrealEditor/Inc/Engine/UHT/ProjectileMovementComponent.generated.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/Interfaces/CombatInterface.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/CombatInterface.generated.h \
-  Runtime/Engine/Classes/Kismet/KismetSystemLibrary.h \
-  Runtime/CoreUObject/Public/UObject/TextProperty.h \
-  Runtime/CoreUObject/Public/UObject/SoftObjectPtr.h \
-  Runtime/CoreUObject/Public/UObject/PropertyAccessUtil.h \
-  Runtime/Core/Public/Containers/UnrealString.h \
-  Runtime/Core/Public/CoreGlobals.h \
-  Runtime/Core/Public/Misc/EnumClassFlags.h \
-  Runtime/Core/Public/Templates/Function.h \
-  Runtime/Core/Public/Templates/UniquePtr.h \
-  Runtime/CoreUObject/Public/UObject/TopLevelAssetPath.h \
-  Runtime/Engine/Classes/Engine/LatentActionManager.h \
-  Runtime/Engine/Classes/Engine/CollisionProfile.h \
-  Runtime/CoreUObject/Public/AssetRegistry/ARFilter.h \
-  Runtime/CoreUObject/Public/UObject/SoftObjectPath.h \
-  ../Intermediate/Build/Linux/UnrealEditor/Inc/Engine/UHT/KismetSystemLibrary.generated.h
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/AuraGamePlayTags.h

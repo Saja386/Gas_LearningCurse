@@ -8,6 +8,8 @@
 #include "GAS/PlayerAbilitySystemComponent.h"
 #include "GAS/PlayerAttributeSet.h"
 #include "UI/Widgets/AuraUserWidget.h"
+#include "AuraGamePlayTags.h"
+#include "GameFramework/CharacterMovementComponent.h"
 
 
 ABaseEnemy::ABaseEnemy()
@@ -28,11 +30,20 @@ ABaseEnemy::ABaseEnemy()
 	
 }
 
+void ABaseEnemy::HitReactTagChanged(const FGameplayTag IncomingTag, int32 NewCount)
+{
+	BHitReacting = NewCount > 0;
+	GetCharacterMovement()->MaxWalkSpeed = BHitReacting ? 0.f : BaseMaxWalkSpeed ;
+	
+}
+
 void ABaseEnemy::BeginPlay()
 {
 	Super::BeginPlay();
+	UAuraAbilitySystemLiberary::GiveStartUpAbilitys(this , AbilitySystemComponent);
 	SetInitInfo();
-	
+	GetCharacterMovement()->MaxWalkSpeed = BaseMaxWalkSpeed ;
+
 	if(UAuraUserWidget* AuraUserWidget = Cast<UAuraUserWidget>(HealthBarComponent->GetUserWidgetObject()))
 	{
 		AuraUserWidget->SetWidgetController(this);
@@ -55,6 +66,8 @@ void ABaseEnemy::BeginPlay()
 				);
 			OnHealthChanged.Broadcast(AS->GetHealth());
 			OnMaxHealthChanged.Broadcast(AS->GetMaxHealth());
+
+			GetAbilitySystemComponent()->RegisterGameplayTagEvent(FAuraGamePlayTags::Get().Effect_HitReact , EGameplayTagEventType::NewOrRemoved).AddUObject(this , &ABaseEnemy::HitReactTagChanged);
 		}
 	}
 }

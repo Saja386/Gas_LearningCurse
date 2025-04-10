@@ -137,6 +137,11 @@ public:
 	ATTRIBUTE_ACCESSORS(UPlayerAttributeSet,Mana);
 
 
+	//Meta attributes
+	UPROPERTY(BlueprintReadOnly , Category="MetaAttributes")
+	FGameplayAttributeData IncomingDamage ;
+	ATTRIBUTE_ACCESSORS(UPlayerAttributeSet,IncomingDamage);
+
 	
 
 	//Then we need to notify the GAS That our variable has changed from the server .

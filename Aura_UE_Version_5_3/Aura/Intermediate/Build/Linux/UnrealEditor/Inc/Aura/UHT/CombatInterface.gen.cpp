@@ -14,8 +14,79 @@ AURA_API UClass* Z_Construct_UClass_UCombatInterface();
 AURA_API UClass* Z_Construct_UClass_UCombatInterface_NoRegister();
 COREUOBJECT_API UClass* Z_Construct_UClass_UInterface();
 COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
+ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
 UPackage* Z_Construct_UPackage__Script_Aura();
 // End Cross Module References
+
+// Begin Interface UCombatInterface Function GetHitReactMontage
+struct CombatInterface_eventGetHitReactMontage_Parms
+{
+	UAnimMontage* ReturnValue;
+
+	/** Constructor, initializes return property only **/
+	CombatInterface_eventGetHitReactMontage_Parms()
+		: ReturnValue(NULL)
+	{
+	}
+};
+UAnimMontage* ICombatInterface::GetHitReactMontage()
+{
+	check(0 && "Do not directly call Event functions in Interfaces. Call Execute_GetHitReactMontage instead.");
+	CombatInterface_eventGetHitReactMontage_Parms Parms;
+	return Parms.ReturnValue;
+}
+static FName NAME_UCombatInterface_GetHitReactMontage = FName(TEXT("GetHitReactMontage"));
+UAnimMontage* ICombatInterface::Execute_GetHitReactMontage(UObject* O)
+{
+	check(O != NULL);
+	check(O->GetClass()->ImplementsInterface(UCombatInterface::StaticClass()));
+	CombatInterface_eventGetHitReactMontage_Parms Parms;
+	UFunction* const Func = O->FindFunction(NAME_UCombatInterface_GetHitReactMontage);
+	if (Func)
+	{
+		O->ProcessEvent(Func, &Parms);
+	}
+	else if (auto I = (ICombatInterface*)(O->GetNativeInterfaceAddress(UCombatInterface::StaticClass())))
+	{
+		Parms.ReturnValue = I->GetHitReactMontage_Implementation();
+	}
+	return Parms.ReturnValue;
+}
+struct Z_Construct_UFunction_UCombatInterface_GetHitReactMontage_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Interfaces/CombatInterface.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UCombatInterface_GetHitReactMontage_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(CombatInterface_eventGetHitReactMontage_Parms, ReturnValue), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UCombatInterface_GetHitReactMontage_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UCombatInterface_GetHitReactMontage_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UCombatInterface_GetHitReactMontage_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UCombatInterface_GetHitReactMontage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UCombatInterface, nullptr, "GetHitReactMontage", nullptr, nullptr, Z_Construct_UFunction_UCombatInterface_GetHitReactMontage_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UCombatInterface_GetHitReactMontage_Statics::PropPointers), sizeof(CombatInterface_eventGetHitReactMontage_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UCombatInterface_GetHitReactMontage_Statics::Function_MetaDataParams), Z_Construct_UFunction_UCombatInterface_GetHitReactMontage_Statics::Function_MetaDataParams) };
+static_assert(sizeof(CombatInterface_eventGetHitReactMontage_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UCombatInterface_GetHitReactMontage()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UCombatInterface_GetHitReactMontage_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(ICombatInterface::execGetHitReactMontage)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(UAnimMontage**)Z_Param__Result=P_THIS->GetHitReactMontage_Implementation();
+	P_NATIVE_END;
+}
+// End Interface UCombatInterface Function GetHitReactMontage
 
 // Begin Interface UCombatInterface Function SetFacingTarget
 struct CombatInterface_eventSetFacingTarget_Parms
@@ -74,6 +145,11 @@ UFunction* Z_Construct_UFunction_UCombatInterface_SetFacingTarget()
 // Begin Interface UCombatInterface
 void UCombatInterface::StaticRegisterNativesUCombatInterface()
 {
+	UClass* Class = UCombatInterface::StaticClass();
+	static const FNameNativePtrPair Funcs[] = {
+		{ "GetHitReactMontage", &ICombatInterface::execGetHitReactMontage },
+	};
+	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
 IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UCombatInterface);
 UClass* Z_Construct_UClass_UCombatInterface_NoRegister()
@@ -90,6 +166,7 @@ struct Z_Construct_UClass_UCombatInterface_Statics
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_UCombatInterface_GetHitReactMontage, "GetHitReactMontage" }, // 2817589384
 		{ &Z_Construct_UFunction_UCombatInterface_SetFacingTarget, "SetFacingTarget" }, // 56861439
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -139,10 +216,10 @@ UCombatInterface::~UCombatInterface() {}
 struct Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Interfaces_CombatInterface_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UCombatInterface, UCombatInterface::StaticClass, TEXT("UCombatInterface"), &Z_Registration_Info_UClass_UCombatInterface, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCombatInterface), 2638303973U) },
+		{ Z_Construct_UClass_UCombatInterface, UCombatInterface::StaticClass, TEXT("UCombatInterface"), &Z_Registration_Info_UClass_UCombatInterface, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCombatInterface), 3707477865U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Interfaces_CombatInterface_h_2372687415(TEXT("/Script/Aura"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Interfaces_CombatInterface_h_846473166(TEXT("/Script/Aura"),
 	Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Interfaces_CombatInterface_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Interfaces_CombatInterface_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

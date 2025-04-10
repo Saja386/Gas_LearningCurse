@@ -121,6 +121,60 @@ DEFINE_FUNCTION(UAuraAbilitySystemLiberary::execGetOverlayWidgetController)
 }
 // End Class UAuraAbilitySystemLiberary Function GetOverlayWidgetController
 
+// Begin Class UAuraAbilitySystemLiberary Function GiveStartUpAbilitys
+struct Z_Construct_UFunction_UAuraAbilitySystemLiberary_GiveStartUpAbilitys_Statics
+{
+	struct AuraAbilitySystemLiberary_eventGiveStartUpAbilitys_Parms
+	{
+		const UObject* WorldContextObject;
+		UAbilitySystemComponent* ASC;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Aura Ability System|AttributeWidgetController" },
+		{ "ModuleRelativePath", "Public/GAS/AuraAbilitySystemLiberary.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WorldContextObject_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ASC_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_WorldContextObject;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_ASC;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UAuraAbilitySystemLiberary_GiveStartUpAbilitys_Statics::NewProp_WorldContextObject = { "WorldContextObject", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AuraAbilitySystemLiberary_eventGiveStartUpAbilitys_Parms, WorldContextObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WorldContextObject_MetaData), NewProp_WorldContextObject_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UAuraAbilitySystemLiberary_GiveStartUpAbilitys_Statics::NewProp_ASC = { "ASC", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AuraAbilitySystemLiberary_eventGiveStartUpAbilitys_Parms, ASC), Z_Construct_UClass_UAbilitySystemComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ASC_MetaData), NewProp_ASC_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UAuraAbilitySystemLiberary_GiveStartUpAbilitys_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAuraAbilitySystemLiberary_GiveStartUpAbilitys_Statics::NewProp_WorldContextObject,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAuraAbilitySystemLiberary_GiveStartUpAbilitys_Statics::NewProp_ASC,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UAuraAbilitySystemLiberary_GiveStartUpAbilitys_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UAuraAbilitySystemLiberary_GiveStartUpAbilitys_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UAuraAbilitySystemLiberary, nullptr, "GiveStartUpAbilitys", nullptr, nullptr, Z_Construct_UFunction_UAuraAbilitySystemLiberary_GiveStartUpAbilitys_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UAuraAbilitySystemLiberary_GiveStartUpAbilitys_Statics::PropPointers), sizeof(Z_Construct_UFunction_UAuraAbilitySystemLiberary_GiveStartUpAbilitys_Statics::AuraAbilitySystemLiberary_eventGiveStartUpAbilitys_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UAuraAbilitySystemLiberary_GiveStartUpAbilitys_Statics::Function_MetaDataParams), Z_Construct_UFunction_UAuraAbilitySystemLiberary_GiveStartUpAbilitys_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UAuraAbilitySystemLiberary_GiveStartUpAbilitys_Statics::AuraAbilitySystemLiberary_eventGiveStartUpAbilitys_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UAuraAbilitySystemLiberary_GiveStartUpAbilitys()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UAuraAbilitySystemLiberary_GiveStartUpAbilitys_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UAuraAbilitySystemLiberary::execGiveStartUpAbilitys)
+{
+	P_GET_OBJECT(UObject,Z_Param_WorldContextObject);
+	P_GET_OBJECT(UAbilitySystemComponent,Z_Param_ASC);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	UAuraAbilitySystemLiberary::GiveStartUpAbilitys(Z_Param_WorldContextObject,Z_Param_ASC);
+	P_NATIVE_END;
+}
+// End Class UAuraAbilitySystemLiberary Function GiveStartUpAbilitys
+
 // Begin Class UAuraAbilitySystemLiberary Function InitializeDefaultAttributesbyClass
 struct Z_Construct_UFunction_UAuraAbilitySystemLiberary_InitializeDefaultAttributesbyClass_Statics
 {
@@ -195,6 +249,7 @@ void UAuraAbilitySystemLiberary::StaticRegisterNativesUAuraAbilitySystemLiberary
 	static const FNameNativePtrPair Funcs[] = {
 		{ "GetAttributeMenuWidgetController", &UAuraAbilitySystemLiberary::execGetAttributeMenuWidgetController },
 		{ "GetOverlayWidgetController", &UAuraAbilitySystemLiberary::execGetOverlayWidgetController },
+		{ "GiveStartUpAbilitys", &UAuraAbilitySystemLiberary::execGiveStartUpAbilitys },
 		{ "InitializeDefaultAttributesbyClass", &UAuraAbilitySystemLiberary::execInitializeDefaultAttributesbyClass },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -219,6 +274,7 @@ struct Z_Construct_UClass_UAuraAbilitySystemLiberary_Statics
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_UAuraAbilitySystemLiberary_GetAttributeMenuWidgetController, "GetAttributeMenuWidgetController" }, // 149676906
 		{ &Z_Construct_UFunction_UAuraAbilitySystemLiberary_GetOverlayWidgetController, "GetOverlayWidgetController" }, // 1073682621
+		{ &Z_Construct_UFunction_UAuraAbilitySystemLiberary_GiveStartUpAbilitys, "GiveStartUpAbilitys" }, // 1403954715
 		{ &Z_Construct_UFunction_UAuraAbilitySystemLiberary_InitializeDefaultAttributesbyClass, "InitializeDefaultAttributesbyClass" }, // 3153204970
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -268,10 +324,10 @@ UAuraAbilitySystemLiberary::~UAuraAbilitySystemLiberary() {}
 struct Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_AuraAbilitySystemLiberary_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UAuraAbilitySystemLiberary, UAuraAbilitySystemLiberary::StaticClass, TEXT("UAuraAbilitySystemLiberary"), &Z_Registration_Info_UClass_UAuraAbilitySystemLiberary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAuraAbilitySystemLiberary), 1087563313U) },
+		{ Z_Construct_UClass_UAuraAbilitySystemLiberary, UAuraAbilitySystemLiberary::StaticClass, TEXT("UAuraAbilitySystemLiberary"), &Z_Registration_Info_UClass_UAuraAbilitySystemLiberary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAuraAbilitySystemLiberary), 2933782589U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_AuraAbilitySystemLiberary_h_2559812531(TEXT("/Script/Aura"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_AuraAbilitySystemLiberary_h_234457580(TEXT("/Script/Aura"),
 	Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_AuraAbilitySystemLiberary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_AuraAbilitySystemLiberary_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

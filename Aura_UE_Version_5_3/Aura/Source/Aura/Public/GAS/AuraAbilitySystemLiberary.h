@@ -25,5 +25,8 @@ public:
 	static UAttributeMenuWidgetController* GetAttributeMenuWidgetController(const UObject* WorldContextObject);
 
 	UFUNCTION(BlueprintCallable , Category = "Aura Ability System|AttributeWidgetController")
-	static void InitializeDefaultAttributesbyClass (const UObject* WorldContextObject ,ECharacterClasses CharacterClasses , float Level , UAbilitySystemComponent* ASC); 
+	static void InitializeDefaultAttributesbyClass (const UObject* WorldContextObject ,ECharacterClasses CharacterClasses , float Level , UAbilitySystemComponent* ASC);
+
+	UFUNCTION(BlueprintCallable , Category = "Aura Ability System|AttributeWidgetController")
+	static void GiveStartUpAbilitys (const UObject* WorldContextObject , UAbilitySystemComponent* ASC);
 };

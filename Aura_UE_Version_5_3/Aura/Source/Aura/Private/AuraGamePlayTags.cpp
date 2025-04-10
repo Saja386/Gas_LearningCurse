@@ -45,4 +45,8 @@ void FAuraGamePlayTags::initializeNativeGamePlayTags()
 	GamePlayTags.InputTag_2 = UGameplayTagsManager::Get().AddNativeGameplayTag(FName("InputTag.2"));
 	GamePlayTags.InputTag_3 = UGameplayTagsManager::Get().AddNativeGameplayTag(FName("InputTag.3"));
 	GamePlayTags.InputTag_4 = UGameplayTagsManager::Get().AddNativeGameplayTag(FName("InputTag.4"));
+	GamePlayTags.Damage = UGameplayTagsManager::Get().AddNativeGameplayTag(FName("Damage"));
+	GamePlayTags.Effect_HitReact = UGameplayTagsManager::Get().AddNativeGameplayTag(FName("Effect.HitReact"));
+
+
 }

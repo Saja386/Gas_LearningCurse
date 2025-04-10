@@ -12,6 +12,5 @@ int32 ICombatInterface::GetPlayerLevel()
 FVector ICombatInterface::GetCombatSucetLocation()
 {
 	return FVector::ZeroVector;
-
 }
 

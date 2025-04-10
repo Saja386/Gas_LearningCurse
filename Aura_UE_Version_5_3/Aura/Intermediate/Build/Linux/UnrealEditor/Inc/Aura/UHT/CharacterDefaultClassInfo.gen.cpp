@@ -16,6 +16,7 @@ AURA_API UEnum* Z_Construct_UEnum_Aura_ECharacterClasses();
 AURA_API UScriptStruct* Z_Construct_UScriptStruct_FCharacterDefaultClassInfo();
 COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 ENGINE_API UClass* Z_Construct_UClass_UDataAsset();
+GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UGameplayAbility_NoRegister();
 GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UGameplayEffect_NoRegister();
 UPackage* Z_Construct_UPackage__Script_Aura();
 // End Cross Module References
@@ -167,6 +168,10 @@ struct Z_Construct_UClass_UCharacterClassInfo_Statics
 		{ "Category", "Common Class Defaults" },
 		{ "ModuleRelativePath", "Public/GAS/Data/CharacterDefaultClassInfo.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CommonGameplayAbilitys_MetaData[] = {
+		{ "Category", "Common Class Defaults" },
+		{ "ModuleRelativePath", "Public/GAS/Data/CharacterDefaultClassInfo.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FClassPropertyParams NewProp_SecondaryAttributes;
 	static const UECodeGen_Private::FClassPropertyParams NewProp_VitalAttributes;
@@ -174,6 +179,8 @@ struct Z_Construct_UClass_UCharacterClassInfo_Statics
 	static const UECodeGen_Private::FBytePropertyParams NewProp_CharacterClassInformation_Key_KeyProp_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_CharacterClassInformation_Key_KeyProp;
 	static const UECodeGen_Private::FMapPropertyParams NewProp_CharacterClassInformation;
+	static const UECodeGen_Private::FClassPropertyParams NewProp_CommonGameplayAbilitys_Inner;
+	static const UECodeGen_Private::FArrayPropertyParams NewProp_CommonGameplayAbilitys;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -187,6 +194,8 @@ const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UCharacterClas
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UCharacterClassInfo_Statics::NewProp_CharacterClassInformation_Key_KeyProp_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UCharacterClassInfo_Statics::NewProp_CharacterClassInformation_Key_KeyProp = { "CharacterClassInformation_Key", nullptr, (EPropertyFlags)0x0000000000000001, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UEnum_Aura_ECharacterClasses, METADATA_PARAMS(0, nullptr) }; // 4023798841
 const UECodeGen_Private::FMapPropertyParams Z_Construct_UClass_UCharacterClassInfo_Statics::NewProp_CharacterClassInformation = { "CharacterClassInformation", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCharacterClassInfo, CharacterClassInformation), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CharacterClassInformation_MetaData), NewProp_CharacterClassInformation_MetaData) }; // 4023798841 2951234089
+const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_UCharacterClassInfo_Statics::NewProp_CommonGameplayAbilitys_Inner = { "CommonGameplayAbilitys", nullptr, (EPropertyFlags)0x0004000000000000, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UClass, Z_Construct_UClass_UGameplayAbility_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UCharacterClassInfo_Statics::NewProp_CommonGameplayAbilitys = { "CommonGameplayAbilitys", nullptr, (EPropertyFlags)0x0014000000010001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCharacterClassInfo, CommonGameplayAbilitys), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CommonGameplayAbilitys_MetaData), NewProp_CommonGameplayAbilitys_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UCharacterClassInfo_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterClassInfo_Statics::NewProp_SecondaryAttributes,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterClassInfo_Statics::NewProp_VitalAttributes,
@@ -194,6 +203,8 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UCharacte
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterClassInfo_Statics::NewProp_CharacterClassInformation_Key_KeyProp_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterClassInfo_Statics::NewProp_CharacterClassInformation_Key_KeyProp,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterClassInfo_Statics::NewProp_CharacterClassInformation,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterClassInfo_Statics::NewProp_CommonGameplayAbilitys_Inner,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCharacterClassInfo_Statics::NewProp_CommonGameplayAbilitys,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UCharacterClassInfo_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_UCharacterClassInfo_Statics::DependentSingletons[])() = {
@@ -243,10 +254,10 @@ struct Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Vers
 		{ FCharacterDefaultClassInfo::StaticStruct, Z_Construct_UScriptStruct_FCharacterDefaultClassInfo_Statics::NewStructOps, TEXT("CharacterDefaultClassInfo"), &Z_Registration_Info_UScriptStruct_CharacterDefaultClassInfo, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FCharacterDefaultClassInfo), 2951234089U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UCharacterClassInfo, UCharacterClassInfo::StaticClass, TEXT("UCharacterClassInfo"), &Z_Registration_Info_UClass_UCharacterClassInfo, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCharacterClassInfo), 2804513292U) },
+		{ Z_Construct_UClass_UCharacterClassInfo, UCharacterClassInfo::StaticClass, TEXT("UCharacterClassInfo"), &Z_Registration_Info_UClass_UCharacterClassInfo, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCharacterClassInfo), 1207811152U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_Data_CharacterDefaultClassInfo_h_3537115211(TEXT("/Script/Aura"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_Data_CharacterDefaultClassInfo_h_3045872982(TEXT("/Script/Aura"),
 	Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_Data_CharacterDefaultClassInfo_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_Data_CharacterDefaultClassInfo_h_Statics::ClassInfo),
 	Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_Data_CharacterDefaultClassInfo_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_Data_CharacterDefaultClassInfo_h_Statics::ScriptStructInfo),
 	Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_Data_CharacterDefaultClassInfo_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_Data_CharacterDefaultClassInfo_h_Statics::EnumInfo));
