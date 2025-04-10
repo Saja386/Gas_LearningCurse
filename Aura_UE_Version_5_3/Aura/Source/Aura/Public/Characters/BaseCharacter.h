@@ -61,6 +61,19 @@ protected:
 	virtual void InitializeDefaultAttributes() const;
 	
 	void AddAbilitiesToCharacter();
+
+	// Disolve
+	void Disolve ();
+	UFUNCTION(BlueprintImplementableEvent)
+	void StartDesolveTimeLine(UMaterialInstanceDynamic* DynamicMaterialInstance) ;
+	UFUNCTION(BlueprintImplementableEvent)
+	void StartWeaponDesolveTimeLine(UMaterialInstanceDynamic* DynamicMaterialInstance) ;
+	
+	UPROPERTY(EditAnywhere ,BlueprintReadOnly , Category = "Death" )
+	TObjectPtr<UMaterialInstance> DissolveMaterialInstance;
+
+	UPROPERTY(EditAnywhere ,BlueprintReadOnly , Category = "Death" )
+	TObjectPtr<UMaterialInstance> WeaponDissolveMaterialInstance;
 private:
 	UPROPERTY(EditAnywhere,Category="Abilities")
 	TArray<TSubclassOf<UGameplayAbility>> StartUpAbilities;

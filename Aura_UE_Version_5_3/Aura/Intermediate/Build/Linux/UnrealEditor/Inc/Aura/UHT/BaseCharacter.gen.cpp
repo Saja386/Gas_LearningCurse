@@ -16,6 +16,8 @@ AURA_API UClass* Z_Construct_UClass_UCombatInterface_NoRegister();
 COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
+ENGINE_API UClass* Z_Construct_UClass_UMaterialInstance_NoRegister();
+ENGINE_API UClass* Z_Construct_UClass_UMaterialInstanceDynamic_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
 GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UAbilitySystemComponent_NoRegister();
 GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UAbilitySystemInterface_NoRegister();
@@ -58,6 +60,88 @@ DEFINE_FUNCTION(ABaseCharacter::execMultiCastHandleDeath)
 	P_NATIVE_END;
 }
 // End Class ABaseCharacter Function MultiCastHandleDeath
+
+// Begin Class ABaseCharacter Function StartDesolveTimeLine
+struct BaseCharacter_eventStartDesolveTimeLine_Parms
+{
+	UMaterialInstanceDynamic* DynamicMaterialInstance;
+};
+static FName NAME_ABaseCharacter_StartDesolveTimeLine = FName(TEXT("StartDesolveTimeLine"));
+void ABaseCharacter::StartDesolveTimeLine(UMaterialInstanceDynamic* DynamicMaterialInstance)
+{
+	BaseCharacter_eventStartDesolveTimeLine_Parms Parms;
+	Parms.DynamicMaterialInstance=DynamicMaterialInstance;
+	ProcessEvent(FindFunctionChecked(NAME_ABaseCharacter_StartDesolveTimeLine),&Parms);
+}
+struct Z_Construct_UFunction_ABaseCharacter_StartDesolveTimeLine_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Characters/BaseCharacter.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_DynamicMaterialInstance;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ABaseCharacter_StartDesolveTimeLine_Statics::NewProp_DynamicMaterialInstance = { "DynamicMaterialInstance", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BaseCharacter_eventStartDesolveTimeLine_Parms, DynamicMaterialInstance), Z_Construct_UClass_UMaterialInstanceDynamic_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABaseCharacter_StartDesolveTimeLine_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseCharacter_StartDesolveTimeLine_Statics::NewProp_DynamicMaterialInstance,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacter_StartDesolveTimeLine_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseCharacter_StartDesolveTimeLine_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseCharacter, nullptr, "StartDesolveTimeLine", nullptr, nullptr, Z_Construct_UFunction_ABaseCharacter_StartDesolveTimeLine_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacter_StartDesolveTimeLine_Statics::PropPointers), sizeof(BaseCharacter_eventStartDesolveTimeLine_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacter_StartDesolveTimeLine_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABaseCharacter_StartDesolveTimeLine_Statics::Function_MetaDataParams) };
+static_assert(sizeof(BaseCharacter_eventStartDesolveTimeLine_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_ABaseCharacter_StartDesolveTimeLine()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABaseCharacter_StartDesolveTimeLine_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+// End Class ABaseCharacter Function StartDesolveTimeLine
+
+// Begin Class ABaseCharacter Function StartWeaponDesolveTimeLine
+struct BaseCharacter_eventStartWeaponDesolveTimeLine_Parms
+{
+	UMaterialInstanceDynamic* DynamicMaterialInstance;
+};
+static FName NAME_ABaseCharacter_StartWeaponDesolveTimeLine = FName(TEXT("StartWeaponDesolveTimeLine"));
+void ABaseCharacter::StartWeaponDesolveTimeLine(UMaterialInstanceDynamic* DynamicMaterialInstance)
+{
+	BaseCharacter_eventStartWeaponDesolveTimeLine_Parms Parms;
+	Parms.DynamicMaterialInstance=DynamicMaterialInstance;
+	ProcessEvent(FindFunctionChecked(NAME_ABaseCharacter_StartWeaponDesolveTimeLine),&Parms);
+}
+struct Z_Construct_UFunction_ABaseCharacter_StartWeaponDesolveTimeLine_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Characters/BaseCharacter.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_DynamicMaterialInstance;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ABaseCharacter_StartWeaponDesolveTimeLine_Statics::NewProp_DynamicMaterialInstance = { "DynamicMaterialInstance", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(BaseCharacter_eventStartWeaponDesolveTimeLine_Parms, DynamicMaterialInstance), Z_Construct_UClass_UMaterialInstanceDynamic_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ABaseCharacter_StartWeaponDesolveTimeLine_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ABaseCharacter_StartWeaponDesolveTimeLine_Statics::NewProp_DynamicMaterialInstance,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacter_StartWeaponDesolveTimeLine_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_ABaseCharacter_StartWeaponDesolveTimeLine_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ABaseCharacter, nullptr, "StartWeaponDesolveTimeLine", nullptr, nullptr, Z_Construct_UFunction_ABaseCharacter_StartWeaponDesolveTimeLine_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacter_StartWeaponDesolveTimeLine_Statics::PropPointers), sizeof(BaseCharacter_eventStartWeaponDesolveTimeLine_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_ABaseCharacter_StartWeaponDesolveTimeLine_Statics::Function_MetaDataParams), Z_Construct_UFunction_ABaseCharacter_StartWeaponDesolveTimeLine_Statics::Function_MetaDataParams) };
+static_assert(sizeof(BaseCharacter_eventStartWeaponDesolveTimeLine_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_ABaseCharacter_StartWeaponDesolveTimeLine()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_ABaseCharacter_StartWeaponDesolveTimeLine_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+// End Class ABaseCharacter Function StartWeaponDesolveTimeLine
 
 // Begin Class ABaseCharacter
 void ABaseCharacter::StaticRegisterNativesABaseCharacter()
@@ -110,6 +194,14 @@ struct Z_Construct_UClass_ABaseCharacter_Statics
 		{ "Category", "Attributes" },
 		{ "ModuleRelativePath", "Public/Characters/BaseCharacter.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DissolveMaterialInstance_MetaData[] = {
+		{ "Category", "Death" },
+		{ "ModuleRelativePath", "Public/Characters/BaseCharacter.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WeaponDissolveMaterialInstance_MetaData[] = {
+		{ "Category", "Death" },
+		{ "ModuleRelativePath", "Public/Characters/BaseCharacter.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_StartUpAbilities_MetaData[] = {
 		{ "Category", "Abilities" },
 		{ "ModuleRelativePath", "Public/Characters/BaseCharacter.h" },
@@ -126,6 +218,8 @@ struct Z_Construct_UClass_ABaseCharacter_Statics
 	static const UECodeGen_Private::FClassPropertyParams NewProp_DefaultPrimaryAttributes;
 	static const UECodeGen_Private::FClassPropertyParams NewProp_DefaultSecondaryAttributes;
 	static const UECodeGen_Private::FClassPropertyParams NewProp_DefaultVitalAttributes;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_DissolveMaterialInstance;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_WeaponDissolveMaterialInstance;
 	static const UECodeGen_Private::FClassPropertyParams NewProp_StartUpAbilities_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_StartUpAbilities;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_HitReactMontage;
@@ -133,6 +227,8 @@ struct Z_Construct_UClass_ABaseCharacter_Statics
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_ABaseCharacter_MultiCastHandleDeath, "MultiCastHandleDeath" }, // 2543882667
+		{ &Z_Construct_UFunction_ABaseCharacter_StartDesolveTimeLine, "StartDesolveTimeLine" }, // 1481351826
+		{ &Z_Construct_UFunction_ABaseCharacter_StartWeaponDesolveTimeLine, "StartWeaponDesolveTimeLine" }, // 1101488831
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
@@ -148,6 +244,8 @@ const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_ABaseCharacter_S
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp_DefaultPrimaryAttributes = { "DefaultPrimaryAttributes", nullptr, (EPropertyFlags)0x0024080000000015, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacter, DefaultPrimaryAttributes), Z_Construct_UClass_UClass, Z_Construct_UClass_UGameplayEffect_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DefaultPrimaryAttributes_MetaData), NewProp_DefaultPrimaryAttributes_MetaData) };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp_DefaultSecondaryAttributes = { "DefaultSecondaryAttributes", nullptr, (EPropertyFlags)0x0024080000000015, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacter, DefaultSecondaryAttributes), Z_Construct_UClass_UClass, Z_Construct_UClass_UGameplayEffect_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DefaultSecondaryAttributes_MetaData), NewProp_DefaultSecondaryAttributes_MetaData) };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp_DefaultVitalAttributes = { "DefaultVitalAttributes", nullptr, (EPropertyFlags)0x0024080000000015, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacter, DefaultVitalAttributes), Z_Construct_UClass_UClass, Z_Construct_UClass_UGameplayEffect_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DefaultVitalAttributes_MetaData), NewProp_DefaultVitalAttributes_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp_DissolveMaterialInstance = { "DissolveMaterialInstance", nullptr, (EPropertyFlags)0x0124080000000015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacter, DissolveMaterialInstance), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DissolveMaterialInstance_MetaData), NewProp_DissolveMaterialInstance_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp_WeaponDissolveMaterialInstance = { "WeaponDissolveMaterialInstance", nullptr, (EPropertyFlags)0x0124080000000015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacter, WeaponDissolveMaterialInstance), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WeaponDissolveMaterialInstance_MetaData), NewProp_WeaponDissolveMaterialInstance_MetaData) };
 const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp_StartUpAbilities_Inner = { "StartUpAbilities", nullptr, (EPropertyFlags)0x0004000000000000, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UClass, Z_Construct_UClass_UGameplayAbility_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp_StartUpAbilities = { "StartUpAbilities", nullptr, (EPropertyFlags)0x0044000000000001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacter, StartUpAbilities), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_StartUpAbilities_MetaData), NewProp_StartUpAbilities_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp_HitReactMontage = { "HitReactMontage", nullptr, (EPropertyFlags)0x0144000000000001, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacter, HitReactMontage), Z_Construct_UClass_UAnimMontage_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HitReactMontage_MetaData), NewProp_HitReactMontage_MetaData) };
@@ -159,6 +257,8 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABaseChar
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp_DefaultPrimaryAttributes,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp_DefaultSecondaryAttributes,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp_DefaultVitalAttributes,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp_DissolveMaterialInstance,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp_WeaponDissolveMaterialInstance,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp_StartUpAbilities_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp_StartUpAbilities,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp_HitReactMontage,
@@ -208,10 +308,10 @@ ABaseCharacter::~ABaseCharacter() {}
 struct Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Characters_BaseCharacter_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ABaseCharacter, ABaseCharacter::StaticClass, TEXT("ABaseCharacter"), &Z_Registration_Info_UClass_ABaseCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacter), 716838474U) },
+		{ Z_Construct_UClass_ABaseCharacter, ABaseCharacter::StaticClass, TEXT("ABaseCharacter"), &Z_Registration_Info_UClass_ABaseCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacter), 2624774009U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Characters_BaseCharacter_h_3095856617(TEXT("/Script/Aura"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Characters_BaseCharacter_h_2487468540(TEXT("/Script/Aura"),
 	Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Characters_BaseCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Characters_BaseCharacter_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

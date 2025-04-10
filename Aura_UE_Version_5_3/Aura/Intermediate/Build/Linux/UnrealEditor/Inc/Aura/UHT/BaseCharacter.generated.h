@@ -9,6 +9,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UMaterialInstanceDynamic;
 #ifdef AURA_BaseCharacter_generated_h
 #error "BaseCharacter.generated.h already included, missing '#pragma once' in BaseCharacter.h"
 #endif
