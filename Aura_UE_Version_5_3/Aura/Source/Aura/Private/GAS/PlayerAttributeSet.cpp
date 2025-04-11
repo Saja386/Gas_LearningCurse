@@ -8,7 +8,9 @@
 #include "GameplayEffectExtension.h"
 #include "Net/UnrealNetwork.h"
 #include "AuraGamePlayTags.h"
+#include "Controllers/AuraPlayerController.h"
 #include "Interfaces/CombatInterface.h"
+#include "Kismet/GameplayStatics.h"
 
 
 UPlayerAttributeSet::UPlayerAttributeSet()
@@ -98,6 +100,13 @@ void UPlayerAttributeSet::PostGameplayEffectExecute(const  FGameplayEffectModCal
 				if (CombatInterface)
 				{
 					CombatInterface->Die();
+				}
+			}
+			if (props.SourceCharacter != props.TargetCharacter)
+			{
+				if(AAuraPlayerController* PlayerController = Cast<AAuraPlayerController>(UGameplayStatics::GetPlayerController(props.SourceCharacter , 0)))
+				{
+					PlayerController->ShowTextDamage(LocalIncomingDamage,  props.TargetCharacter);
 				}
 			}
 		}
@@ -205,7 +214,7 @@ void UPlayerAttributeSet::SetEffectProperties(const FGameplayEffectModCallbackDa
 		}
 		if(Proprties.SourceController)
 		{
-			ACharacter* SourceCharacter = Cast <ACharacter>(Proprties.SourceController->GetCharacter());
+			Proprties.SourceCharacter = Cast <ACharacter>(Proprties.SourceController->GetCharacter());
 		}
 	}
 	if (Data.Target.AbilityActorInfo.IsValid() && Data.Target.AbilityActorInfo->AvatarActor.IsValid())

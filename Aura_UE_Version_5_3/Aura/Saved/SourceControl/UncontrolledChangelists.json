@@ -85,6 +85,8 @@
 				"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Content/Bluprints/GAS_Modules/GamePlayAbilities/GA_HitReact.uasset",
 				"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Content/Assets/Enemies/Goblin/Animations/Spear/HitReact_SpearMontage.uasset",
 				"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Content/Assets/Enemies/Goblin/Animations/Slingshot/HitReact_SlingshotMontage.uasset",
+				"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Content/Bluprints/UI/FloatingText/WBP_DamageText.uasset",
+				"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Content/Bluprints/UI/FloatingText/BP_DamageTextComp.uasset",
 				"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Content/Bluprints/GAS_Modules/GamePlayAbilities/Projectiles/Fire/FireBolt/CT_FireBoltDamage.uasset",
 				"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Content/Bluprints/GAS_Modules/GamePlayAbilities/Projectiles/Fire/FireBolt/CT_Damage.uasset",
 				"/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Content/Bluprints/GAS_Modules/GamePlayEffects/Defaults/GE_AuraSecondaryEffect.uasset",

@@ -2816,6 +2816,14 @@
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/BaseEnemy.generated.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/CharacterDefaultClassInfo.gen.cpp \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/CombatInterface.gen.cpp \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/DamageTextComp.gen.cpp \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/UI/Widgets/DamageTextComp.h \
+  Runtime/UMG/Public/Components/WidgetComponent.h \
+  Runtime/SlateCore/Public/Layout/ArrangedWidget.h \
+  Runtime/Engine/Public/WorldCollision.h \
+  Runtime/Engine/Classes/Components/MeshComponent.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/UMG/UHT/WidgetComponent.generated.h \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/DamageTextComp.generated.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/EnemyInterface.gen.cpp \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/MMC_MaxHealth.gen.cpp \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/GAS/MMC/MMC_MaxHealth.h \
