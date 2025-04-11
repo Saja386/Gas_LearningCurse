@@ -1,0 +1,19 @@
+// copy right druid mechanics
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "GameplayEffectExecutionCalculation.h"
+#include "DamageExecutionCalculation.generated.h"
+
+/**
+ * 
+ */
+UCLASS()
+class AURA_API UDamageExecutionCalculation : public UGameplayEffectExecutionCalculation
+{
+	GENERATED_BODY()
+public:
+	UDamageExecutionCalculation();
+	virtual void Execute_Implementation(const FGameplayEffectCustomExecutionParameters& ExecutionParams, FGameplayEffectCustomExecutionOutput& OutExecutionOutput) const override;
+};
