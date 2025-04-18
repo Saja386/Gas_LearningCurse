@@ -1,4 +1,4 @@
-﻿Log file open, 04/09/25 16:21:10
+﻿Log file open, 04/13/25 15:45:44
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +1:00, Platform Override: ''
 LogConfig: No local boot hotfix file found at: [/home/sage/.config/Epic/CrashReportClient/Saved/PersistentDownloadDir/HotfixForNextBoot.txt]
 LogInit: ExecutableName: CrashReportClientEditor
@@ -15,7 +15,7 @@ LogInit: Architecture: x64
 LogInit: Compiled with Clang: 16.0.6 (github.com/llvm/llvm-project 7cbf1a2591520c2491aa35339f227775f4d3adf6)
 LogInit: Build Configuration: Shipping
 LogInit: Branch Name: ++UE5+Release-5.4
-LogInit: Command Line:  -Abslog="/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Saved/Logs/Aura-CRC.log" -Unattended "/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Saved/Crashes/ensureinfo-Aura-pid-5242-A318876BAD2B4D1E9DB1EF6E3FF8FA72/"
+LogInit: Command Line:  -Abslog="/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Saved/Logs/Aura-CRC.log" -Unattended "/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Saved/Crashes/ensureinfo-Aura-pid-3878-81F6F8013CDD4ECD8E58026FFC50837C/"
 LogInit: Base Directory: /home/sage/Apps/GameMaking/Linux_Unreal_Engine_5.4.4/Engine/Binaries/Linux/
 LogInit: Allocator: Mimalloc
 LogInit: Installed Engine Build: 1
@@ -23,104 +23,104 @@ LogInit: This binary is optimized with LTO: no, PGO: no, instrumented for PGO da
 LogInit: Presizing for max 2097152 objects, including 1 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
 LogConfig: Applying CVar settings from Section [ConsoleVariables] File [Engine]
-[2025.04.09-14.21.10:254][  0]LogConfig: Set CVar [[memory.MemoryPressureCriticalThresholdMB:512]]
-[2025.04.09-14.21.10:254][  0]LogInit: Unix hardware info:
-[2025.04.09-14.21.10:254][  0]LogInit:  - we are the first instance of this executable
-[2025.04.09-14.21.10:254][  0]LogInit:  - this process' id (pid) is 6539, parent process' id (ppid) is 5242
-[2025.04.09-14.21.10:254][  0]LogInit:  - we are not running under debugger
-[2025.04.09-14.21.10:254][  0]LogInit:  - machine network name is 'archlinux'
-[2025.04.09-14.21.10:254][  0]LogInit:  - user name is 'sage' (sage)
-[2025.04.09-14.21.10:254][  0]LogInit:  - we're logged in locally
-[2025.04.09-14.21.10:254][  0]LogInit:  - we're running with rendering
-[2025.04.09-14.21.10:254][  0]LogInit:  - CPU: GenuineIntel '12th Gen Intel(R) Core(TM) i9-12900K' (signature: 0x90672)
-[2025.04.09-14.21.10:254][  0]LogInit:  - Number of physical cores available for the process: 16
-[2025.04.09-14.21.10:254][  0]LogInit:  - Number of logical cores available for the process: 24
-[2025.04.09-14.21.10:254][  0]LogInit:  - GPU Brand Info: NVIDIA GeForce RTX 3070 Ti (NVIDIA UNIX x86_64 Kernel Module  570.133.07  Fri Mar 14 13:12:07 UTC 2025)
-[2025.04.09-14.21.10:254][  0]LogInit:  - Memory allocator used: Mimalloc
-[2025.04.09-14.21.10:254][  0]LogInit:  - This is an internal build.
-[2025.04.09-14.21.10:254][  0]LogCore: Skipped benchmarking clocks because the engine is running in a standalone program mode - CLOCK_MONOTONIC will be used.
-[2025.04.09-14.21.10:254][  0]LogInit: Unix-specific commandline switches:
-[2025.04.09-14.21.10:254][  0]LogInit:  -ansimalloc - use malloc()/free() from libc (useful for tools like valgrind and electric fence)
-[2025.04.09-14.21.10:254][  0]LogInit:  -jemalloc - use jemalloc for all memory allocation
-[2025.04.09-14.21.10:254][  0]LogInit:  -binnedmalloc - use binned malloc  for all memory allocation
-[2025.04.09-14.21.10:254][  0]LogInit:  -filemapcachesize=NUMBER - set the size for case-sensitive file mapping cache
-[2025.04.09-14.21.10:254][  0]LogInit:  -useksm - uses kernel same-page mapping (KSM) for mapped memory (OFF)
-[2025.04.09-14.21.10:254][  0]LogInit:  -ksmmergeall - marks all mmap'd memory pages suitable for KSM (OFF)
-[2025.04.09-14.21.10:254][  0]LogInit:  -preloadmodulesymbols - Loads the main module symbols file into memory (OFF)
-[2025.04.09-14.21.10:254][  0]LogInit:  -sigdfl=SIGNAL - Allows a specific signal to be set to its default handler rather then ignoring the signal
-[2025.04.09-14.21.10:254][  0]LogInit:  -crashhandlerstacksize - Allows setting crash handler stack sizes (204800)
-[2025.04.09-14.21.10:254][  0]LogInit:  -noexclusivelockonwrite - disables marking files created by the engine as exclusive locked while the engine has them opened
-[2025.04.09-14.21.10:254][  0]LogInit:  -httpproxy=ADDRESS:PORT - redirects HTTP requests to a proxy (only supported if compiled with libcurl)
-[2025.04.09-14.21.10:254][  0]LogInit:  -reuseconn - allow libcurl to reuse HTTP connections (only matters if compiled with libcurl)
-[2025.04.09-14.21.10:254][  0]LogInit:  -virtmemkb=NUMBER - sets process virtual memory (address space) limit (overrides VirtualMemoryLimitInKB value from .ini)
-[2025.04.09-14.21.10:254][  0]LogInit:  -allowsyscallfilterfile=PATH_TO_FILE - sets up a system call filter allow list. any invalid syscall in this list *will* cause a crash
-[2025.04.09-14.21.10:254][  0]LogInit:  - Physical RAM available (not considering process quota): 32 GB (31822 MB, 32586504 KB, 33368580096 bytes)
-[2025.04.09-14.21.10:254][  0]LogInit:  - VirtualMemoryAllocator pools will grow at scale 1
-[2025.04.09-14.21.10:254][  0]LogInit:  - MemoryRangeDecommit() will be a no-op (re-run with -vmapoolevict to change)
-[2025.04.09-14.21.10:255][  0]LogInit:  - PageSize 4096
-[2025.04.09-14.21.10:255][  0]LogInit:  - BinnedPageSize 65536
-[2025.04.09-14.21.10:256][  0]LogUObjectArray: 475 objects as part of root set at end of initial load.
-[2025.04.09-14.21.10:256][  0]LogUObjectArray: 0 objects are not in the root set, but can never be destroyed because they are in the DisregardForGC set.
-[2025.04.09-14.21.10:256][  0]LogUObjectAllocator: 80424 out of 0 bytes used by permanent object pool.
-[2025.04.09-14.21.10:256][  0]LogUObjectArray: CloseDisregardForGC: 475/475 objects in disregard for GC pool
-[2025.04.09-14.21.10:256][  0]LogInit: Using OS detected language (en-US).
-[2025.04.09-14.21.10:256][  0]LogInit: Using OS detected locale (en-US).
-[2025.04.09-14.21.10:256][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so 'en' will be used for the language.
-[2025.04.09-14.21.10:278][  0]LogInit: Using OS detected language (en-US).
-[2025.04.09-14.21.10:278][  0]LogInit: Using OS detected locale (en-US).
-[2025.04.09-14.21.10:278][  0]LogTextLocalizationManager: No localization for 'en-US' exists, so 'en' will be used for the language.
-[2025.04.09-14.21.10:278][  0]LogTextLocalizationManager: No localization for 'en-US' exists, so 'en' will be used for the locale.
-[2025.04.09-14.21.10:278][  0]LogPackageLocalizationCache: Processed 2 localized package path(s) for 1 prioritized culture(s) in 0.000018 seconds
-[2025.04.09-14.21.10:287][  0]LogInit: Using libcurl 8.4.0
-[2025.04.09-14.21.10:287][  0]LogInit:  - built for x86_64-unknown-linux-gnu
-[2025.04.09-14.21.10:287][  0]LogInit:  - supports SSL with OpenSSL/1.1.1t
-[2025.04.09-14.21.10:287][  0]LogInit:  - supports HTTP deflate (compression) using libz 1.3
-[2025.04.09-14.21.10:287][  0]LogInit:  - other features:
-[2025.04.09-14.21.10:287][  0]LogInit:      CURL_VERSION_SSL
-[2025.04.09-14.21.10:287][  0]LogInit:      CURL_VERSION_LIBZ
-[2025.04.09-14.21.10:287][  0]LogInit:      CURL_VERSION_IPV6
-[2025.04.09-14.21.10:287][  0]LogInit:      CURL_VERSION_ASYNCHDNS
-[2025.04.09-14.21.10:287][  0]LogInit:      CURL_VERSION_LARGEFILE
-[2025.04.09-14.21.10:287][  0]LogInit:      CURL_VERSION_TLSAUTH_SRP
-[2025.04.09-14.21.10:287][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
-[2025.04.09-14.21.10:287][  0]LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
-[2025.04.09-14.21.10:287][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
-[2025.04.09-14.21.10:287][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
-[2025.04.09-14.21.10:287][  0]LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
-[2025.04.09-14.21.10:287][  0]LogInit:  - LocalHostAddr = Default
-[2025.04.09-14.21.10:287][  0]LogInit:  - BufferSize = 65536
-[2025.04.09-14.21.10:287][  0]LogInit: CreateHttpThread using FCurlMultiPollEventLoopHttpThread
-[2025.04.09-14.21.10:287][  0]LogAnalytics: Display: [CrashReporter.Release] APIServer = https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data. AppVersion = ++UE5+Release-5.4-CL-35576357
-[2025.04.09-14.21.10:288][  0]CrashReportCoreLog: Display: Applying project settings from '/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Saved/Crashes/ensureinfo-Aura-pid-5242-A318876BAD2B4D1E9DB1EF6E3FF8FA72/CrashReportClient.ini'.
-[2025.04.09-14.21.10:288][  0]CrashReportCoreLog: CrashReportClientVersion=1.0
-[2025.04.09-14.21.10:288][  0]CrashReportCoreLog: CrashReportReceiver disabled
-[2025.04.09-14.21.10:288][  0]CrashReportCoreLog: DataRouterUrl: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data
-[2025.04.09-14.21.10:288][  0]CrashReportCoreLog: Initial state = Unknown UploadState value
-[2025.04.09-14.21.10:288][  0]CrashReportCoreLog: Initial state = Unknown UploadState value
-[2025.04.09-14.21.10:288][  0]LogCrashDebugHelper: DepotName: //UE5/Release-5.4
-[2025.04.09-14.21.10:288][  0]LogCrashDebugHelper: BuiltFromCL: 35576357
-[2025.04.09-14.21.10:288][  0]LogCrashDebugHelper: EngineVersion: 5.4.4-35576357+++UE5+Release-5.4
-[2025.04.09-14.21.10:288][  0]LogCrashDebugHelper: BuildVersion: ++UE5+Release-5.4-CL-35576357
-[2025.04.09-14.21.11:259][  0]CrashReportCoreLog: Got 4 pending files to upload from 'ensureinfo-Aura-pid-5242-A318876BAD2B4D1E9DB1EF6E3FF8FA72'
-[2025.04.09-14.21.11:259][  0]CrashReportCoreLog: State change from Ready to SendingFiles
-[2025.04.09-14.21.11:259][  0]CrashReportCoreLog: CompressAndSendData have 4 pending files
-[2025.04.09-14.21.11:259][  0]CrashReportCoreLog: CompressAndSendData compressing 40594 bytes ('/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Saved/Crashes/ensureinfo-Aura-pid-5242-A318876BAD2B4D1E9DB1EF6E3FF8FA72/CrashContext.runtime-xml')
-[2025.04.09-14.21.11:259][  0]CrashReportCoreLog: CompressAndSendData compressing 179 bytes ('/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Saved/Crashes/ensureinfo-Aura-pid-5242-A318876BAD2B4D1E9DB1EF6E3FF8FA72/CrashReportClient.ini')
-[2025.04.09-14.21.11:259][  0]CrashReportCoreLog: CompressAndSendData compressing 248055 bytes ('/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Saved/Crashes/ensureinfo-Aura-pid-5242-A318876BAD2B4D1E9DB1EF6E3FF8FA72/Aura.log')
-[2025.04.09-14.21.11:259][  0]CrashReportCoreLog: CompressAndSendData compressing 4447 bytes ('/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Saved/Crashes/ensureinfo-Aura-pid-5242-A318876BAD2B4D1E9DB1EF6E3FF8FA72/Diagnostics.txt')
-[2025.04.09-14.21.11:261][  0]CrashReportCoreLog: Sending HTTP request: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?AppID=CrashReporter&AppVersion=5.4.4-35576357%2B%2B%2BUE5%2BRelease-5.4&AppEnvironment=Release&UploadType=crashreports&UserID=8d3b60c972e743f19c784435601e6ee2-000003e8%7C%7C8d3b60c972e743f19c784435601e6ee2, Payload size: 43143
-[2025.04.09-14.21.12:460][  0]CrashReportCoreLog: OnProcessRequestComplete(), State=SendingFiles bSucceeded=1
-[2025.04.09-14.21.12:460][  0]CrashReportCoreLog: State change from SendingFiles to SendingFiles
-[2025.04.09-14.21.12:460][  0]CrashReportCoreLog: All uploads done
-[2025.04.09-14.21.12:460][  0]CrashReportCoreLog: State change from SendingFiles to Finished
-[2025.04.09-14.21.13:295][  0]CrashReportCoreLog: Final state (Receiver) = Finished
-[2025.04.09-14.21.13:295][  0]CrashReportCoreLog: Final state (Receiver) = Unknown UploadState value
-[2025.04.09-14.21.13:295][  0]LogAnalytics: Display: [CrashReporter.Release] Destroying ET Analytics provider
-[2025.04.09-14.21.13:295][  0]LogAnalytics: Display: [CrashReporter.Release] Ended ET Analytics provider session
-[2025.04.09-14.21.13:295][  0]LogAnalytics: Display: [CrashReporter.Release] Destroyed ET Analytics provider
-[2025.04.09-14.21.13:295][  0]LogCore: Engine exit requested (reason: CrashReportClientApp RequestExit)
-[2025.04.09-14.21.13:295][  0]LogExit: Preparing to exit.
-[2025.04.09-14.21.13:300][  0]LogExit: Object subsystem successfully closed.
-[2025.04.09-14.21.13:801][  0]LogPakFile: Destroying PakPlatformFile
-[2025.04.09-14.21.13:801][  0]LogExit: Exiting.
-[2025.04.09-14.21.13:812][  0]Log file closed, 04/09/25 16:21:13
+[2025.04.13-13.45.44:086][  0]LogConfig: Set CVar [[memory.MemoryPressureCriticalThresholdMB:512]]
+[2025.04.13-13.45.44:086][  0]LogInit: Unix hardware info:
+[2025.04.13-13.45.44:086][  0]LogInit:  - we are the first instance of this executable
+[2025.04.13-13.45.44:086][  0]LogInit:  - this process' id (pid) is 5927, parent process' id (ppid) is 3878
+[2025.04.13-13.45.44:086][  0]LogInit:  - we are not running under debugger
+[2025.04.13-13.45.44:086][  0]LogInit:  - machine network name is 'archlinux'
+[2025.04.13-13.45.44:086][  0]LogInit:  - user name is 'sage' (sage)
+[2025.04.13-13.45.44:086][  0]LogInit:  - we're logged in locally
+[2025.04.13-13.45.44:086][  0]LogInit:  - we're running with rendering
+[2025.04.13-13.45.44:086][  0]LogInit:  - CPU: GenuineIntel '12th Gen Intel(R) Core(TM) i9-12900K' (signature: 0x90672)
+[2025.04.13-13.45.44:086][  0]LogInit:  - Number of physical cores available for the process: 16
+[2025.04.13-13.45.44:086][  0]LogInit:  - Number of logical cores available for the process: 24
+[2025.04.13-13.45.44:086][  0]LogInit:  - GPU Brand Info: NVIDIA GeForce RTX 3070 Ti (NVIDIA UNIX x86_64 Kernel Module  570.133.07  Fri Mar 14 13:12:07 UTC 2025)
+[2025.04.13-13.45.44:086][  0]LogInit:  - Memory allocator used: Mimalloc
+[2025.04.13-13.45.44:086][  0]LogInit:  - This is an internal build.
+[2025.04.13-13.45.44:086][  0]LogCore: Skipped benchmarking clocks because the engine is running in a standalone program mode - CLOCK_MONOTONIC will be used.
+[2025.04.13-13.45.44:086][  0]LogInit: Unix-specific commandline switches:
+[2025.04.13-13.45.44:086][  0]LogInit:  -ansimalloc - use malloc()/free() from libc (useful for tools like valgrind and electric fence)
+[2025.04.13-13.45.44:086][  0]LogInit:  -jemalloc - use jemalloc for all memory allocation
+[2025.04.13-13.45.44:086][  0]LogInit:  -binnedmalloc - use binned malloc  for all memory allocation
+[2025.04.13-13.45.44:086][  0]LogInit:  -filemapcachesize=NUMBER - set the size for case-sensitive file mapping cache
+[2025.04.13-13.45.44:086][  0]LogInit:  -useksm - uses kernel same-page mapping (KSM) for mapped memory (OFF)
+[2025.04.13-13.45.44:086][  0]LogInit:  -ksmmergeall - marks all mmap'd memory pages suitable for KSM (OFF)
+[2025.04.13-13.45.44:086][  0]LogInit:  -preloadmodulesymbols - Loads the main module symbols file into memory (OFF)
+[2025.04.13-13.45.44:086][  0]LogInit:  -sigdfl=SIGNAL - Allows a specific signal to be set to its default handler rather then ignoring the signal
+[2025.04.13-13.45.44:086][  0]LogInit:  -crashhandlerstacksize - Allows setting crash handler stack sizes (204800)
+[2025.04.13-13.45.44:086][  0]LogInit:  -noexclusivelockonwrite - disables marking files created by the engine as exclusive locked while the engine has them opened
+[2025.04.13-13.45.44:086][  0]LogInit:  -httpproxy=ADDRESS:PORT - redirects HTTP requests to a proxy (only supported if compiled with libcurl)
+[2025.04.13-13.45.44:086][  0]LogInit:  -reuseconn - allow libcurl to reuse HTTP connections (only matters if compiled with libcurl)
+[2025.04.13-13.45.44:086][  0]LogInit:  -virtmemkb=NUMBER - sets process virtual memory (address space) limit (overrides VirtualMemoryLimitInKB value from .ini)
+[2025.04.13-13.45.44:086][  0]LogInit:  -allowsyscallfilterfile=PATH_TO_FILE - sets up a system call filter allow list. any invalid syscall in this list *will* cause a crash
+[2025.04.13-13.45.44:086][  0]LogInit:  - Physical RAM available (not considering process quota): 32 GB (31822 MB, 32586508 KB, 33368584192 bytes)
+[2025.04.13-13.45.44:086][  0]LogInit:  - VirtualMemoryAllocator pools will grow at scale 1
+[2025.04.13-13.45.44:086][  0]LogInit:  - MemoryRangeDecommit() will be a no-op (re-run with -vmapoolevict to change)
+[2025.04.13-13.45.44:086][  0]LogInit:  - PageSize 4096
+[2025.04.13-13.45.44:086][  0]LogInit:  - BinnedPageSize 65536
+[2025.04.13-13.45.44:088][  0]LogUObjectArray: 475 objects as part of root set at end of initial load.
+[2025.04.13-13.45.44:088][  0]LogUObjectArray: 0 objects are not in the root set, but can never be destroyed because they are in the DisregardForGC set.
+[2025.04.13-13.45.44:088][  0]LogUObjectAllocator: 80424 out of 0 bytes used by permanent object pool.
+[2025.04.13-13.45.44:088][  0]LogUObjectArray: CloseDisregardForGC: 475/475 objects in disregard for GC pool
+[2025.04.13-13.45.44:088][  0]LogInit: Using OS detected language (en-US).
+[2025.04.13-13.45.44:088][  0]LogInit: Using OS detected locale (en-US).
+[2025.04.13-13.45.44:089][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so 'en' will be used for the language.
+[2025.04.13-13.45.44:119][  0]LogInit: Using OS detected language (en-US).
+[2025.04.13-13.45.44:119][  0]LogInit: Using OS detected locale (en-US).
+[2025.04.13-13.45.44:119][  0]LogTextLocalizationManager: No localization for 'en-US' exists, so 'en' will be used for the language.
+[2025.04.13-13.45.44:119][  0]LogTextLocalizationManager: No localization for 'en-US' exists, so 'en' will be used for the locale.
+[2025.04.13-13.45.44:119][  0]LogPackageLocalizationCache: Processed 2 localized package path(s) for 1 prioritized culture(s) in 0.000027 seconds
+[2025.04.13-13.45.44:129][  0]LogInit: Using libcurl 8.4.0
+[2025.04.13-13.45.44:129][  0]LogInit:  - built for x86_64-unknown-linux-gnu
+[2025.04.13-13.45.44:129][  0]LogInit:  - supports SSL with OpenSSL/1.1.1t
+[2025.04.13-13.45.44:129][  0]LogInit:  - supports HTTP deflate (compression) using libz 1.3
+[2025.04.13-13.45.44:129][  0]LogInit:  - other features:
+[2025.04.13-13.45.44:129][  0]LogInit:      CURL_VERSION_SSL
+[2025.04.13-13.45.44:129][  0]LogInit:      CURL_VERSION_LIBZ
+[2025.04.13-13.45.44:129][  0]LogInit:      CURL_VERSION_IPV6
+[2025.04.13-13.45.44:129][  0]LogInit:      CURL_VERSION_ASYNCHDNS
+[2025.04.13-13.45.44:129][  0]LogInit:      CURL_VERSION_LARGEFILE
+[2025.04.13-13.45.44:129][  0]LogInit:      CURL_VERSION_TLSAUTH_SRP
+[2025.04.13-13.45.44:129][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
+[2025.04.13-13.45.44:129][  0]LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+[2025.04.13-13.45.44:129][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+[2025.04.13-13.45.44:129][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+[2025.04.13-13.45.44:129][  0]LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+[2025.04.13-13.45.44:129][  0]LogInit:  - LocalHostAddr = Default
+[2025.04.13-13.45.44:129][  0]LogInit:  - BufferSize = 65536
+[2025.04.13-13.45.44:129][  0]LogInit: CreateHttpThread using FCurlMultiPollEventLoopHttpThread
+[2025.04.13-13.45.44:129][  0]LogAnalytics: Display: [CrashReporter.Release] APIServer = https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data. AppVersion = ++UE5+Release-5.4-CL-35576357
+[2025.04.13-13.45.44:130][  0]CrashReportCoreLog: Display: Applying project settings from '/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Saved/Crashes/ensureinfo-Aura-pid-3878-81F6F8013CDD4ECD8E58026FFC50837C/CrashReportClient.ini'.
+[2025.04.13-13.45.44:130][  0]CrashReportCoreLog: CrashReportClientVersion=1.0
+[2025.04.13-13.45.44:130][  0]CrashReportCoreLog: CrashReportReceiver disabled
+[2025.04.13-13.45.44:130][  0]CrashReportCoreLog: DataRouterUrl: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data
+[2025.04.13-13.45.44:130][  0]CrashReportCoreLog: Initial state = Unknown UploadState value
+[2025.04.13-13.45.44:130][  0]CrashReportCoreLog: Initial state = Unknown UploadState value
+[2025.04.13-13.45.44:131][  0]LogCrashDebugHelper: DepotName: //UE5/Release-5.4
+[2025.04.13-13.45.44:131][  0]LogCrashDebugHelper: BuiltFromCL: 35576357
+[2025.04.13-13.45.44:131][  0]LogCrashDebugHelper: EngineVersion: 5.4.4-35576357+++UE5+Release-5.4
+[2025.04.13-13.45.44:131][  0]LogCrashDebugHelper: BuildVersion: ++UE5+Release-5.4-CL-35576357
+[2025.04.13-13.45.45:101][  0]CrashReportCoreLog: Got 4 pending files to upload from 'ensureinfo-Aura-pid-3878-81F6F8013CDD4ECD8E58026FFC50837C'
+[2025.04.13-13.45.45:101][  0]CrashReportCoreLog: State change from Ready to SendingFiles
+[2025.04.13-13.45.45:101][  0]CrashReportCoreLog: CompressAndSendData have 4 pending files
+[2025.04.13-13.45.45:101][  0]CrashReportCoreLog: CompressAndSendData compressing 40594 bytes ('/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Saved/Crashes/ensureinfo-Aura-pid-3878-81F6F8013CDD4ECD8E58026FFC50837C/CrashContext.runtime-xml')
+[2025.04.13-13.45.45:101][  0]CrashReportCoreLog: CompressAndSendData compressing 179 bytes ('/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Saved/Crashes/ensureinfo-Aura-pid-3878-81F6F8013CDD4ECD8E58026FFC50837C/CrashReportClient.ini')
+[2025.04.13-13.45.45:101][  0]CrashReportCoreLog: CompressAndSendData compressing 242762 bytes ('/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Saved/Crashes/ensureinfo-Aura-pid-3878-81F6F8013CDD4ECD8E58026FFC50837C/Aura.log')
+[2025.04.13-13.45.45:101][  0]CrashReportCoreLog: CompressAndSendData compressing 4447 bytes ('/home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Saved/Crashes/ensureinfo-Aura-pid-3878-81F6F8013CDD4ECD8E58026FFC50837C/Diagnostics.txt')
+[2025.04.13-13.45.45:104][  0]CrashReportCoreLog: Sending HTTP request: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?AppID=CrashReporter&AppVersion=5.4.4-35576357%2B%2B%2BUE5%2BRelease-5.4&AppEnvironment=Release&UploadType=crashreports&UserID=8d3b60c972e743f19c784435601e6ee2-000003e8%7C%7C8d3b60c972e743f19c784435601e6ee2, Payload size: 42551
+[2025.04.13-13.45.46:002][  0]CrashReportCoreLog: OnProcessRequestComplete(), State=SendingFiles bSucceeded=1
+[2025.04.13-13.45.46:002][  0]CrashReportCoreLog: State change from SendingFiles to SendingFiles
+[2025.04.13-13.45.46:002][  0]CrashReportCoreLog: All uploads done
+[2025.04.13-13.45.46:002][  0]CrashReportCoreLog: State change from SendingFiles to Finished
+[2025.04.13-13.45.46:135][  0]CrashReportCoreLog: Final state (Receiver) = Finished
+[2025.04.13-13.45.46:135][  0]CrashReportCoreLog: Final state (Receiver) = Unknown UploadState value
+[2025.04.13-13.45.46:135][  0]LogAnalytics: Display: [CrashReporter.Release] Destroying ET Analytics provider
+[2025.04.13-13.45.46:135][  0]LogAnalytics: Display: [CrashReporter.Release] Ended ET Analytics provider session
+[2025.04.13-13.45.46:135][  0]LogAnalytics: Display: [CrashReporter.Release] Destroyed ET Analytics provider
+[2025.04.13-13.45.46:135][  0]LogCore: Engine exit requested (reason: CrashReportClientApp RequestExit)
+[2025.04.13-13.45.46:135][  0]LogExit: Preparing to exit.
+[2025.04.13-13.45.46:153][  0]LogExit: Object subsystem successfully closed.
+[2025.04.13-13.45.46:654][  0]LogPakFile: Destroying PakPlatformFile
+[2025.04.13-13.45.46:654][  0]LogExit: Exiting.
+[2025.04.13-13.45.46:668][  0]Log file closed, 04/13/25 15:45:46

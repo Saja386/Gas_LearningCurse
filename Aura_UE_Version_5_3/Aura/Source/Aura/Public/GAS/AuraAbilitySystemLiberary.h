@@ -29,4 +29,7 @@ public:
 
 	UFUNCTION(BlueprintCallable , Category = "Aura Ability System|AttributeWidgetController")
 	static void GiveStartUpAbilitys (const UObject* WorldContextObject , UAbilitySystemComponent* ASC);
+
+	UFUNCTION(BlueprintCallable , Category = "Aura Ability System|AttributeWidgetController")
+	static UCharacterClassInfo* GetCharacterClassInfo(const UObject* WorldContextObject);
 };

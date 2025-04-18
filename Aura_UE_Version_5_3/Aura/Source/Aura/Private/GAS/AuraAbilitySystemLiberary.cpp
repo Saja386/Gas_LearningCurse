@@ -87,3 +87,10 @@ void UAuraAbilitySystemLiberary::GiveStartUpAbilitys(const UObject* WorldContext
 	}
 }
 
+UCharacterClassInfo* UAuraAbilitySystemLiberary::GetCharacterClassInfo(const UObject* WorldContextObject)
+{
+	AAuraGameModeBase* AuraGameModeBase = Cast<AAuraGameModeBase>(UGameplayStatics::GetGameMode(WorldContextObject));
+	if(AuraGameModeBase==nullptr) return nullptr;
+	return  AuraGameModeBase->CharacterClassInfo;
+}
+

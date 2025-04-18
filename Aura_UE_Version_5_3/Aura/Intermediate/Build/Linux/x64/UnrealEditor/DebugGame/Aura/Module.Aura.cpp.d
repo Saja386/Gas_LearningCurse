@@ -2816,6 +2816,13 @@
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/BaseEnemy.generated.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/CharacterDefaultClassInfo.gen.cpp \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/CombatInterface.gen.cpp \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/DamageExecutionCalculation.gen.cpp \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/GAS/GPEEC/DamageExecutionCalculation.h \
+  ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/GameplayEffectExecutionCalculation.h \
+  ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/GameplayEffectCalculation.h \
+  ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/GameplayEffectCalculation.generated.h \
+  ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/GameplayEffectExecutionCalculation.generated.h \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/DamageExecutionCalculation.generated.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/DamageTextComp.gen.cpp \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/UI/Widgets/DamageTextComp.h \
   Runtime/UMG/Public/Components/WidgetComponent.h \
@@ -2828,8 +2835,6 @@
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/MMC_MaxHealth.gen.cpp \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/GAS/MMC/MMC_MaxHealth.h \
   ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/GameplayModMagnitudeCalculation.h \
-  ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/GameplayEffectCalculation.h \
-  ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/GameplayEffectCalculation.generated.h \
   ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/GameplayModMagnitudeCalculation.generated.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/MMC_MaxHealth.generated.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/MMC_MaxMana.gen.cpp \

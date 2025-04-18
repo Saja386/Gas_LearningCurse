@@ -39,5 +39,8 @@ public:
 	TMap<ECharacterClasses, FCharacterDefaultClassInfo> CharacterClassInformation;
 	UPROPERTY(EditDefaultsOnly , Category="Common Class Defaults")
 	TArray<TSubclassOf<UGameplayAbility>> CommonGameplayAbilitys ;
+	
+	UPROPERTY(EditDefaultsOnly , Category="Common Class Defaults")
+	TObjectPtr<UCurveTable> DamageCoefficienseTable; 
 	FCharacterDefaultClassInfo GetDefaultClassInfo(ECharacterClasses CharacterClass);
 };

@@ -11,6 +11,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 class UAbilitySystemComponent;
 class UAttributeMenuWidgetController;
+class UCharacterClassInfo;
 class UObject;
 class UOverlayWidgetController;
 enum class ECharacterClasses : uint8;
@@ -20,6 +21,7 @@ enum class ECharacterClasses : uint8;
 #define AURA_AuraAbilitySystemLiberary_generated_h
 
 #define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_AuraAbilitySystemLiberary_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execGetCharacterClassInfo); \
 	DECLARE_FUNCTION(execGiveStartUpAbilitys); \
 	DECLARE_FUNCTION(execInitializeDefaultAttributesbyClass); \
 	DECLARE_FUNCTION(execGetAttributeMenuWidgetController); \
