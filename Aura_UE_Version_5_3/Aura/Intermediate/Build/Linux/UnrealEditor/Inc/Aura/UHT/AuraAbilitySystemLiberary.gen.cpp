@@ -6,6 +6,7 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "Aura/Public/GAS/AuraAbilitySystemLiberary.h"
+#include "GameplayAbilities/Public/GameplayEffectTypes.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeAuraAbilitySystemLiberary() {}
 
@@ -19,6 +20,7 @@ AURA_API UEnum* Z_Construct_UEnum_Aura_ECharacterClasses();
 COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UBlueprintFunctionLibrary();
 GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UAbilitySystemComponent_NoRegister();
+GAMEPLAYABILITIES_API UScriptStruct* Z_Construct_UScriptStruct_FGameplayEffectContextHandle();
 UPackage* Z_Construct_UPackage__Script_Aura();
 // End Cross Module References
 
@@ -293,6 +295,222 @@ DEFINE_FUNCTION(UAuraAbilitySystemLiberary::execInitializeDefaultAttributesbyCla
 }
 // End Class UAuraAbilitySystemLiberary Function InitializeDefaultAttributesbyClass
 
+// Begin Class UAuraAbilitySystemLiberary Function IsBlockHit
+struct Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsBlockHit_Statics
+{
+	struct AuraAbilitySystemLiberary_eventIsBlockHit_Parms
+	{
+		FGameplayEffectContextHandle EffectContextHandle;
+		bool ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Aura Ability System|GamePlayEffect" },
+		{ "ModuleRelativePath", "Public/GAS/AuraAbilitySystemLiberary.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EffectContextHandle_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStructPropertyParams NewProp_EffectContextHandle;
+	static void NewProp_ReturnValue_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsBlockHit_Statics::NewProp_EffectContextHandle = { "EffectContextHandle", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AuraAbilitySystemLiberary_eventIsBlockHit_Parms, EffectContextHandle), Z_Construct_UScriptStruct_FGameplayEffectContextHandle, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EffectContextHandle_MetaData), NewProp_EffectContextHandle_MetaData) }; // 1628379207
+void Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsBlockHit_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+{
+	((AuraAbilitySystemLiberary_eventIsBlockHit_Parms*)Obj)->ReturnValue = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsBlockHit_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(AuraAbilitySystemLiberary_eventIsBlockHit_Parms), &Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsBlockHit_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsBlockHit_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsBlockHit_Statics::NewProp_EffectContextHandle,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsBlockHit_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsBlockHit_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsBlockHit_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UAuraAbilitySystemLiberary, nullptr, "IsBlockHit", nullptr, nullptr, Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsBlockHit_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsBlockHit_Statics::PropPointers), sizeof(Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsBlockHit_Statics::AuraAbilitySystemLiberary_eventIsBlockHit_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsBlockHit_Statics::Function_MetaDataParams), Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsBlockHit_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsBlockHit_Statics::AuraAbilitySystemLiberary_eventIsBlockHit_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsBlockHit()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsBlockHit_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UAuraAbilitySystemLiberary::execIsBlockHit)
+{
+	P_GET_STRUCT_REF(FGameplayEffectContextHandle,Z_Param_Out_EffectContextHandle);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(bool*)Z_Param__Result=UAuraAbilitySystemLiberary::IsBlockHit(Z_Param_Out_EffectContextHandle);
+	P_NATIVE_END;
+}
+// End Class UAuraAbilitySystemLiberary Function IsBlockHit
+
+// Begin Class UAuraAbilitySystemLiberary Function IsCriticalHit
+struct Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsCriticalHit_Statics
+{
+	struct AuraAbilitySystemLiberary_eventIsCriticalHit_Parms
+	{
+		FGameplayEffectContextHandle EffectContextHandle;
+		bool ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Aura Ability System|GamePlayEffect" },
+		{ "ModuleRelativePath", "Public/GAS/AuraAbilitySystemLiberary.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EffectContextHandle_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStructPropertyParams NewProp_EffectContextHandle;
+	static void NewProp_ReturnValue_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsCriticalHit_Statics::NewProp_EffectContextHandle = { "EffectContextHandle", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AuraAbilitySystemLiberary_eventIsCriticalHit_Parms, EffectContextHandle), Z_Construct_UScriptStruct_FGameplayEffectContextHandle, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EffectContextHandle_MetaData), NewProp_EffectContextHandle_MetaData) }; // 1628379207
+void Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsCriticalHit_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+{
+	((AuraAbilitySystemLiberary_eventIsCriticalHit_Parms*)Obj)->ReturnValue = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsCriticalHit_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(AuraAbilitySystemLiberary_eventIsCriticalHit_Parms), &Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsCriticalHit_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsCriticalHit_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsCriticalHit_Statics::NewProp_EffectContextHandle,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsCriticalHit_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsCriticalHit_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsCriticalHit_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UAuraAbilitySystemLiberary, nullptr, "IsCriticalHit", nullptr, nullptr, Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsCriticalHit_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsCriticalHit_Statics::PropPointers), sizeof(Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsCriticalHit_Statics::AuraAbilitySystemLiberary_eventIsCriticalHit_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsCriticalHit_Statics::Function_MetaDataParams), Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsCriticalHit_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsCriticalHit_Statics::AuraAbilitySystemLiberary_eventIsCriticalHit_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsCriticalHit()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsCriticalHit_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UAuraAbilitySystemLiberary::execIsCriticalHit)
+{
+	P_GET_STRUCT_REF(FGameplayEffectContextHandle,Z_Param_Out_EffectContextHandle);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(bool*)Z_Param__Result=UAuraAbilitySystemLiberary::IsCriticalHit(Z_Param_Out_EffectContextHandle);
+	P_NATIVE_END;
+}
+// End Class UAuraAbilitySystemLiberary Function IsCriticalHit
+
+// Begin Class UAuraAbilitySystemLiberary Function SetIsBlockHit
+struct Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsBlockHit_Statics
+{
+	struct AuraAbilitySystemLiberary_eventSetIsBlockHit_Parms
+	{
+		FGameplayEffectContextHandle EffectContextHandle;
+		bool IsBlockedHit;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Aura Ability System|GamePlayEffect" },
+		{ "ModuleRelativePath", "Public/GAS/AuraAbilitySystemLiberary.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStructPropertyParams NewProp_EffectContextHandle;
+	static void NewProp_IsBlockedHit_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_IsBlockedHit;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsBlockHit_Statics::NewProp_EffectContextHandle = { "EffectContextHandle", nullptr, (EPropertyFlags)0x0010000008000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AuraAbilitySystemLiberary_eventSetIsBlockHit_Parms, EffectContextHandle), Z_Construct_UScriptStruct_FGameplayEffectContextHandle, METADATA_PARAMS(0, nullptr) }; // 1628379207
+void Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsBlockHit_Statics::NewProp_IsBlockedHit_SetBit(void* Obj)
+{
+	((AuraAbilitySystemLiberary_eventSetIsBlockHit_Parms*)Obj)->IsBlockedHit = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsBlockHit_Statics::NewProp_IsBlockedHit = { "IsBlockedHit", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(AuraAbilitySystemLiberary_eventSetIsBlockHit_Parms), &Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsBlockHit_Statics::NewProp_IsBlockedHit_SetBit, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsBlockHit_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsBlockHit_Statics::NewProp_EffectContextHandle,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsBlockHit_Statics::NewProp_IsBlockedHit,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsBlockHit_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsBlockHit_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UAuraAbilitySystemLiberary, nullptr, "SetIsBlockHit", nullptr, nullptr, Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsBlockHit_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsBlockHit_Statics::PropPointers), sizeof(Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsBlockHit_Statics::AuraAbilitySystemLiberary_eventSetIsBlockHit_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsBlockHit_Statics::Function_MetaDataParams), Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsBlockHit_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsBlockHit_Statics::AuraAbilitySystemLiberary_eventSetIsBlockHit_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsBlockHit()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsBlockHit_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UAuraAbilitySystemLiberary::execSetIsBlockHit)
+{
+	P_GET_STRUCT_REF(FGameplayEffectContextHandle,Z_Param_Out_EffectContextHandle);
+	P_GET_UBOOL(Z_Param_IsBlockedHit);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	UAuraAbilitySystemLiberary::SetIsBlockHit(Z_Param_Out_EffectContextHandle,Z_Param_IsBlockedHit);
+	P_NATIVE_END;
+}
+// End Class UAuraAbilitySystemLiberary Function SetIsBlockHit
+
+// Begin Class UAuraAbilitySystemLiberary Function SetIsCritical
+struct Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsCritical_Statics
+{
+	struct AuraAbilitySystemLiberary_eventSetIsCritical_Parms
+	{
+		FGameplayEffectContextHandle EffectContextHandle;
+		bool IsCritical;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Aura Ability System|GamePlayEffect" },
+		{ "ModuleRelativePath", "Public/GAS/AuraAbilitySystemLiberary.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStructPropertyParams NewProp_EffectContextHandle;
+	static void NewProp_IsCritical_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_IsCritical;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsCritical_Statics::NewProp_EffectContextHandle = { "EffectContextHandle", nullptr, (EPropertyFlags)0x0010000008000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AuraAbilitySystemLiberary_eventSetIsCritical_Parms, EffectContextHandle), Z_Construct_UScriptStruct_FGameplayEffectContextHandle, METADATA_PARAMS(0, nullptr) }; // 1628379207
+void Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsCritical_Statics::NewProp_IsCritical_SetBit(void* Obj)
+{
+	((AuraAbilitySystemLiberary_eventSetIsCritical_Parms*)Obj)->IsCritical = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsCritical_Statics::NewProp_IsCritical = { "IsCritical", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(AuraAbilitySystemLiberary_eventSetIsCritical_Parms), &Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsCritical_Statics::NewProp_IsCritical_SetBit, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsCritical_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsCritical_Statics::NewProp_EffectContextHandle,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsCritical_Statics::NewProp_IsCritical,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsCritical_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsCritical_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UAuraAbilitySystemLiberary, nullptr, "SetIsCritical", nullptr, nullptr, Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsCritical_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsCritical_Statics::PropPointers), sizeof(Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsCritical_Statics::AuraAbilitySystemLiberary_eventSetIsCritical_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsCritical_Statics::Function_MetaDataParams), Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsCritical_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsCritical_Statics::AuraAbilitySystemLiberary_eventSetIsCritical_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsCritical()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsCritical_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UAuraAbilitySystemLiberary::execSetIsCritical)
+{
+	P_GET_STRUCT_REF(FGameplayEffectContextHandle,Z_Param_Out_EffectContextHandle);
+	P_GET_UBOOL(Z_Param_IsCritical);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	UAuraAbilitySystemLiberary::SetIsCritical(Z_Param_Out_EffectContextHandle,Z_Param_IsCritical);
+	P_NATIVE_END;
+}
+// End Class UAuraAbilitySystemLiberary Function SetIsCritical
+
 // Begin Class UAuraAbilitySystemLiberary
 void UAuraAbilitySystemLiberary::StaticRegisterNativesUAuraAbilitySystemLiberary()
 {
@@ -303,6 +521,10 @@ void UAuraAbilitySystemLiberary::StaticRegisterNativesUAuraAbilitySystemLiberary
 		{ "GetOverlayWidgetController", &UAuraAbilitySystemLiberary::execGetOverlayWidgetController },
 		{ "GiveStartUpAbilitys", &UAuraAbilitySystemLiberary::execGiveStartUpAbilitys },
 		{ "InitializeDefaultAttributesbyClass", &UAuraAbilitySystemLiberary::execInitializeDefaultAttributesbyClass },
+		{ "IsBlockHit", &UAuraAbilitySystemLiberary::execIsBlockHit },
+		{ "IsCriticalHit", &UAuraAbilitySystemLiberary::execIsCriticalHit },
+		{ "SetIsBlockHit", &UAuraAbilitySystemLiberary::execSetIsBlockHit },
+		{ "SetIsCritical", &UAuraAbilitySystemLiberary::execSetIsCritical },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
@@ -329,6 +551,10 @@ struct Z_Construct_UClass_UAuraAbilitySystemLiberary_Statics
 		{ &Z_Construct_UFunction_UAuraAbilitySystemLiberary_GetOverlayWidgetController, "GetOverlayWidgetController" }, // 1073682621
 		{ &Z_Construct_UFunction_UAuraAbilitySystemLiberary_GiveStartUpAbilitys, "GiveStartUpAbilitys" }, // 1403954715
 		{ &Z_Construct_UFunction_UAuraAbilitySystemLiberary_InitializeDefaultAttributesbyClass, "InitializeDefaultAttributesbyClass" }, // 3153204970
+		{ &Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsBlockHit, "IsBlockHit" }, // 3615928414
+		{ &Z_Construct_UFunction_UAuraAbilitySystemLiberary_IsCriticalHit, "IsCriticalHit" }, // 4065414525
+		{ &Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsBlockHit, "SetIsBlockHit" }, // 2504516829
+		{ &Z_Construct_UFunction_UAuraAbilitySystemLiberary_SetIsCritical, "SetIsCritical" }, // 3463417035
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -377,10 +603,10 @@ UAuraAbilitySystemLiberary::~UAuraAbilitySystemLiberary() {}
 struct Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_AuraAbilitySystemLiberary_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UAuraAbilitySystemLiberary, UAuraAbilitySystemLiberary::StaticClass, TEXT("UAuraAbilitySystemLiberary"), &Z_Registration_Info_UClass_UAuraAbilitySystemLiberary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAuraAbilitySystemLiberary), 1235141444U) },
+		{ Z_Construct_UClass_UAuraAbilitySystemLiberary, UAuraAbilitySystemLiberary::StaticClass, TEXT("UAuraAbilitySystemLiberary"), &Z_Registration_Info_UClass_UAuraAbilitySystemLiberary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UAuraAbilitySystemLiberary), 197492176U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_AuraAbilitySystemLiberary_h_327740137(TEXT("/Script/Aura"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_AuraAbilitySystemLiberary_h_462581350(TEXT("/Script/Aura"),
 	Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_AuraAbilitySystemLiberary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_AuraAbilitySystemLiberary_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

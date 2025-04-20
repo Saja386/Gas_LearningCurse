@@ -28,7 +28,7 @@ void AAuraPlayerController::Tick(float DeltaTime)
 	AutoRun();
 }
 
-void AAuraPlayerController::ShowTextDamage_Implementation(float DamageAmount , ACharacter* DamageTarget)
+void AAuraPlayerController::ShowTextDamage_Implementation(float DamageAmount , ACharacter* DamageTarget ,bool IsBlocked , bool ISCriticalHit )
 {
 	if(IsValid(DamageTarget)&& DamageTextCompo)
 	{
@@ -36,7 +36,7 @@ void AAuraPlayerController::ShowTextDamage_Implementation(float DamageAmount , A
 		DamageTextComp->RegisterComponent();
 		DamageTextComp->AttachToComponent(DamageTarget->GetRootComponent() , FAttachmentTransformRules::KeepRelativeTransform);
 		DamageTextComp->DetachFromComponent(FDetachmentTransformRules::KeepWorldTransform);
-		DamageTextComp->SetDamageText(DamageAmount);
+		DamageTextComp->SetDamageText(DamageAmount , IsBlocked , ISCriticalHit);
 	}
 }
 

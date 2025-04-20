@@ -9,6 +9,7 @@
 #include "Net/UnrealNetwork.h"
 #include "AuraGamePlayTags.h"
 #include "Controllers/AuraPlayerController.h"
+#include "GAS/AuraAbilitySystemLiberary.h"
 #include "Interfaces/CombatInterface.h"
 #include "Kismet/GameplayStatics.h"
 
@@ -102,11 +103,16 @@ void UPlayerAttributeSet::PostGameplayEffectExecute(const  FGameplayEffectModCal
 					CombatInterface->Die();
 				}
 			}
+
+
+			const  bool BBlocked = UAuraAbilitySystemLiberary::IsBlockHit(props.EffectContextHandle);
+			const bool BCritical = UAuraAbilitySystemLiberary::IsCriticalHit(props.EffectContextHandle);
+			
 			if (props.SourceCharacter != props.TargetCharacter)
 			{
 				if(AAuraPlayerController* PlayerController = Cast<AAuraPlayerController>(UGameplayStatics::GetPlayerController(props.SourceCharacter , 0)))
 				{
-					PlayerController->ShowTextDamage(LocalIncomingDamage,  props.TargetCharacter);
+					PlayerController->ShowTextDamage(LocalIncomingDamage,  props.TargetCharacter , BBlocked , BCritical);
 				}
 			}
 		}

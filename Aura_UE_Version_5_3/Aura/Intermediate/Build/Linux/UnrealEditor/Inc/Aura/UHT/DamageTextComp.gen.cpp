@@ -20,12 +20,16 @@ UPackage* Z_Construct_UPackage__Script_Aura();
 struct DamageTextComp_eventSetDamageText_Parms
 {
 	float damageText;
+	bool IsBlocked;
+	bool ISCriticalHit;
 };
 static FName NAME_UDamageTextComp_SetDamageText = FName(TEXT("SetDamageText"));
-void UDamageTextComp::SetDamageText(float damageText)
+void UDamageTextComp::SetDamageText(float damageText, bool IsBlocked, bool ISCriticalHit)
 {
 	DamageTextComp_eventSetDamageText_Parms Parms;
 	Parms.damageText=damageText;
+	Parms.IsBlocked=IsBlocked ? true : false;
+	Parms.ISCriticalHit=ISCriticalHit ? true : false;
 	ProcessEvent(FindFunctionChecked(NAME_UDamageTextComp_SetDamageText),&Parms);
 }
 struct Z_Construct_UFunction_UDamageTextComp_SetDamageText_Statics
@@ -36,12 +40,28 @@ struct Z_Construct_UFunction_UDamageTextComp_SetDamageText_Statics
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_damageText;
+	static void NewProp_IsBlocked_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_IsBlocked;
+	static void NewProp_ISCriticalHit_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_ISCriticalHit;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UDamageTextComp_SetDamageText_Statics::NewProp_damageText = { "damageText", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(DamageTextComp_eventSetDamageText_Parms, damageText), METADATA_PARAMS(0, nullptr) };
+void Z_Construct_UFunction_UDamageTextComp_SetDamageText_Statics::NewProp_IsBlocked_SetBit(void* Obj)
+{
+	((DamageTextComp_eventSetDamageText_Parms*)Obj)->IsBlocked = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UDamageTextComp_SetDamageText_Statics::NewProp_IsBlocked = { "IsBlocked", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(DamageTextComp_eventSetDamageText_Parms), &Z_Construct_UFunction_UDamageTextComp_SetDamageText_Statics::NewProp_IsBlocked_SetBit, METADATA_PARAMS(0, nullptr) };
+void Z_Construct_UFunction_UDamageTextComp_SetDamageText_Statics::NewProp_ISCriticalHit_SetBit(void* Obj)
+{
+	((DamageTextComp_eventSetDamageText_Parms*)Obj)->ISCriticalHit = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UDamageTextComp_SetDamageText_Statics::NewProp_ISCriticalHit = { "ISCriticalHit", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(DamageTextComp_eventSetDamageText_Parms), &Z_Construct_UFunction_UDamageTextComp_SetDamageText_Statics::NewProp_ISCriticalHit_SetBit, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UDamageTextComp_SetDamageText_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDamageTextComp_SetDamageText_Statics::NewProp_damageText,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDamageTextComp_SetDamageText_Statics::NewProp_IsBlocked,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDamageTextComp_SetDamageText_Statics::NewProp_ISCriticalHit,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UDamageTextComp_SetDamageText_Statics::PropPointers) < 2048);
 const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UDamageTextComp_SetDamageText_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UDamageTextComp, nullptr, "SetDamageText", nullptr, nullptr, Z_Construct_UFunction_UDamageTextComp_SetDamageText_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UDamageTextComp_SetDamageText_Statics::PropPointers), sizeof(DamageTextComp_eventSetDamageText_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UDamageTextComp_SetDamageText_Statics::Function_MetaDataParams), Z_Construct_UFunction_UDamageTextComp_SetDamageText_Statics::Function_MetaDataParams) };
@@ -80,7 +100,7 @@ struct Z_Construct_UClass_UDamageTextComp_Statics
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UDamageTextComp_SetDamageText, "SetDamageText" }, // 1732850775
+		{ &Z_Construct_UFunction_UDamageTextComp_SetDamageText, "SetDamageText" }, // 4020087406
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -129,10 +149,10 @@ UDamageTextComp::~UDamageTextComp() {}
 struct Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_UI_Widgets_DamageTextComp_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UDamageTextComp, UDamageTextComp::StaticClass, TEXT("UDamageTextComp"), &Z_Registration_Info_UClass_UDamageTextComp, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDamageTextComp), 2889010045U) },
+		{ Z_Construct_UClass_UDamageTextComp, UDamageTextComp::StaticClass, TEXT("UDamageTextComp"), &Z_Registration_Info_UClass_UDamageTextComp, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDamageTextComp), 1527595210U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_UI_Widgets_DamageTextComp_h_837280487(TEXT("/Script/Aura"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_UI_Widgets_DamageTextComp_h_1087641656(TEXT("/Script/Aura"),
 	Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_UI_Widgets_DamageTextComp_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_UI_Widgets_DamageTextComp_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

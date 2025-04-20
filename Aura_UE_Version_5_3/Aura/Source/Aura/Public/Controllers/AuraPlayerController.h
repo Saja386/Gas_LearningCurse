@@ -28,7 +28,7 @@ class AURA_API AAuraPlayerController : public APlayerController
 	virtual void Tick(float DeltaTime) override;
 
 	UFUNCTION(Reliable , Client)
-	void ShowTextDamage(float DamageAmount , ACharacter* DamageTarget);
+	void ShowTextDamage(float DamageAmount , ACharacter* DamageTarget , bool IsBlocked , bool ISCriticalHit );
 protected:
 	virtual void BeginPlay() override;
 	virtual void SetupInputComponent() override;

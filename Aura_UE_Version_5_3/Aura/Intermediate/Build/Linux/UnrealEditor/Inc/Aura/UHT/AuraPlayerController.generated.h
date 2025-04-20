@@ -16,7 +16,7 @@ class ACharacter;
 #define AURA_AuraPlayerController_generated_h
 
 #define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Controllers_AuraPlayerController_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
-	virtual void ShowTextDamage_Implementation(float DamageAmount, ACharacter* DamageTarget); \
+	virtual void ShowTextDamage_Implementation(float DamageAmount, ACharacter* DamageTarget, bool IsBlocked, bool ISCriticalHit); \
 	DECLARE_FUNCTION(execShowTextDamage);
 
 

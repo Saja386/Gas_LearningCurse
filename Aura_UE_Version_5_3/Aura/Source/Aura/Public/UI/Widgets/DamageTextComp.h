@@ -15,5 +15,5 @@ class AURA_API UDamageTextComp : public UWidgetComponent
 	GENERATED_BODY()
 public :
 	UFUNCTION(BlueprintImplementableEvent , BlueprintCallable)
-	void SetDamageText(float damageText);
+	void SetDamageText(float damageText , bool IsBlocked , bool ISCriticalHit );
 };

@@ -7,6 +7,7 @@
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "AuraAbilitySystemLiberary.generated.h"
 
+struct FGameplayEffectContextHandle;
 class UAbilitySystemComponent;
 class UAttributeMenuWidgetController;
 class UOverlayWidgetController;
@@ -32,4 +33,17 @@ public:
 
 	UFUNCTION(BlueprintCallable , Category = "Aura Ability System|AttributeWidgetController")
 	static UCharacterClassInfo* GetCharacterClassInfo(const UObject* WorldContextObject);
+
+	UFUNCTION (BlueprintPure , Category = "Aura Ability System|GamePlayEffect")
+	static bool IsBlockHit (const FGameplayEffectContextHandle& EffectContextHandle);
+
+	UFUNCTION (BlueprintPure , Category = "Aura Ability System|GamePlayEffect")
+	static bool IsCriticalHit (const FGameplayEffectContextHandle& EffectContextHandle);
+
+	UFUNCTION (BlueprintCallable , Category = "Aura Ability System|GamePlayEffect")
+	static void SetIsBlockHit (UPARAM(ref)FGameplayEffectContextHandle& EffectContextHandle, bool IsBlockedHit);
+
+	UFUNCTION (BlueprintCallable , Category = "Aura Ability System|GamePlayEffect")
+	static void SetIsCritical (UPARAM(ref)FGameplayEffectContextHandle& EffectContextHandle, bool IsCritical);
+	
 };

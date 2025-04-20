@@ -28,13 +28,17 @@ struct AuraPlayerController_eventShowTextDamage_Parms
 {
 	float DamageAmount;
 	ACharacter* DamageTarget;
+	bool IsBlocked;
+	bool ISCriticalHit;
 };
 static FName NAME_AAuraPlayerController_ShowTextDamage = FName(TEXT("ShowTextDamage"));
-void AAuraPlayerController::ShowTextDamage(float DamageAmount, ACharacter* DamageTarget)
+void AAuraPlayerController::ShowTextDamage(float DamageAmount, ACharacter* DamageTarget, bool IsBlocked, bool ISCriticalHit)
 {
 	AuraPlayerController_eventShowTextDamage_Parms Parms;
 	Parms.DamageAmount=DamageAmount;
 	Parms.DamageTarget=DamageTarget;
+	Parms.IsBlocked=IsBlocked ? true : false;
+	Parms.ISCriticalHit=ISCriticalHit ? true : false;
 	ProcessEvent(FindFunctionChecked(NAME_AAuraPlayerController_ShowTextDamage),&Parms);
 }
 struct Z_Construct_UFunction_AAuraPlayerController_ShowTextDamage_Statics
@@ -46,14 +50,30 @@ struct Z_Construct_UFunction_AAuraPlayerController_ShowTextDamage_Statics
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_DamageAmount;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_DamageTarget;
+	static void NewProp_IsBlocked_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_IsBlocked;
+	static void NewProp_ISCriticalHit_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_ISCriticalHit;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AAuraPlayerController_ShowTextDamage_Statics::NewProp_DamageAmount = { "DamageAmount", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AuraPlayerController_eventShowTextDamage_Parms, DamageAmount), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AAuraPlayerController_ShowTextDamage_Statics::NewProp_DamageTarget = { "DamageTarget", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AuraPlayerController_eventShowTextDamage_Parms, DamageTarget), Z_Construct_UClass_ACharacter_NoRegister, METADATA_PARAMS(0, nullptr) };
+void Z_Construct_UFunction_AAuraPlayerController_ShowTextDamage_Statics::NewProp_IsBlocked_SetBit(void* Obj)
+{
+	((AuraPlayerController_eventShowTextDamage_Parms*)Obj)->IsBlocked = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AAuraPlayerController_ShowTextDamage_Statics::NewProp_IsBlocked = { "IsBlocked", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(AuraPlayerController_eventShowTextDamage_Parms), &Z_Construct_UFunction_AAuraPlayerController_ShowTextDamage_Statics::NewProp_IsBlocked_SetBit, METADATA_PARAMS(0, nullptr) };
+void Z_Construct_UFunction_AAuraPlayerController_ShowTextDamage_Statics::NewProp_ISCriticalHit_SetBit(void* Obj)
+{
+	((AuraPlayerController_eventShowTextDamage_Parms*)Obj)->ISCriticalHit = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AAuraPlayerController_ShowTextDamage_Statics::NewProp_ISCriticalHit = { "ISCriticalHit", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(AuraPlayerController_eventShowTextDamage_Parms), &Z_Construct_UFunction_AAuraPlayerController_ShowTextDamage_Statics::NewProp_ISCriticalHit_SetBit, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AAuraPlayerController_ShowTextDamage_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AAuraPlayerController_ShowTextDamage_Statics::NewProp_DamageAmount,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AAuraPlayerController_ShowTextDamage_Statics::NewProp_DamageTarget,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AAuraPlayerController_ShowTextDamage_Statics::NewProp_IsBlocked,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AAuraPlayerController_ShowTextDamage_Statics::NewProp_ISCriticalHit,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AAuraPlayerController_ShowTextDamage_Statics::PropPointers) < 2048);
 const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AAuraPlayerController_ShowTextDamage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AAuraPlayerController, nullptr, "ShowTextDamage", nullptr, nullptr, Z_Construct_UFunction_AAuraPlayerController_ShowTextDamage_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AAuraPlayerController_ShowTextDamage_Statics::PropPointers), sizeof(AuraPlayerController_eventShowTextDamage_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x01020CC0, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AAuraPlayerController_ShowTextDamage_Statics::Function_MetaDataParams), Z_Construct_UFunction_AAuraPlayerController_ShowTextDamage_Statics::Function_MetaDataParams) };
@@ -71,9 +91,11 @@ DEFINE_FUNCTION(AAuraPlayerController::execShowTextDamage)
 {
 	P_GET_PROPERTY(FFloatProperty,Z_Param_DamageAmount);
 	P_GET_OBJECT(ACharacter,Z_Param_DamageTarget);
+	P_GET_UBOOL(Z_Param_IsBlocked);
+	P_GET_UBOOL(Z_Param_ISCriticalHit);
 	P_FINISH;
 	P_NATIVE_BEGIN;
-	P_THIS->ShowTextDamage_Implementation(Z_Param_DamageAmount,Z_Param_DamageTarget);
+	P_THIS->ShowTextDamage_Implementation(Z_Param_DamageAmount,Z_Param_DamageTarget,Z_Param_IsBlocked,Z_Param_ISCriticalHit);
 	P_NATIVE_END;
 }
 // End Class AAuraPlayerController Function ShowTextDamage
@@ -143,7 +165,7 @@ struct Z_Construct_UClass_AAuraPlayerController_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_AAuraPlayerController_ShowTextDamage, "ShowTextDamage" }, // 1346557921
+		{ &Z_Construct_UFunction_AAuraPlayerController_ShowTextDamage, "ShowTextDamage" }, // 421338008
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -208,10 +230,10 @@ AAuraPlayerController::~AAuraPlayerController() {}
 struct Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Controllers_AuraPlayerController_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AAuraPlayerController, AAuraPlayerController::StaticClass, TEXT("AAuraPlayerController"), &Z_Registration_Info_UClass_AAuraPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAuraPlayerController), 4059587815U) },
+		{ Z_Construct_UClass_AAuraPlayerController, AAuraPlayerController::StaticClass, TEXT("AAuraPlayerController"), &Z_Registration_Info_UClass_AAuraPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAuraPlayerController), 1801085171U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Controllers_AuraPlayerController_h_2191999909(TEXT("/Script/Aura"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Controllers_AuraPlayerController_h_999521203(TEXT("/Script/Aura"),
 	Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Controllers_AuraPlayerController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_Controllers_AuraPlayerController_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

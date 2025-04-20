@@ -4,6 +4,7 @@
 #include "GAS/GPEEC/DamageExecutionCalculation.h"
 
 #include "AbilitySystemComponent.h"
+#include "AuraAbilitiesTypes.h"
 #include "AuraGamePlayTags.h"
 #include "Engine/SpecularProfile.h"
 #include "GAS/AuraAbilitySystemLiberary.h"
@@ -131,6 +132,12 @@ void UDamageExecutionCalculation::Execute_Implementation(
 
 	const bool bBlocked = FMath::RandRange(1 , 100) < TargetBlockChance;
 	if(bBlocked) Damage *= 0.25 ;
+	FGameplayEffectContextHandle SpecContextHandle = Spec.GetContext();
+	FGameplayEffectContext* SpecContext = SpecContextHandle.Get();
+	FAuraGamePlayEffectContextStruct* AuraSpecContext = static_cast<FAuraGamePlayEffectContextStruct*>(SpecContext);
+	AuraSpecContext->SetBIsBlock(bBlocked);
+
+	UAuraAbilitySystemLiberary::SetIsCritical(SpecContextHandle , BCriticalHit);
 	
 	FGameplayModifierEvaluatedData EvaluatedData(UPlayerAttributeSet::GetIncomingDamageAttribute() , EGameplayModOp::Additive , Damage);
 	OutExecutionOutput.AddOutputModifier(EvaluatedData);
