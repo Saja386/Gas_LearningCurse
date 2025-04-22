@@ -24,6 +24,10 @@ struct FGameplayAttributeData;
 template<> AURA_API UScriptStruct* StaticStruct<struct FEffectGamePlayProperties>();
 
 #define FID_Documents_GitHub_Gas_LearningCurse_Aura_UE_Version_5_3_Aura_Source_Aura_Public_GAS_PlayerAttributeSet_h_56_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execOnRep_PhysicalResistance); \
+	DECLARE_FUNCTION(execOnRep_ArcaneResistance); \
+	DECLARE_FUNCTION(execOnRep_LightningResistance); \
+	DECLARE_FUNCTION(execOnRep_FireResistance); \
 	DECLARE_FUNCTION(execOnRep_ManaRegeneration); \
 	DECLARE_FUNCTION(execOnRep_HealthRegeneration); \
 	DECLARE_FUNCTION(execOnRep_CriticalHitResistance); \
@@ -66,6 +70,10 @@ public: \
 		ManaRegeneration, \
 		MaxMana, \
 		MaxHealth, \
+		FireResistance, \
+		LightningResistance, \
+		ArcaneResistance, \
+		PhysicalResistance, \
 		Health, \
 		Mana, \
 		NETFIELD_REP_END=Mana	}; \

@@ -1,0 +1,20 @@
+Generating report for minidump
+
+Application version 5.4.4.0
+ ... built from changelist 35576357
+
+OS version Linux 6.13.8-arch1-1 (network name: archlinux)
+Running 16 x86_64 processors (24 logical cores)
+Exception was "SIGSEGV: invalid attempt to read memory at address 0x0000000019829cc0"
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+Unknown!UnknownFunction()
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!

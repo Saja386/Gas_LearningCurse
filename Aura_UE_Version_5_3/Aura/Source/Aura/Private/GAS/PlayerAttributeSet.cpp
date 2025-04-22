@@ -35,6 +35,13 @@ UPlayerAttributeSet::UPlayerAttributeSet()
 	TagsToAttributes.Add(GamePlayTags.Attribute_Secondary_MaxHealth , GetMaxHealthAttribute);
 	TagsToAttributes.Add(GamePlayTags.Attribute_Secondary_MaxMana , GetMaxManaAttribute);
 
+	//Resistance
+	TagsToAttributes.Add(GamePlayTags.Attribute_Resitances_Fire , GetFireResistanceAttribute);
+	TagsToAttributes.Add(GamePlayTags.Attribute_Resitances_Lightning , GetLightningResistanceAttribute);
+	TagsToAttributes.Add(GamePlayTags.Attribute_Resitances_Arcane , GetArcaneResistanceAttribute);
+	TagsToAttributes.Add(GamePlayTags.Attribute_Resitances_Physical, GetPhysicalResistanceAttribute);
+	
+
 
 
 	
@@ -63,6 +70,11 @@ void UPlayerAttributeSet::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& 
 	DOREPLIFETIME_CONDITION_NOTIFY(UPlayerAttributeSet , Mana , COND_None , REPNOTIFY_Always) ;
 	DOREPLIFETIME_CONDITION_NOTIFY(UPlayerAttributeSet , MaxMana , COND_None , REPNOTIFY_Always) ;
 
+
+	DOREPLIFETIME_CONDITION_NOTIFY(UPlayerAttributeSet , FireResistance , COND_None , REPNOTIFY_Always) ;
+	DOREPLIFETIME_CONDITION_NOTIFY(UPlayerAttributeSet , LightningResistance , COND_None , REPNOTIFY_Always) ;
+	DOREPLIFETIME_CONDITION_NOTIFY(UPlayerAttributeSet , ArcaneResistance , COND_None , REPNOTIFY_Always) ;
+	DOREPLIFETIME_CONDITION_NOTIFY(UPlayerAttributeSet , PhysicalResistance , COND_None , REPNOTIFY_Always) ;
 }
 
 
@@ -200,6 +212,29 @@ void UPlayerAttributeSet::OnRep_HealthRegeneration(const FGameplayAttributeData&
 void UPlayerAttributeSet::OnRep_ManaRegeneration(const FGameplayAttributeData& CurrentManaRegeneration) const
 {
 	GAMEPLAYATTRIBUTE_REPNOTIFY(UPlayerAttributeSet , ManaRegeneration , CurrentManaRegeneration) ;
+}
+
+void UPlayerAttributeSet::OnRep_FireResistance(const FGameplayAttributeData& CurrentFireResistance) const
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(UPlayerAttributeSet , FireResistance , CurrentFireResistance) ;
+}
+
+void UPlayerAttributeSet::OnRep_LightningResistance(const FGameplayAttributeData& CurrentLightningResistance) const
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(UPlayerAttributeSet , LightningResistance , CurrentLightningResistance) ;
+
+}
+
+void UPlayerAttributeSet::OnRep_ArcaneResistance(const FGameplayAttributeData& CurrentArcaneResistance) const
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(UPlayerAttributeSet , ArcaneResistance , CurrentArcaneResistance) ;
+
+}
+
+void UPlayerAttributeSet::OnRep_PhysicalResistance(const FGameplayAttributeData& CurrentPhysicalResistance) const
+{
+	GAMEPLAYATTRIBUTE_REPNOTIFY(UPlayerAttributeSet , PhysicalResistance , CurrentPhysicalResistance) ;
+
 }
 
 void UPlayerAttributeSet::SetEffectProperties(const FGameplayEffectModCallbackData& Data,

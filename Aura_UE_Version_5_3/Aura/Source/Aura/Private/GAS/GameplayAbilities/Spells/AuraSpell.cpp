@@ -52,10 +52,13 @@ void UAuraSpell::SpawnProjectile(const FVector& TargetLocation)
 
 
 			FAuraGamePlayTags GamePlayTags = FAuraGamePlayTags::Get();
-			UAbilitySystemBlueprintLibrary::AssignTagSetByCallerMagnitude(DamageSpec , GamePlayTags.Damage , Damage.GetValueAtLevel(GetAbilityLevel()));
+			for (auto& Pair : DamageTagMap)
+			{
+				const float ScaledDmage = Pair.Value.GetValueAtLevel(GetAbilityLevel());
+				UAbilitySystemBlueprintLibrary::AssignTagSetByCallerMagnitude(DamageSpec , Pair.Key , ScaledDmage);
+
+			}
 			Projectile->AuraEffectHandle = DamageSpec;
-				
-			
 			
 			Projectile -> FinishSpawning(SpawnTransform);
 		

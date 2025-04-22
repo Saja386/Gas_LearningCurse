@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GAS/GameplayAbilities/AuraAbilities.h"
+#include "GAS/GameplayAbilities/DamagingAbility/AuraDamageAbility.h"
 #include "AuraSpell.generated.h"
 
 class AAuraProjectile;
@@ -12,7 +13,7 @@ class UGameplayEffect;
  * 
  */
 UCLASS()
-class AURA_API UAuraSpell : public UAuraAbilities
+class AURA_API UAuraSpell : public UAuraDamageAbility
 {
 	GENERATED_BODY()
 protected:
@@ -23,7 +24,6 @@ protected:
 	UFUNCTION(BlueprintCallable)
 	void SpawnProjectile (const FVector& TargetLocation);
 
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly , Category="Effects")
-	TSubclassOf<UGameplayEffect> DamageEffectClass;
+	
 	
 };

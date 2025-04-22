@@ -45,7 +45,23 @@ void FAuraGamePlayTags::initializeNativeGamePlayTags()
 	GamePlayTags.InputTag_2 = UGameplayTagsManager::Get().AddNativeGameplayTag(FName("InputTag.2"));
 	GamePlayTags.InputTag_3 = UGameplayTagsManager::Get().AddNativeGameplayTag(FName("InputTag.3"));
 	GamePlayTags.InputTag_4 = UGameplayTagsManager::Get().AddNativeGameplayTag(FName("InputTag.4"));
+
+	//DamageTypes
 	GamePlayTags.Damage = UGameplayTagsManager::Get().AddNativeGameplayTag(FName("Damage"));
+	GamePlayTags.Damage_Fire = UGameplayTagsManager::Get().AddNativeGameplayTag(FName("Damage.Fire"));
+	GamePlayTags.Damage_Lightning = UGameplayTagsManager::Get().AddNativeGameplayTag(FName("Damage.Lightning"));
+	GamePlayTags.Damage_Arcane = UGameplayTagsManager::Get().AddNativeGameplayTag(FName("Damage.Arcane"));
+	GamePlayTags.Damage_Physical = UGameplayTagsManager::Get().AddNativeGameplayTag(FName("Damage.Physical"));
+	GamePlayTags.Attribute_Resitances_Fire = UGameplayTagsManager::Get().AddNativeGameplayTag(FName("Attributes.Resitances.Fire"));
+	GamePlayTags.Attribute_Resitances_Lightning = UGameplayTagsManager::Get().AddNativeGameplayTag(FName("Attributes.Resitances.Lightning"));
+	GamePlayTags.Attribute_Resitances_Arcane = UGameplayTagsManager::Get().AddNativeGameplayTag(FName("Attributes.Resitances.Arcane"));
+	GamePlayTags.Attribute_Resitances_Physical = UGameplayTagsManager::Get().AddNativeGameplayTag(FName("Attributes.Resitances.Physical"));
+	
+	GamePlayTags.DamageToResistance.Add(GamePlayTags.Damage_Fire , GamePlayTags.Attribute_Resitances_Fire);
+	GamePlayTags.DamageToResistance.Add(GamePlayTags.Damage_Lightning, GamePlayTags.Attribute_Resitances_Lightning);
+	GamePlayTags.DamageToResistance.Add(GamePlayTags.Damage_Arcane, GamePlayTags.Attribute_Resitances_Arcane);
+	GamePlayTags.DamageToResistance.Add(GamePlayTags.Damage_Physical, GamePlayTags.Attribute_Resitances_Physical);
+
 	GamePlayTags.Effect_HitReact = UGameplayTagsManager::Get().AddNativeGameplayTag(FName("Effect.HitReact"));
 
 
