@@ -122,7 +122,7 @@ void UPlayerAttributeSet::PostGameplayEffectExecute(const  FGameplayEffectModCal
 			
 			if (props.SourceCharacter != props.TargetCharacter)
 			{
-				if(AAuraPlayerController* PlayerController = Cast<AAuraPlayerController>(UGameplayStatics::GetPlayerController(props.SourceCharacter , 0)))
+				if(AAuraPlayerController* PlayerController = Cast<AAuraPlayerController>(props.SourceCharacter->Controller))
 				{
 					PlayerController->ShowTextDamage(LocalIncomingDamage,  props.TargetCharacter , BBlocked , BCritical);
 				}

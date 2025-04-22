@@ -44,9 +44,13 @@ void AAuraProjectile::BeginPlay()
 void AAuraProjectile::OnSphereOverlap(UPrimitiveComponent* OverlapedComponent, AActor* OtherActor,
 	UPrimitiveComponent* OtherComponent, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepHitResult)
 {
-	UGameplayStatics::PlaySoundAtLocation(this , ImpactSound , GetActorLocation() , FRotator::ZeroRotator );
-	UNiagaraFunctionLibrary::SpawnSystemAtLocation(this , ImpactEffect , GetActorLocation() , FRotator::ZeroRotator );
-	LoopingSoundComponent->Stop();
+	if(AuraEffectHandle.Data.Get()->GetContext().GetEffectCauser() == OtherActor && AuraEffectHandle.Data.IsValid())return;
+	if(!BHit)
+	{
+		UGameplayStatics::PlaySoundAtLocation(this , ImpactSound , GetActorLocation() , FRotator::ZeroRotator );
+		UNiagaraFunctionLibrary::SpawnSystemAtLocation(this , ImpactEffect , GetActorLocation() , FRotator::ZeroRotator );
+		if(LoopingSoundComponent)LoopingSoundComponent->Stop();
+	}
 	if(HasAuthority())
 	{
 		if(UAbilitySystemComponent* TargetAsc = UAbilitySystemBlueprintLibrary::GetAbilitySystemComponent(OtherActor))
@@ -69,7 +73,7 @@ void AAuraProjectile::Destroyed()
 	{
 		UGameplayStatics::PlaySoundAtLocation(this , ImpactSound , GetActorLocation() , FRotator::ZeroRotator );
 		UNiagaraFunctionLibrary::SpawnSystemAtLocation(this , ImpactEffect , GetActorLocation() , FRotator::ZeroRotator );
-		LoopingSoundComponent->Stop();
+		if(LoopingSoundComponent)LoopingSoundComponent->Stop();
 	}
 	Super::Destroyed();
 }
