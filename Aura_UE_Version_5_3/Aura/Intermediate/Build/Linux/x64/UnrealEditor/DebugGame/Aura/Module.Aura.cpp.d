@@ -2713,6 +2713,37 @@
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraEffectActor.gen.cpp \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/Actor/AuraEffectActor.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraEffectActor.generated.h \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraEnemyAiController.gen.cpp \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/AI/AuraEnemyAiController.h \
+  Runtime/AIModule/Classes/AIController.h \
+  Runtime/NavigationSystem/Public/NavFilters/NavigationQueryFilter.h \
+  Runtime/NavigationSystem/Public/NavAreas/NavArea.h \
+  Runtime/Engine/Classes/AI/Navigation/NavAreaBase.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/Engine/UHT/NavAreaBase.generated.h \
+  Runtime/Engine/Classes/AI/Navigation/NavAgentSelector.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/NavigationSystem/UHT/NavArea.generated.h \
+  Runtime/Engine/Public/AI/Navigation/NavQueryFilter.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/NavigationSystem/UHT/NavigationQueryFilter.generated.h \
+  Runtime/AIModule/Classes/AITypes.h \
+  Runtime/Engine/Classes/AI/Navigation/NavigationTypes.h \
+  Runtime/NavigationSystem/Public/NavigationSystemTypes.h \
+  Runtime/Engine/Classes/AI/NavigationSystemConfig.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/Engine/UHT/NavigationSystemConfig.generated.h \
+  Runtime/Engine/Classes/AI/Navigation/NavLinkDefinition.h \
+  Runtime/Core/Public/Math/GenericOctreePublic.h \
+  Runtime/Engine/Public/AI/NavigationModifier.h \
+  Runtime/CoreUObject/Public/UObject/WeakInterfacePtr.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/AIModule/UHT/AITypes.generated.h \
+  Runtime/GameplayTasks/Classes/GameplayTask.h \
+  Runtime/CoreUObject/Public/UObject/ScriptInterface.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/GameplayTasks/UHT/GameplayTask.generated.h \
+  Runtime/Engine/Classes/GameFramework/Controller.h \
+  Runtime/AIModule/Classes/Perception/AIPerceptionListenerInterface.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/AIModule/UHT/AIPerceptionListenerInterface.generated.h \
+  Runtime/AIModule/Classes/GenericTeamAgentInterface.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/AIModule/UHT/GenericTeamAgentInterface.generated.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/AIModule/UHT/AIController.generated.h \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraEnemyAiController.generated.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraGameModeBase.gen.cpp \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/Game/AuraGameModeBase.h \
   Runtime/Engine/Classes/GameFramework/GameModeBase.h \
@@ -2860,10 +2891,6 @@
   ../Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Public/GameplayCueInterface.h \
   ../Plugins/Runtime/GameplayAbilities/Intermediate/Build/Linux/UnrealEditor/Inc/GameplayAbilities/UHT/GameplayCueInterface.generated.h \
   Runtime/GameplayTasks/Classes/GameplayTasksComponent.h \
-  Runtime/CoreUObject/Public/UObject/ScriptInterface.h \
-  Runtime/GameplayTasks/Classes/GameplayTask.h \
-  Runtime/CoreUObject/Public/UObject/WeakInterfacePtr.h \
-  ../Intermediate/Build/Linux/UnrealEditor/Inc/GameplayTasks/UHT/GameplayTask.generated.h \
   Runtime/GameplayTasks/Classes/GameplayTaskResource.h \
   ../Intermediate/Build/Linux/UnrealEditor/Inc/GameplayTasks/UHT/GameplayTaskResource.generated.h \
   ../Intermediate/Build/Linux/UnrealEditor/Inc/GameplayTasks/UHT/GameplayTasksComponent.generated.h \

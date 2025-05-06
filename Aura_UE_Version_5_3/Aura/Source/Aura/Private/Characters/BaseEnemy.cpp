@@ -9,6 +9,9 @@
 #include "GAS/PlayerAttributeSet.h"
 #include "UI/Widgets/AuraUserWidget.h"
 #include "AuraGamePlayTags.h"
+#include "AI/AuraEnemyAiController.h"
+#include "BehaviorTree/BehaviorTree.h"
+#include "BehaviorTree/BlackboardComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
 
 
@@ -22,6 +25,10 @@ ABaseEnemy::ABaseEnemy()
 	AbilitySystemComponent->SetIsReplicated(true);
 	AbilitySystemComponent->SetReplicationMode(EGameplayEffectReplicationMode::Minimal);
 
+	bUseControllerRotationYaw = false;
+	bUseControllerRotationPitch = false;
+	bUseControllerRotationRoll = false;
+	GetCharacterMovement()->bUseControllerDesiredRotation = true;
 	
 	AttributeSet = CreateDefaultSubobject<UPlayerAttributeSet>("Attribute Set");
 
@@ -34,6 +41,8 @@ void ABaseEnemy::HitReactTagChanged(const FGameplayTag IncomingTag, int32 NewCou
 {
 	BHitReacting = NewCount > 0;
 	GetCharacterMovement()->MaxWalkSpeed = BHitReacting ? 0.f : BaseMaxWalkSpeed ;
+	AuraAiController->GetBlackboardComponent()->SetValueAsBool(FName("HitReacting"), BHitReacting);
+
 	
 }
 
@@ -96,6 +105,26 @@ void ABaseEnemy::SetInitInfo()
 void ABaseEnemy::InitializeDefaultAttributes() const
 {
 	UAuraAbilitySystemLiberary::InitializeDefaultAttributesbyClass(this , EnemyClass , Level , AbilitySystemComponent);
+}
+
+void ABaseEnemy::PossessedBy(AController* NewController)
+{
+	Super::PossessedBy(NewController);
+	if(!HasAuthority())return;
+	AuraAiController = Cast<AAuraEnemyAiController>(NewController);
+	AuraAiController->GetBlackboardComponent()->InitializeBlackboard(*BehaviorTree->BlackboardAsset);
+	AuraAiController->RunBehaviorTree(BehaviorTree);
+	AuraAiController->GetBlackboardComponent()->SetValueAsBool(FName("HitReacting"), false);
+	if(EnemyClass==ECharacterClasses::Warrior)
+	{
+		AuraAiController->GetBlackboardComponent()->SetValueAsBool(FName("RangedAttack"), false);
+
+	}
+	else
+	{
+		AuraAiController->GetBlackboardComponent()->SetValueAsBool(FName("RangedAttack"), true);
+
+	}
 }
 
 int32 ABaseEnemy::GetPlayerLevel()

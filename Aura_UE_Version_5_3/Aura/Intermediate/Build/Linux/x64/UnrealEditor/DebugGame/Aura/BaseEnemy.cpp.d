@@ -2742,9 +2742,71 @@
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/UI/Widgets/AuraUserWidget.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraUserWidget.generated.h \
   /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/AuraGamePlayTags.h \
-  Runtime/Engine/Classes/GameFramework/CharacterMovementComponent.h \
-  Runtime/Engine/Classes/Engine/EngineBaseTypes.h \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Source/Aura/Public/AI/AuraEnemyAiController.h \
+  Runtime/AIModule/Classes/AIController.h \
+  Runtime/NavigationSystem/Public/NavFilters/NavigationQueryFilter.h \
+  Runtime/NavigationSystem/Public/NavAreas/NavArea.h \
+  Runtime/Engine/Classes/AI/Navigation/NavAreaBase.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/Engine/UHT/NavAreaBase.generated.h \
+  Runtime/Engine/Classes/AI/Navigation/NavAgentSelector.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/NavigationSystem/UHT/NavArea.generated.h \
+  Runtime/Engine/Public/AI/Navigation/NavQueryFilter.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/NavigationSystem/UHT/NavigationQueryFilter.generated.h \
+  Runtime/AIModule/Classes/AITypes.h \
   Runtime/Engine/Classes/AI/Navigation/NavigationTypes.h \
+  Runtime/NavigationSystem/Public/NavigationSystemTypes.h \
+  Runtime/Engine/Classes/AI/NavigationSystemConfig.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/Engine/UHT/NavigationSystemConfig.generated.h \
+  Runtime/Engine/Classes/AI/Navigation/NavLinkDefinition.h \
+  Runtime/Core/Public/Math/GenericOctreePublic.h \
+  Runtime/Engine/Public/AI/NavigationModifier.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/AIModule/UHT/AITypes.generated.h \
+  Runtime/Engine/Classes/GameFramework/Controller.h \
+  Runtime/AIModule/Classes/Perception/AIPerceptionListenerInterface.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/AIModule/UHT/AIPerceptionListenerInterface.generated.h \
+  Runtime/AIModule/Classes/GenericTeamAgentInterface.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/AIModule/UHT/GenericTeamAgentInterface.generated.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/AIModule/UHT/AIController.generated.h \
+  /home/sage/Documents/GitHub/Gas_LearningCurse/Aura_UE_Version_5_3/Aura/Intermediate/Build/Linux/UnrealEditor/Inc/Aura/UHT/AuraEnemyAiController.generated.h \
+  Runtime/AIModule/Classes/BehaviorTree/BehaviorTree.h \
+  Runtime/Engine/Classes/Engine/Blueprint.h \
+  Runtime/AIModule/Classes/BehaviorTree/BTCompositeNode.h \
+  Runtime/AIModule/Classes/BehaviorTree/BTNode.h \
+  Runtime/AIModule/Classes/BehaviorTree/BehaviorTreeTypes.h \
+  Runtime/AIModule/Classes/BehaviorTree/Blackboard/BlackboardKey.h \
+  Runtime/InputCore/Classes/InputCoreTypes.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/AIModule/UHT/BehaviorTreeTypes.generated.h \
+  Runtime/AIModule/Classes/BehaviorTree/BehaviorTreeComponent.h \
+  Runtime/AIModule/Classes/BrainComponent.h \
+  Runtime/AIModule/Classes/AIResourceInterface.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/AIModule/UHT/AIResourceInterface.generated.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/AIModule/UHT/BrainComponent.generated.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/AIModule/UHT/BehaviorTreeComponent.generated.h \
+  Runtime/AIModule/Classes/BehaviorTree/BlackboardAssetProvider.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/AIModule/UHT/BlackboardAssetProvider.generated.h \
+  Runtime/AIModule/Classes/Tasks/AITask.h \
+  Runtime/CoreUObject/Public/UObject/Package.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/AIModule/UHT/AITask.generated.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/AIModule/UHT/BTNode.generated.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/AIModule/UHT/BTCompositeNode.generated.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/AIModule/UHT/BehaviorTree.generated.h \
+  Runtime/AIModule/Classes/BehaviorTree/BlackboardComponent.h \
+  Runtime/AIModule/Classes/BehaviorTree/Blackboard/BlackboardKeyType.h \
+  Runtime/AIModule/Classes/BehaviorTree/Blackboard/BlackboardKeyEnums.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/AIModule/UHT/BlackboardKeyEnums.generated.h \
+  Runtime/CoreUObject/Public/Templates/IsUEnumClass.h \
+  Runtime/CoreUObject/Public/UObject/ReflectedTypeAccessors.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/AIModule/UHT/BlackboardKeyType.generated.h \
+  Runtime/AIModule/Classes/AISystem.h \
+  Runtime/Engine/Classes/AI/AISystemBase.h \
+  Runtime/Engine/Classes/Engine/EngineBaseTypes.h \
+  Runtime/Core/Public/Modules/ModuleInterface.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/Engine/UHT/AISystemBase.generated.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/AIModule/UHT/AISystem.generated.h \
+  Runtime/AIModule/Classes/BehaviorTree/BlackboardData.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/AIModule/UHT/BlackboardData.generated.h \
+  ../Intermediate/Build/Linux/UnrealEditor/Inc/AIModule/UHT/BlackboardComponent.generated.h \
+  Runtime/Engine/Classes/GameFramework/CharacterMovementComponent.h \
   Runtime/Engine/Classes/Animation/AnimMontage.h \
   Runtime/Engine/Classes/AI/Navigation/NavigationAvoidanceTypes.h \
   ../Intermediate/Build/Linux/UnrealEditor/Inc/Engine/UHT/NavigationAvoidanceTypes.generated.h \

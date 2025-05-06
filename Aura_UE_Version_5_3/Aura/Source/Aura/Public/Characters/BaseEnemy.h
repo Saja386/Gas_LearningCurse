@@ -11,6 +11,8 @@
 
 
 class UWidgetComponent;
+class UBehaviorTree;
+class AAuraEnemyAiController;
 /**
  * 
  */
@@ -19,6 +21,7 @@ class AURA_API ABaseEnemy : public ABaseCharacter ,public IEnemyInterface
 {
 	GENERATED_BODY()
 public:
+	virtual void PossessedBy(AController* NewController) override;
 	virtual int32 GetPlayerLevel() override;
 	virtual void HighlightActor () override;
 	virtual void UnHighlightActor () override;
@@ -53,7 +56,10 @@ protected:
 	TObjectPtr<UWidgetComponent> HealthBarComponent;
 
 	void InitializeDefaultAttributes() const override;
+	UPROPERTY(EditAnywhere , Category="Ai")
+	TObjectPtr<UBehaviorTree> BehaviorTree;
 
 
-	
+	UPROPERTY()
+	TObjectPtr<AAuraEnemyAiController> AuraAiController;
 };
